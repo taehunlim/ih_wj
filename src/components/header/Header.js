@@ -25,7 +25,7 @@ const Header = () => {
 
     return (
         <Fragment>
-            <Navbar fixed="top" className="navigation sticky nav-sticky">
+            <Navbar fixed="top" className="navigation sticky">
                 <Container>
                     <NavbarBrand className="navbar-logo " href="/">
                         <img src={logo} alt="" height="19" className="logo logo-light"/>
@@ -44,9 +44,6 @@ const Header = () => {
                         <li>
                             <button
                                 className="mobile-nav-btn"
-                                style={{
-                                    border: "none"
-                                }}
                                 onClick={() => setOffCanvasMobileMenu(true)}
                             >
                                 <IoIosMenu />
