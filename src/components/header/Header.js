@@ -1,4 +1,4 @@
-import React, {Fragment, useState} from 'react';
+import React, {Fragment, useState, useEffect} from 'react';
 import {
     Container,
     Navbar,
@@ -15,6 +15,9 @@ import MobileMenu from "./elements/MobileMenu";
 const Header = () => {
 
     const [ offCanvasMobileMenu, setOffCanvasMobileMenu ] = useState(false);
+    const [scroll, setScroll] = useState();
+    const [headerTop, setHeaderTop] = useState();
+    const [headerHeight, setHeaderHeight] = useState();
 
     const [navItems, setNavItems] = useState([
         { id: 1 , idnm : "coloroflife", navheading: "COLOR of Life" },
@@ -23,9 +26,31 @@ const Header = () => {
         { id: 4 , idnm : "service", navheading: "SERVICE" },
     ]);
 
+    let TargetId = navItems.map((item) => item.idnm);
+
+    useEffect(() => {
+        const header = document.querySelector("nav");
+        setHeaderTop(header.offsetTop)
+        setHeaderHeight(header.offsetHeight);
+        window.addEventListener("scroll", handleScroll)
+        scroll > headerTop
+            ? (document.body.style.paddingTop = `${headerHeight}px`)
+            : (document.body.style.padding = 0);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll)
+        }
+    }, [headerTop, headerHeight, scroll])
+
+    const handleScroll = () => {
+        setScroll(window.scrollY)
+    }
+
     return (
         <Fragment>
-            <Navbar fixed="top" className="navigation sticky">
+            <Navbar expand="lg" fixed="top" className={`navigation sticky ${
+                scroll > headerTop ? "nav-sticky" : ""
+            }`}>
                 <Container>
                     <NavbarBrand className="navbar-logo " href="/">
                         <img src={logo} alt="" height="19" className="logo logo-light"/>
