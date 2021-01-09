@@ -6,6 +6,11 @@ import {Link} from "react-router-dom";
 import img1 from "../../assets/images/Cover/mainSlide1.jpg";
 import img2 from "../../assets/images/Cover/mainSlide2.jpg";
 import img3 from "../../assets/images/Cover/mainSlide3.jpg";
+import {Swiper, SwiperSlide} from "swiper/react";
+import SwiperCore, {Controller, Navigation, Pagination } from 'swiper'
+
+SwiperCore.use([Navigation, Pagination, Controller])
+
 
 
 const Cover = () => {
@@ -49,6 +54,7 @@ const Cover = () => {
             caption: '외래팀'
         },
     ];
+
 
     return (
         <Fragment>
