@@ -11,6 +11,7 @@ import {IoIosMenu} from 'react-icons/io'
 
 import logo from '../../assets/images/logo.jpg'
 import MobileMenu from "./elements/MobileMenu";
+import ScrollspyNav from "./elements/scrollSpy";
 
 const Header = () => {
 
@@ -57,13 +58,20 @@ const Header = () => {
                         <img src={logo} alt="" height="19" className="logo logo-dark"/>
                     </NavbarBrand>
 
-                    <Nav className="ml-auto navbar-nav d-none d-lg-flex" id="topnav-menu">
-                        {navItems.map((item, key) => (
-                            <NavItem key={key} className={item.navheading === "COLOR of Life" ? "active" : ""}>
-                                <NavLink href={"#" + item.idnm}>{item.navheading}</NavLink>
-                            </NavItem>
-                        ))}
-                    </Nav>
+                    <ScrollspyNav
+                        scrollTargetIds={TargetId}
+                        scrollDuration="300"
+                        headerBackground="true"
+                        activeNavClass="active"
+                    >
+                        <Nav className="ml-auto navbar-nav d-none d-lg-flex" id="topnav-menu">
+                            {navItems.map((item, key) => (
+                                <NavItem key={key} className={item.navheading === "COLOR of Life" ? "active" : ""}>
+                                    <NavLink href={"#" + item.idnm}>{item.navheading}</NavLink>
+                                </NavItem>
+                            ))}
+                        </Nav>
+                    </ScrollspyNav>
 
                     <ul className="d-block d-lg-none">
                         <li>
