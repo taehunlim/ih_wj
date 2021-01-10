@@ -1,34 +1,20 @@
-import React, {Fragment, useState} from 'react';
-import classnames from 'classnames'
-import { Container, Row, Col, Carousel, CarouselItem, CarouselControl } from 'reactstrap';
+import React, {Fragment, useState, useEffect} from 'react';
+
+import { Container, Row, Col } from 'reactstrap';
 import {Link} from "react-router-dom";
 
 import img1 from "../../assets/images/Cover/mainSlide1.jpg";
 import img2 from "../../assets/images/Cover/mainSlide2.jpg";
 import img3 from "../../assets/images/Cover/mainSlide3.jpg";
+import img4 from "../../assets/images/Cover/mainSlide4.jpg";
 
+
+import Slider from 'react-slick';
 
 const Cover = () => {
 
     const [activeIndex, setActiveIndex] = useState(0);
     const [animating, setAnimating] = useState(false);
-
-    const next = () => {
-        if (animating) return;
-        const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
-        setActiveIndex(nextIndex);
-    }
-
-    const previous = () => {
-        if (animating) return;
-        const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
-        setActiveIndex(nextIndex);
-    }
-
-    const goToIndex = (newIndex) => {
-        if (animating) return;
-        setActiveIndex(newIndex);
-    }
 
     const items = [
         {
@@ -46,40 +32,63 @@ const Cover = () => {
             src: img3,
             caption: '외래팀'
         },
+        {
+            id: "4",
+            src: img4,
+            caption: '외래팀'
+        },
     ];
+
+    const [nav1, setNav1] = useState(null);
+    const [nav2, setNav2] = useState(null);
+    const [slider1, setSlider1] = useState(null);
+    const [slider2, setSlider2] = useState(null);
+
+    useEffect(() => {
+
+        setNav1(slider1);
+        setNav2(slider2);
+
+    });
+
+    const settingsMain = {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider-nav'
+    };
+
+    const settingsThumbs = {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.slider-for',
+        centerMode: true,
+        swipeToSlide: true,
+        focusOnSelect: true,
+        centerPadding: '10px'
+    };
+
+
 
     return (
         <Fragment>
             <section id="cover">
-                <Carousel activeIndex={activeIndex} next={next} previous={previous}>
-                    <ol className="carousel-indicators">
-                        {items.map((item, index) => {
-                            return (
-                                <li
-                                    data-target="#carousel-thumb"
-                                    key={index}
-                                    onClick={() => goToIndex(index)}
-                                    className={classnames({ active: activeIndex === index })}
-                                >
-                                    <img className="img-fluid d-block" src={item.src}/>
-                                </li>
-                            );
-                        })}
+                <div className="main-slick-slider">
+                    <Slider
+                        {...settingsMain}
+                        asNavFor={nav2}
+                        ref={slider => (setSlider1(slider))}
+                    >
 
+                        {items.map((item) =>
 
-                        <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
-                        <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
-                    </ol>
+                            <div className="slick-slider">
+                                <div className="slider-img">
+                                    <img src={item.src} className="img-fluid"/>
+                                </div>
 
-                    {items && items.map((item) => {
-                        return (
-                            <CarouselItem>
-                                <div
-                                    className="carousel-bg"
-                                    style={{
-                                        backgroundImage:`url(${item.src})`,
-                                    }}
-                                >
+                                <div className="slider-content">
                                     <Container>
                                         <Row className="align-items-center">
                                             <Col lg={5}>
@@ -94,10 +103,28 @@ const Cover = () => {
                                     </Container>
                                 </div>
 
-                            </CarouselItem>
-                        )
-                    })}
-                </Carousel>
+                            </div>
+                        )}
+                    </Slider>
+
+                    <div className="thumbnail-slick-slider">
+                        <Slider
+                            {...settingsThumbs}
+                            asNavFor={nav1}
+                            ref={slider => (setSlider2(slider))}
+                            style={{width:"70%"}}
+                        >
+
+                            {items.map((slide) =>
+
+                                <div className="slick-thumb-slide" key={slide.id}>
+                                    <img className="slick-slide-image img-fluid" src={slide.src} />
+                                </div>
+
+                            )}
+                        </Slider>
+                    </div>
+                </div>
             </section>
         </Fragment>
     );
