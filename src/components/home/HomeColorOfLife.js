@@ -11,6 +11,7 @@ import {
 } from 'reactstrap';
 import {Link} from 'react-router-dom';
 import Slider from 'react-slick';
+import {IoIosArrowForward, IoIosArrowBack} from 'react-icons/io'
 
 import {trimText} from '../../utils'
 
@@ -22,14 +23,49 @@ import image5 from '../../assets/images/cl/color5.jpg';
 
 const HomeColorOfLife = () => {
 
-
-    const setting = {
+    const settings = {
         slidesToShow: 3,
         slidesToScroll: 1,
         swipeToSlide: true,
         focusOnSelect: true,
         centerPadding: '5px',
-        dots: true
+        dots: true,
+        nextArrow: (
+            <div>
+                <div className="next-slick-arrow"> <IoIosArrowForward/> </div>
+            </div>
+        ),
+        prevArrow: (
+            <div>
+                <div className="prev-slick-arrow"> <IoIosArrowBack/> </div>
+            </div>
+        ),
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     };
 
     const items = [
@@ -90,9 +126,9 @@ const HomeColorOfLife = () => {
                     </Row>
 
                     <Col lg="12">
-                        <div className="">
+                        <div className="sub-slick-slider">
                             <div className="events" id="timeline-carousel">
-                                <Slider {...setting}>
+                                <Slider {...settings}>
                                     {items.map((item) => (
                                         <Col md={12}>
                                             <Card className="card-slider">

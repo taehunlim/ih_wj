@@ -8,9 +8,6 @@ import {Link} from "react-router-dom";
 
 import { FaFacebookF, FaInstagram, FaBloggerB, FaTwitter } from "react-icons/fa";
 
-
-
-
 const Service = () => {
 
     return (

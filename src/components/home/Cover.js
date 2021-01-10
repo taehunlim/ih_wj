@@ -10,6 +10,7 @@ import img4 from "../../assets/images/Cover/mainSlide4.jpg";
 
 
 import Slider from 'react-slick';
+import {IoIosArrowBack, IoIosArrowForward} from "react-icons/io/index";
 
 const Cover = () => {
 
@@ -45,7 +46,6 @@ const Cover = () => {
     const [slider2, setSlider2] = useState(null);
 
     useEffect(() => {
-
         setNav1(slider1);
         setNav2(slider2);
 
@@ -66,7 +66,25 @@ const Cover = () => {
         centerMode: true,
         swipeToSlide: true,
         focusOnSelect: true,
-        centerPadding: '10px'
+        centerPadding: '5px',
+        nextArrow: (
+            <div>
+                <div className="next-slick-arrow"> <IoIosArrowForward/> </div>
+            </div>
+        ),
+        prevArrow: (
+            <div>
+                <div className="prev-slick-arrow"> <IoIosArrowBack/> </div>
+            </div>
+        ),
+        responsive: [
+            {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 2
+                }
+            }
+        ]
     };
 
 

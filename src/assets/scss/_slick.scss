@@ -50,5 +50,23 @@
       }
     }
   }
+}
+
+
+.sub-slick-slider {
+
+  .slick-prev {
+    left: -52px !important;
+  }
+
+  .slick-next:before,
+  .slick-prev:before {
+    content: "" !important;
+  }
+  .next-slick-arrow,
+  .prev-slick-arrow {
+    color: #000000;
+    font-size: 48px;
+  }
 
 }

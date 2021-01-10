@@ -18,16 +18,53 @@ import image1 from '../../assets/images/news/bcontThumb3_1.jpg'
 import image2 from '../../assets/images/news/bcontThumb3_2.jpg'
 import image3 from '../../assets/images/news/bcontThumb3_3.jpg'
 import image4 from '../../assets/images/news/bcontThumb3_4.jpg'
+import {IoIosArrowBack, IoIosArrowForward} from "react-icons/io/index";
 
 const HomeIhNews = () => {
 
-    const setting = {
+    const settings = {
         slidesToShow: 3,
         slidesToScroll: 1,
         swipeToSlide: true,
         focusOnSelect: true,
         centerPadding: '5px',
-        dots: true
+        dots: true,
+        nextArrow: (
+            <div>
+                <div className="next-slick-arrow"> <IoIosArrowForward/> </div>
+            </div>
+        ),
+        prevArrow: (
+            <div>
+                <div className="prev-slick-arrow"> <IoIosArrowBack/> </div>
+            </div>
+        ),
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     };
 
     const items = [
@@ -73,9 +110,9 @@ const HomeIhNews = () => {
                     </Row>
 
                     <Col lg="12">
-                        <div className="">
+                        <div className="sub-slick-slider">
                             <div className="events" id="timeline-carousel">
-                                <Slider {...setting}>
+                                <Slider {...settings}>
                                     {items.map((item) => (
                                         <Col md={12}>
                                             <Card className="card-slider">
