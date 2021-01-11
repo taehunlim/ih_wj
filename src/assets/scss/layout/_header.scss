@@ -7,11 +7,19 @@
   transition: all 0.5s ease-in-out;
   border-bottom: 1px solid rgba($white, 0.1);
 
+  @media (max-width: 1024px) {
+    height: 8%;
+  }
+
   .navbar-logo{
     line-height: 70px;
     transition: all 0.4s;
     .logo{
       height: 55px;
+
+      @media (max-width: 576px) {
+        height: 35px;
+      }
     }
     .logo-dark{
       display: none;
@@ -219,6 +227,10 @@
       font-size: 40px;
       line-height: 1;
     }
+
+    @media (max-width: 320px) {
+      margin-left: 40px;
+    }
   }
 
   &__content-wrapper {
@@ -228,6 +240,10 @@
 
     background-color: $white;
     box-shadow: 0 0 87px 0 rgba($black, 0.09);
+
+    @media (max-width: 320px) {
+      margin-left: 40px;
+    }
   }
 
   &__content {

@@ -14,9 +14,6 @@ import {IoIosArrowBack, IoIosArrowForward} from "react-icons/io/index";
 
 const Cover = () => {
 
-    const [activeIndex, setActiveIndex] = useState(0);
-    const [animating, setAnimating] = useState(false);
-
     const items = [
         {
             id: "1",
@@ -68,14 +65,10 @@ const Cover = () => {
         focusOnSelect: true,
         centerPadding: '5px',
         nextArrow: (
-            <div>
-                <div className="next-slick-arrow"> <IoIosArrowForward/> </div>
-            </div>
+            <div className="next-slick-arrow"> <IoIosArrowForward/> </div>
         ),
         prevArrow: (
-            <div>
-                <div className="prev-slick-arrow"> <IoIosArrowBack/> </div>
-            </div>
+            <div className="prev-slick-arrow"> <IoIosArrowBack/> </div>
         ),
         responsive: [
             {
