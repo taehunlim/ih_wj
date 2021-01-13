@@ -9,7 +9,7 @@ import {
 } from 'reactstrap';
 import {IoIosMenu} from 'react-icons/io'
 
-import logo from '../../assets/images/logo.jpg'
+import logo from '../../assets/images/logo_top.png'
 import MobileMenu from "./elements/MobileMenu";
 import ScrollspyNav from "./elements/scrollSpy";
 
@@ -21,10 +21,10 @@ const Header = () => {
     const [headerHeight, setHeaderHeight] = useState();
 
     const [navItems, setNavItems] = useState([
-        { id: 1 , idnm : "coloroflife", navheading: "COLOR of Life" },
-        { id: 2 , idnm : "ihoflife", navheading: "IH of Life" },
+        { id: 1 , idnm : "section1", navheading: "SECTION1" },
+        { id: 1 , idnm : "section2", navheading: "SECTION2" },
         { id: 3 , idnm : "ihnews", navheading: "IH News" },
-        { id: 4 , idnm : "service", navheading: "SERVICE" },
+        { id: 4 , idnm : "coloroflife", navheading: "COLOR of Life" },
     ]);
 
     let TargetId = navItems.map((item) => item.idnm);

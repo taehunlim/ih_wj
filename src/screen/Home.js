@@ -6,7 +6,11 @@ import Cover from "../components/home/Cover";
 import HomeColorOfLife from "../components/home/HomeColorOfLife"
 import HomeIhOfLife from "../components/home/HomeIhOfLife";
 import HomeIhNews from "../components/home/HomeIhNews";
-import Service from "../components/home/Service";
+
+import Section1 from "../components/home/Section1";
+import Section2 from "../components/home/Section2";
+
+import New from '../components/home/new'
 
 const Home = () => {
     return (
@@ -17,13 +21,17 @@ const Home = () => {
 
                 <Cover/>
 
-                <HomeColorOfLife/>
+                <Section1/>
+
+                <Section2/>
 
                 <HomeIhOfLife/>
 
                 <HomeIhNews/>
 
-                <Service/>
+                <HomeColorOfLife/>
+
+                <New/>
 
                 <Footer/>
 

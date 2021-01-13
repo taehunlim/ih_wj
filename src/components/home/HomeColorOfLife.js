@@ -125,14 +125,16 @@ const HomeColorOfLife = () => {
                         </Col>
                     </Row>
 
-                    <Col lg="12">
+                    <Col lg="12"
+                        style={{padding: "80px"}}
+                    >
                         <div className="sub-slick-slider">
                             <div className="events" id="timeline-carousel">
                                 <Slider {...settings}>
                                     {items.map((item) => (
                                         <Col md={12}>
                                             <Card className="card-slider">
-                                                <Link className="card-slider__link" to="/">
+                                                <Link className="card-slider__link" to={`/coloroflife/${item.id}`}>
                                                     <CardBody>
                                                         <CardTitle className="mt-0">{item.head}</CardTitle>
                                                     </CardBody>

@@ -1,16 +1,16 @@
-import {BrowserRouter, Route, Switch, Redirect, Link} from 'react-router-dom';
-import '../src/assets/scss/app.scss'
+import {BrowserRouter, Route, Switch, Redirect, } from 'react-router-dom';
 
 import Home from "./screen/Home";
-import React, {Fragment} from "react";
-import classnames from "classnames";
+import ColorOfLife from "./screen/ColorOfLife";
+
+import '../src/assets/scss/app.scss'
 
 function App() {
   return (
       <BrowserRouter>
           <Switch>
               <Route path="/" exact render={props => <Home {...props}/>}/>
-
+              <Route path="/coloroflife/:id" render={props => <ColorOfLife {...props}/>}/>
               <Redirect to="/" />
           </Switch>
       </BrowserRouter>

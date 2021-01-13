@@ -1,4 +1,6 @@
 .navigation {
+  position: absolute;
+
   padding: 0 16px;
   height: 10%;
   width: 100%;
@@ -68,6 +70,109 @@
   }
 
   &.nav-sticky{
+    position: fixed;
+
+    background-color: #e49600;
+    //box-shadow: $box-shadow;
+    .navbar-logo{
+      line-height: 60px;
+
+      .logo-dark{
+        display: $display-block;
+      }
+      .logo-light{
+        display: $display-none;
+      }
+    }
+
+    .navbar-nav {
+      .nav-item {
+        .nav-link{
+          line-height: 48px;
+          color: $header-item-color;
+          &:hover, &.active{
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+}
+
+.navigation__page {
+  position: relative;
+
+  padding: 0 16px;
+  height: 10%;
+  width: 100%;
+  z-index: 999;
+  margin-bottom: 0px;
+  transition: all 0.5s ease-in-out;
+  border-bottom: 1px solid rgba($white, 0.1);
+
+  @media (max-width: 1024px) {
+    height: 8%;
+  }
+
+  .navbar-logo{
+    line-height: 70px;
+    transition: all 0.4s;
+    .logo{
+      height: 55px;
+
+      @media (max-width: 576px) {
+        height: 35px;
+      }
+    }
+    .logo-dark{
+      display: none;
+      @media (max-width: 991.98px) {
+        display: block;
+      }
+    }
+    .logo-light{
+      display: block;
+      @media (max-width: 991.98px) {
+        display: none;
+      }
+    }
+  }
+
+
+  .navbar-nav{
+
+    flex-direction: row;
+    .nav-item{
+      .nav-link{
+        color: black;
+        line-height: 58px;
+        padding: 6px 16px;
+        font-size: 20px;
+        font-weight: 500;
+        transition: all 0.4s;
+
+        @media (max-width: 991.98px) {
+          color: #555b6d;
+        }
+
+        &:hover, &.active{
+          color: $primary;
+
+          @media (max-width: 991.98px) {
+            color: $primary;
+          }
+        }
+
+        @media (max-width: 991.98px) {
+          line-height: 28px !important;
+        }
+      }
+    }
+  }
+
+  &.nav-sticky{
+
+    position: fixed;
     background-color: #e49600;
     //box-shadow: $box-shadow;
     .navbar-logo{

@@ -109,7 +109,9 @@ const HomeIhNews = () => {
                         </Col>
                     </Row>
 
-                    <Col lg="12">
+                    <Col lg="12"
+                         style={{padding: "80px"}}
+                    >
                         <div className="sub-slick-slider">
                             <div className="events" id="timeline-carousel">
                                 <Slider {...settings}>
