@@ -4,13 +4,12 @@ import Header from "../components/header/Header";
 import Footer from "../components/footer/Footer";
 import Cover from "../components/home/Cover";
 import HomeColorOfLife from "../components/home/HomeColorOfLife"
-import HomeIhOfLife from "../components/home/HomeIhOfLife";
-import HomeIhNews from "../components/home/HomeIhNews";
+// import HomeIhOfLife from "../components/home/HomeIhOfLife";
+// import HomeIhNews from "../components/home/HomeIhNews";
 
 import Section1 from "../components/home/Section1";
 import Section2 from "../components/home/Section2";
-
-import New from '../components/home/new'
+import Section3 from "../components/home/Section3";
 
 const Home = () => {
     return (
@@ -25,13 +24,13 @@ const Home = () => {
 
                 <Section2/>
 
-                <HomeIhOfLife/>
+                <Section3/>
 
-                <HomeIhNews/>
+                {/*<HomeIhOfLife/>*/}
+
+                {/*<HomeIhNews/>*/}
 
                 <HomeColorOfLife/>
-
-                <New/>
 
                 <Footer/>
 

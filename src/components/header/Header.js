@@ -22,8 +22,8 @@ const Header = () => {
 
     const [navItems, setNavItems] = useState([
         { id: 1 , idnm : "section1", navheading: "SECTION1" },
-        { id: 1 , idnm : "section2", navheading: "SECTION2" },
-        { id: 3 , idnm : "ihnews", navheading: "IH News" },
+        { id: 2 , idnm : "section2", navheading: "SECTION2" },
+        { id: 3 , idnm : "section3", navheading: "SECTION3" },
         { id: 4 , idnm : "coloroflife", navheading: "COLOR of Life" },
     ]);
 
