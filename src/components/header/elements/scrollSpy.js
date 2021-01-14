@@ -101,14 +101,16 @@ class ScrollspyNav extends Component {
                 this.getNavLinkElement(sectionID).parentNode.classList.add(this.activeNavClass);
                 this.clearOtherNavLinkActiveStyle(sectionID);
             }
+            return scrollSectionOffsetTop;
         });
     }
     clearOtherNavLinkActiveStyle(excludeSectionID) {
-        this.scrollTargetIds.map((sectionID, index) => {
+        this.scrollTargetIds.map((sectionID) => {
             if (sectionID !== excludeSectionID) {
                 this.getNavLinkElement(sectionID).classList.remove(this.activeNavClass);
                 this.getNavLinkElement(sectionID).parentNode.classList.remove(this.activeNavClass);
             }
+            return this.scrollTargetIds
         });
     }
 

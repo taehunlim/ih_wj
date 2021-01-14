@@ -3,7 +3,7 @@ import React, {Fragment, useState, useEffect} from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import {Link} from "react-router-dom";
 
-import img1 from "../../assets/images/Cover/mainSlide1.jpg";
+import img1 from "../../assets/images/Cover/cover1.jpg";
 import img2 from "../../assets/images/Cover/mainSlide2.jpg";
 import img3 from "../../assets/images/Cover/mainSlide3.jpg";
 import img4 from "../../assets/images/Cover/mainSlide4.jpg";
@@ -33,7 +33,7 @@ const Cover = () => {
         {
             id: "4",
             src: img4,
-            caption: '외래팀'
+            caption: ''
         },
     ];
 
@@ -46,7 +46,7 @@ const Cover = () => {
         setNav1(slider1);
         setNav2(slider2);
 
-    });
+    }, [slider1, slider2]);
 
     const settingsMain = {
         slidesToShow: 1,
@@ -96,7 +96,7 @@ const Cover = () => {
 
                             <div className="slick-slider">
                                 <div className="slider-img">
-                                    <img src={item.src} className="img-fluid"/>
+                                    <img src={item.src} className="img-fluid" alt="/"/>
                                 </div>
 
                                 <div className="slider-content">
@@ -129,7 +129,7 @@ const Cover = () => {
                             {items.map((slide) =>
 
                                 <div className="slick-thumb-slide" key={slide.id}>
-                                    <img className="slick-slide-image img-fluid" src={slide.src} />
+                                    <img className="slick-slide-image img-fluid" src={slide.src} alt="/" />
                                 </div>
 
                             )}

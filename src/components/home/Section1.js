@@ -7,10 +7,10 @@ import {
 import {Link} from "react-router-dom";
 
 
-import img1 from "../../assets/images/1.png";
-import img2 from "../../assets/images/3.png";
-import img3 from "../../assets/images/4.jpg";
-import img4 from "../../assets/images/2.png";
+import img1 from "../../assets/images/section1/1.png";
+import img2 from "../../assets/images/section1/3.png";
+import img3 from "../../assets/images/section1/4.jpg";
+import img4 from "../../assets/images/section1/2.png";
 
 const Section1 = () => {
 
@@ -43,14 +43,14 @@ const Section1 = () => {
                                                 <div className="title">
                                                     <p>
                                                         <Link
-                                                            to="/"
+                                                            to="/sectionone/1"
                                                             as="/"
                                                         >
-                                                            intro
+                                                            INTRO
                                                         </Link>
                                                     </p>
                                                     <Link
-                                                        to="/"
+                                                        to="/sectionone/1"
                                                         as="/"
                                                     >
                                                         따뜻한 마음을 담아 2021년을 바라봅니다
@@ -58,7 +58,7 @@ const Section1 = () => {
                                                 </div>
                                             </div>
                                             <Link
-                                                to="/"
+                                                to="/sectionone/1"
                                                 as="/"
                                                 className="banner-link"
                                             >
@@ -78,22 +78,22 @@ const Section1 = () => {
                                                 <div className="title">
                                                     <p>
                                                         <Link
-                                                            to="/"
+                                                            to="/sectionone/3"
                                                             as="/"
                                                         >
-                                                            신년사
+                                                            ESSAY
                                                         </Link>
                                                     </p>
                                                     <Link
-                                                        to="/"
+                                                        to="/sectionone/3"
                                                         as="/"
                                                     >
-                                                        2021년 희망찬 새해가 밝았습니다
+                                                        인간이‘본다’는 것은 일차원적이며 최고의 사고행위
                                                     </Link>
                                                 </div>
                                             </div>
                                             <Link
-                                                to="/"
+                                                to="/sectionone/3"
                                                 as="/"
                                                 className="banner-link"
                                             >
@@ -117,14 +117,14 @@ const Section1 = () => {
                                                 <div className="title">
                                                     <p>
                                                         <Link
-                                                            to="/"
+                                                            to="/sectionone/4"
                                                             as="/"
                                                         >
-                                                            interview
+                                                            INTERVIEW
                                                         </Link>
                                                     </p>
                                                     <Link
-                                                        to="/"
+                                                        to="/sectionone/4"
                                                         as="/"
                                                     >
                                                         병원에서‘보다’의 의미를 찾다
@@ -132,7 +132,7 @@ const Section1 = () => {
                                                 </div>
                                             </div>
                                             <Link
-                                                to="/"
+                                                to="/sectionone/4"
                                                 as="/"
                                                 className="banner-link"
                                             >
@@ -152,22 +152,22 @@ const Section1 = () => {
                                                 <div className="title">
                                                     <p>
                                                         <Link
-                                                            to="/"
+                                                            to="/sectionone/2"
                                                             as="/"
                                                         >
-                                                            essay
+                                                            신년사
                                                         </Link>
                                                     </p>
                                                     <Link
-                                                        to="/"
+                                                        to="/sectionone/2"
                                                         as="/"
                                                     >
-                                                        인간이‘본다’는 것은 일차원적이며 최고의 사고행위
+                                                        2021년 희망찬 새해가 밝았습니다
                                                     </Link>
                                                 </div>
                                             </div>
                                             <Link
-                                                to="/"
+                                                to="/sectionone/2"
                                                 as="/"
                                                 className="banner-link"
                                             >

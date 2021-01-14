@@ -11,7 +11,7 @@ import {IoIosMenu} from 'react-icons/io'
 
 import logo from '../../assets/images/logo.jpg'
 import MobileMenu from "./elements/MobileMenu";
-import ScrollspyNav from "./elements/scrollSpy";
+// import ScrollspyNav from "./elements/scrollSpy";
 
 const Header = () => {
 
@@ -20,14 +20,14 @@ const Header = () => {
     const [headerTop, setHeaderTop] = useState();
     const [headerHeight, setHeaderHeight] = useState();
 
-    const [navItems, setNavItems] = useState([
+    const [navItems] = useState([
         { id: 1 , idnm : "coloroflife", navheading: "COLOR of Life" },
         { id: 2 , idnm : "ihoflife", navheading: "IH of Life" },
         { id: 3 , idnm : "ihnews", navheading: "IH News" },
         { id: 4 , idnm : "service", navheading: "SERVICE" },
     ]);
 
-    let TargetId = navItems.map((item) => item.idnm);
+    // let TargetId = navItems.map((item) => item.idnm);
 
     useEffect(() => {
         const header = document.querySelector("nav");
