@@ -31,7 +31,7 @@ const Section3 = () => {
 
                     <Container style={{padding: "0px 100px"}}>
                         <Row>
-                            <Col lg={6}>
+                            <Col sm={6} md={6} lg={6}>
                                 <Row>
                                     <Col lg={12}>
                                         <div className="single-category single-category--three space-mb--30">
@@ -105,7 +105,7 @@ const Section3 = () => {
                                     </Col>
                                 </Row>
                             </Col>
-                            <Col lg={6}>
+                            <Col sm={6} md={6} lg={6}>
                                 <Row>
                                     <Col lg={12}>
                                         <div className="single-category single-category--three space-mb--30">

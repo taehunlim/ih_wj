@@ -111,14 +111,33 @@
 
     &__vertical {
       height: 600px;
+
+      @media (max-width: 1024px) {
+        height: 420px;
+      }
+
+      @media (max-width: 768px) {
+        height: 294px;
+      }
     }
 
     &__square {
       height: 285px;
+
+
     }
 
     &__horizontal {
       height: 300px;
+
+      @media (max-width: 1024px) {
+        height: 210px;
+      }
+
+      @media (max-width: 768px) {
+        height: 147px;
+      }
+
     }
   }
 
@@ -332,7 +351,8 @@
               transform: translateY(0);
               text-transform: capitalize;
 
-              color: $black--two;
+              color: white;
+              //color: $black--two;
 
               @include respond(large-desktop) {
                 font-size: 25px;
@@ -349,8 +369,11 @@
                 line-height: 35px;
               }
 
+              //&:hover {
+              //  color: $black--two;
+              //}
               &:hover {
-                color: $black--two;
+                color: $blue--three;
               }
             }
           }
@@ -366,7 +389,8 @@
             text-transform: uppercase;
 
             opacity: 1;
-            color: $black--two;
+            //color: $black--two;
+            color: white;
 
 
             //&:hover {

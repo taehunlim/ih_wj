@@ -12,7 +12,14 @@ import {
 import HeaderP from "../components/header/HeaderP";
 import Footer from "../components/footer/Footer";
 
-import img from '../assets/images/section1/intro02.png'
+import doctor1 from '../assets/images/section2/doctor101.jpg'
+import doctor12 from '../assets/images/section2/doctor102.jpg'
+
+// import doctor201 from '../assets/images/section2/doctor201.jpg'
+// import doctor202 from '../assets/images/section2/doctor202.jpg'
+// import doctor203 from '../assets/images/section2/doctor203.jpg'
+// import doctor204 from '../assets/images/section2/doctor204.jpg'
+
 import img2 from '../assets/images/section1/newyears.1.png'
 import img3 from '../assets/images/section1/essay.png'
 import img4 from '../assets/images/section1/interview.jpg'
@@ -21,66 +28,86 @@ import interv1 from '../assets/images/section1/interv1.1.jpg'
 import interv2 from '../assets/images/section1/interv2.1.jpg'
 
 
-const SectionOne = ({match}) => {
+const SectionTwo = ({match}) => {
 
     const head = [
         (
             <div style={{fontSize: "24px"}}>
-                INTRO
+                DOCTORS 1
             </div>
         ),
         (
             <div style={{fontSize: "24px"}}>
-                신년사
+                DOCTORS 2
             </div>
         ),
         (
             <div style={{fontSize: "24px"}}>
-                ESSAY
+                TEAM
             </div>
         ),
         (
             <div style={{fontSize: "24px"}}>
-                INTERVIEW
+                RESEARCH
+            </div>
+        ),
+        (
+            <div style={{fontSize: "24px"}}>
+                TRAINING
+            </div>
+        ),
+        (
+            <div style={{fontSize: "24px"}}>
+                CLINIC
+            </div>
+        ),
+        (
+            <div style={{fontSize: "24px"}}>
+                MOMENT
             </div>
         )
     ]
 
     const title = [
         (
-            <div style={{color: "mediumpurple"}}>
-                따뜻한 마음을 담아 <br/>
-                2021년을 바라봅니다
+            <div>
+                끊임없이 연구하고 노력하다
+                <br/>영상의학과 김태환 교수
+            </div>
+        ),
+        (
+            <div>
+                환자에게 새 삶을 선물하는 장기이식센터
+            </div>
+        ),
+        (
+            <div>
+                맛과 영양, 안전까지 더한 최고의 식단을 위하여
+                <br/>영양
             </div>
         ),
         (
             <div>
 
+                국민건강보험공단 표본 코호트 자료를 이용한
+                <br/>중이염과 연관된 의료 이용에 대한
+                <br/>편도 및 아데노이드 절제술의 효과
             </div>
         ),
         (
             <div>
-                인간이 ‘본다’는 것은 <br/>
-                일차원적이며 최고의 사고행위
+                캐나다 브리티시컬럼비아대학교 연수를 마치고
+                <br/>새로운 연구와 소중한 경험의 시간
             </div>
         ),
         (
             <div>
-                <div className="mb-3">
-                    병원에서 '보다'의 의미를 찾다
-                </div>
-
-                <span
-                    style={{
-                        fontWeight: "normal",
-                        fontSize: "16px",
-                        borderBottom: "1px solid",
-                        borderTop: "1px solid",
-                        padding: "10px"
-                    }}
-                >
-                    영상의학과 김철민 수석기사 & 병리과 소재옥 직원
-                </span>
+                손발 저림, 혈액순환이 아니라 신경이 문제
+            </div>
+        ),
+        (
+            <div>
+                코로나19로부터 안전한 세상 일산병원이 함께합니다
             </div>
         )
     ]
@@ -88,36 +115,131 @@ const SectionOne = ({match}) => {
     const subtitle = [
         (
             <div>
-                2021년을 맞이하며 어떤 생각을 했나요? ‘올해는 지난해보다 나은 삶이 되면’,
-                ‘좀 더 많이 웃을 수 있으면’
-                하는 바람도 담겨 있겠지요.
-                그래요. 2021년은 자신과 주변 사람들이 조금 더 행복하면 좋겠다는 작은 바람, 분명이루어질거예요.
-                모두가 한마음으로 따뜻한 마음을 담아 2021을 바라봅니다.
-            </div>
-        ),
-        (
-            <div>
-
-            </div>
-        ),
-        (
-            <div>
-                K-팝처럼 세계 주요 언론에 자주 오르는 단어가 K-방역(quarantine)이다. 검사 - 추적 – 격리 및 치료로 이어지는 ‘코로나19’ 대응방법은 오로지 한국만이 지닌 독특한 방식이다. 이로 인해 한국에서는 확진자 수뿐만 아니라 사망자 수도 현저하게 적다. 그리고 최근에는 AI와 빅데이터 등을 이용해 더욱 혁신적인 코로나19 대응법을 내놓고 있다.
+                영상의학과라고 하면 MRI나 CT 등 촬영이 가장 먼저 떠오를 것이다.
+                <br/>정확한 진단을 위해 검사만 진행하는 곳이라고 생각할 수 있지만,
+                일산병원 영상의학과는 외래를 개설해 직접 환자들과 만나고 있다. 영상의학과 외래 업무는 물론이고 신장내과 등과 함께하는 ‘투석혈관 클리닉’
+                <br/>준비로 누구보다 바쁜 2021년을 맞이한 김태환 교수를 만났다.
                 <br/>
-                그러나 기술이나 의술이 아무리 발전해도 전염병은 국민 스스로 예방수칙을 잘 지키는 것이 최선이다. 한국인은 누가 시키지 않아도 방역수칙을 잘 지키며, 마스크를 잘 착용하여 ‘코로나19’ 확산을 저지하고 있다. 거리에서나, 지하철에서나, 버스에서나 마스크를 착용하지 않은 사람을 찾기는 매우 어렵다. 그러나 서양에서는 다르다.
-                <br/> <br/>
-                글 <span style={{fontWeight: "normal"}}> 구승준 번역가 · 칼럼니스트 / </span>
+                <br/>
+                글 <span style={{fontWeight: "normal"}}> 김희연 / </span>
                 사진 <span style={{fontWeight: "normal"}}> 백기광 </span>
             </div>
         ),
         (
             <div>
-                2021년 새해를 맞이해 {"<問安>"}은 일산병원 구성원들이 함께 소통하는 대담 인터뷰를 시작합니다.
-                <br/> 첫 주자인 영상의학과 김철민 수석기사와 병리과 소재옥 직원에게
-                <br/> 병원에서 ‘보다’의 의미에 대해 이야기를 들어보았습니다.
-                <br/> <br/>
-                글 <span style={{fontWeight: "normal"}}> 편집실 / </span>
+                한 사람의 마지막이 또 다른 이의 새로운 시작이 되는 순간, 바로장기이식이다.
+                <br/>장기이식은 질병이나 사고 등 다양한 이유로 장기 기능을 소실한 환자들에게는 유일한 치료 방법이다.
+                뇌사자 1명의 장기기증으로 최대 9명에게 새로운 삶을 선물할 수 있는, 세상에서 가장 고귀한 나눔을 실천중인 일산병원 장기이식센터는 오늘도 수혜자와 기증자를 위해 구슬땀을 흘리고 있다.
+                <br/>
+                <br/>
+                글 <span style={{fontWeight: "normal"}}> 김희연 / </span>
                 사진 <span style={{fontWeight: "normal"}}> 송인호 </span>
+            </div>
+        ),
+        (
+            <div>
+                병원은 1년 365일 불이 꺼지지 않는다.
+                <br/>응급실을 비롯해 환자들이 입원해 있는 병동, 관제실 등
+                <br/>곳곳에서 많은 사람이 병원의 24시간을 밝히고 있다. 또 보이지 않는 곳에서 이들 못지않게 바쁜 하루를 보내는 사람들도 있다.
+                <br/>입원환자들은 물론 직원들의 영양을 책임지는 영양팀.
+                <br/>최근 일산병원이 코로나19 거점전담병원으로 지정되며 한층 더 바빠진 영양팀을 만났다
+                <br/>
+                <br/>
+                글 <span style={{fontWeight: "normal"}}> 김희연 / </span>
+                사진 <span style={{fontWeight: "normal"}}> 송인호 </span>
+            </div>
+        ),
+        (
+            <div>
+                글 <span style={{fontWeight: "normal"}}> 이비인후과 정준희 교수 </span>
+            </div>
+        ),
+        (
+            <div>
+                캐나다 치과대학 순위 1위인 브리티시컬럼비아대학교에서의 1년간의 연수는 새로운 연구에 몰두할 수 있는 소중한 경험이었습니다.
+                <br/>디지털 덴티스트리 분야에서 빠르게 발전하고 있는 대학에서 3차원 치아 이동 시뮬레이션 및 안면골격과 연조직분석에 대한 연구를 할 수 있어 많은 도움이 되었습니다.
+                <br/>
+                <br/>
+                글·사진 <span style={{fontWeight: "normal"}}> 치과교정과 김정훈 교수 </span>
+            </div>
+        ),
+        (
+            <div>
+                누구나 손발이 저린 경험이 있을 것이다. 오랫동안 바닥에 앉아 있었거나 엎드려서 잠들었을 때 손발이 저릴 수 있는데, 이는 말초신경에 압력이 가해지면서 생긴 일시적인 증상으로, 자세를 바꿔서 말초신경에 가해지는 압력이 사라지면 호전된다.
+                <br/>그러나 손발 저림이 지속되거나 반복적으로 같은 양상이 나타난다면, 치료가 필요한 신경계 이상일 가능성이 있다.
+                <br/>
+                <br/>
+                글 <span style={{fontWeight: "normal"}}> 신경과 조정희 교수 </span>
+            </div>
+        ),
+        (
+            <div>
+                다시 확산하는 코로나19가 끊임없이 우리의 안전을 위협합니다. 국민건강보험 일산병원은 코로나19 확진자 전담 치료병동을 운영하며 코로나19로부터 안전한 세상을 열어갑니다.
+                <br/>코로나19 거점전담병원으로서 국가적 재난 상황에 적극 대응합니다. 공공병원이자 보험자병원인 일산병원이 코로나19 종식의 그 날까지 함께합니다.
+            </div>
+        )
+    ]
+
+    const ctitle1 = [
+        (
+            <div style={{color: "darksalmon"}}>
+                『논어』에 ‘박시제중(博施濟衆)’ 이라는 구절이 있습니다.
+                <br/>
+                ‘널리 베풀고 힘겨운 삶을 함께 풀자’라고 해석해볼 수 있는데요, 의사로서 일하고 있는 지금 제가 가진 역할에 감사한 마음이 있습니다.
+            </div>
+        ),
+        (
+            <div>
+                새로운 도전, 외래 진료
+            </div>
+        ),
+        (
+            <div>
+                함께 만드는 투석혈관 클리닉
+            </div>
+        ),
+        (
+            <div>
+                박시제중(博施濟衆)의 마음으로
+            </div>
+        )
+    ]
+
+    const ctext1 = [
+        (
+            <div>
+                어느덧 영상의학과 전문의 10년 차를 맞이한 김태환 교수의 전문 분야는 영상의학 중재 시술이다. 다소 생소할 수 있는 영상의학 중재 시술은 ‘인터벤션 영상의학’이 공식 명칭으로, 혈 관조영 장비나 초음파 등 영상 장비를 이용해 혈관 관련 시술 혹은 비혈관계 시술을 하는 것을 말한다. 최근 의료기술과 시술 장비의 발전으로 영상의학 중재 시술이 증가하는 추세다. 예전에는 수술로만 치료할 수 있었던 여러 질병이 영상의학 중재 시술로 대체되거나 보완되는 경우가 많기 때문이다.
+                <br/>
+                김태환 교수가 몸담고 있는 일산병원 영상의학과는 전문의, 방사선사, 간호사, 접수 직원 등 총 80여 명으로 구성되어 있다. 최신 기종의 MRI 및 CT 3대와 혈관조영 장비 2대, 하이브리드 장비 1대를 비롯해 초음파 장비와 투시 촬영 장비 등 경 기 서북부와 인근 종합병원들에 비해 우수한 장비를 보유하고 있다.
+            </div>
+        ),
+        (
+            <div>
+                일산병원 영상의학과에서 외래를 개설하고 중재 시술을 시작하게 된데는 김태환 교수의 영향이 크다. 지난 2019년 일본 간사이 지방의 나라현립의과대학에 1년간 연수를 간 김태환 교수는 적잖이 놀랐다고 한다. 나라현립의과대학병원이 인터벤션 영상의학으로 일본에서도 손꼽히는 병원이긴 했지만, 시술 수준은 우리나라와 큰 차이가 없었다. 그러나 영상의학과에서 외래를 보며 직접 환자와 만나고 시술과 입원이 가능한 시스템이 무척이나 인상 깊었다. 일부 국내 대형 병원도 영상 의학과 외래를 개설하고 있긴 하지만, 직접 환자를 보며 외래 진료하는 모습은 새로운 영역으로 다가왔다.
+                <br/>
+                “일본과 우리나라의 영상의학 시술 수준이 크게 차이 나는 것 도 아니었지만, 시스템에서 정교함을 느낄 수 있었습니다. 우리 나라에선 다소 생소한 그림이기도 했고요.”
+                <br/>
+                현재 일산병원 영상의학과는 본관 2층 심뇌혈관질환센터 내에서 외래진료를 하고 있다. 시술이나 초음파, 판독 등 다른 업무로 외래진료 세션 자체가 많지 않지만, 여러 동료의 도움으로 외래를 진행할 수 있었다고 말하는 김태환 교수. 주로 만성신부전 투석 환자들의 투석혈관 시술 중심으로 외래 진료 를 하고 있다. 앞으로 영상의학과 외래 진료 시스템이 활성화 되면 더욱 역량을 쏟아 더 많은 영역에서 인터벤션 시술이나 진료를 진행할 예정이다.
+            </div>
+        ),
+        (
+            <div>
+                고령화가 가속화하고 고혈압이나 당뇨 등 만성질환이 늘어나 면서 자연스레 신장 기능이 떨어지는 환자도 늘고 있다. 대부 분의 만성질환 환자는 신장 기능이 서서히 나빠지는 만성신부전증을 앓게 되는데 신장 기능은 한번 나빠지기 시작하면 스스로 회복하기 어렵다. 신장은 체내 노폐물을 걸러주고 전해질 등 신체 균형을 잡아주는, 우리 몸의 필터 같은 역할을 하기 때문에 이런 경우 혈액투석이나 복막투석 등 투석혈관 시술은 필수다.
+                <br/>
+                김태환 교수가 집중하고 있는 부분이 바로 투석혈관을 가지고 있으면서 지속적으로 혈액투석을 받는 환자들이다. 이들에게 투석혈관은 제2의 심장이자 생명줄(Life line)과 같다. 이런 투석혈관을 꾸준히 관리하고 필요한 경우 즉시 시술해 건강하게 오래오래 사용할 수 있게 하는 것이 김태환 교수의 목표다.
+                <br/>
+                투석혈관 관리는 영상의학과 외에도 처음 만성신부전 환자를 만나는 신장내과, 투석혈관을 수술하는 흉부외과나 혈관외과와 협업을 해야 할 때가 많다. 영상의학과에서는 투석혈관 수술 후 환자들이 투석을 받을 수 있는지 상태를 지속적으로 관리하는 역할을 한다. 투석혈관이 잘 발달하지 않아 투석이 여 의치 않은 경우 풍선확장술로 혈관 성형을 진행해 투석혈관의 발달을 돕는다. 또 계속 한 투석혈관을 사용해 투석을 받다 보면 혈관이 좁아지거나 막히는 경우가 있는데, 이때도 좁아진 부분을 넓혀주고 막힌 부분을 다시 뚫어주는 시술을 한다.
+                <br/>
+                “투석혈관을 하나 만들어 놓으면 최대한 건강하고 안정적으로 사용하는 것이 가장 중요하다고 생각합니다. 사용하던 투석혈관의 상태가 나빠져 다른 곳에 투석혈관을 또 다시 만드는 모습을 임상에서 자주 접했습니다. 저희의 섬세한 관리로 5년, 6 년 아니 그보다 오래 사용하셨으면 하는 마음입니다.”
+                <br/>
+                영상의학과를 포함한 여러과가 협업해 ‘투석혈관 클리닉’을 준비 중이다. 지난해 코로나19 상황으로 인해 진행이 조금 더뎠지만, 서서히 틀이 잡혀가고 있는 상태라고 한다. 앞으로 일산병원 내부를 넘어 지역사회의 투석 전문병원들과 네트워크를 형성해 더 많은 환자가 믿고 투석 혈관 관리를 맡길 수 있는 투석혈관 클리닉으로 성장할 수 있는 시스템을 고안 중이다.
+            </div>
+        ),
+        (
+            <div>
+                지난해 개원 20주년을 맞은 일산병원. 김태환 교수는 사람으로 치면 이제 막 청년기를 지났다며 앞으로 가야 할 시간이 더 많다고 말한다. 지난 12월 일산병원이 코로나19 전담병원으로 지정되면서 병원 구성원 모두가 눈 코 뜰새 없이 바쁜 나날을 보내고 있지만, 일산병원 같은 공공병원이 수행해야 할 역할이 있고 그렇기에 스스로 노력해야 한다고, 또 영상의학과도 지금까지 열심히 해왔던 것처럼 앞으로도 더 정진하리라 믿어 의심치 않는다는 뜻을 밝히며 김태환 교수는 마지막 인사를 전했다.
+                <br/>
+                『논어』에 ‘박시제중(博施濟衆)’이라는 구절이 있습니다. ‘널리 베풀고 힘겨운 삶을 함께 풀자’라고 해석해 볼 수 있는데요, 의사로서 일하고 있는 지금 제가 가진 역할에 감사한 마음이 있습니다. 제가 하는 시술이나 치료 등이 누군가에게 도움이 되는 일이라고 생각합니다. 널리 베풀 수 있는 자격이 저한테 주어진 것에 항상 감사합니다. 병원에는 의사 외에도 여러 직종 이있습니다.저는 우리 일산병원 식구들이 다 널리 베푸는 삶을 살고 있다고 생각합니다. 지금의 어려운 상황 역시 우리가 각자의 위치에서 최선을 다한다면 박시제중의 마음으로 나아 갈 수 있다고 믿습니다!”
             </div>
         )
     ]
@@ -306,14 +428,27 @@ const SectionOne = ({match}) => {
     const items = [
         {
             id: "1",
-            src: img,
+            src: doctor1,
             head: head[0],
-            title: "",
-            subtitle: "",
+            title: title[0],
+            subtitle: subtitle[0],
             caption: [
                 {
-                    ctitle: "",
-                    ctext: ""
+                    src: doctor12,
+                    ctitle: ctitle1[0],
+                    ctext: ctext1[0]
+                },
+                {
+                    ctitle: ctitle1[1],
+                    ctext: ctext1[1]
+                },
+                {
+                    ctitle: ctitle1[2],
+                    ctext: ctext1[2]
+                },
+                {
+                    ctitle: ctitle1[3],
+                    ctext: ctext1[3]
                 }
             ]
         },
@@ -389,7 +524,70 @@ const SectionOne = ({match}) => {
                     ctext: ctext4[4]
                 }
             ],
-        }
+        },
+        {
+            id: "5",
+            src: img2,
+            head: head[4],
+            title: title[4],
+            subtitle: subtitle[4],
+            caption: [
+                {
+                    ctitle: ctitle2[0],
+                    ctext: ctext2[0]
+                },
+                {
+                    ctitle: ctitle2[1],
+                    ctext: ctext2[1]
+                },
+                {
+                    ctitle: ctitle2[2],
+                    ctext: ctext2[2]
+                }
+            ],
+        },
+        {
+            id: "6",
+            src: img2,
+            head: head[5],
+            title: title[5],
+            subtitle: subtitle[5],
+            caption: [
+                {
+                    ctitle: ctitle2[0],
+                    ctext: ctext2[0]
+                },
+                {
+                    ctitle: ctitle2[1],
+                    ctext: ctext2[1]
+                },
+                {
+                    ctitle: ctitle2[2],
+                    ctext: ctext2[2]
+                }
+            ],
+        },
+        {
+            id: "7",
+            src: img2,
+            head: head[6],
+            title: title[6],
+            subtitle: subtitle[6],
+            caption: [
+                {
+                    ctitle: ctitle2[0],
+                    ctext: ctext2[0]
+                },
+                {
+                    ctitle: ctitle2[1],
+                    ctext: ctext2[1]
+                },
+                {
+                    ctitle: ctitle2[2],
+                    ctext: ctext2[2]
+                }
+            ],
+        },
     ]
 
 
@@ -411,7 +609,7 @@ const SectionOne = ({match}) => {
                             <CardBody className="color-of-life__header">
                                 <div>
                                     <CardTitle>
-                                        SECTION 1
+                                        SECTION 2
                                     </CardTitle>
                                     <CardTitle>
                                         {item.head}
@@ -421,18 +619,14 @@ const SectionOne = ({match}) => {
 
                             <CardImg top className="img-fluid mb-3" src={item.src} alt="/" />
 
-                            {item.title || item.subtitle ?
-                                <CardBody className="color-of-life__body">
-                                    <CardTitle className="color-of-life__body__title mb-4">
-                                        {item.title}
-                                    </CardTitle>
-                                    <CardSubtitle className="color-of-life__body__subtitle mb-5">
-                                        {item.subtitle}
-                                    </CardSubtitle>
-                                </CardBody> : ""
-                            }
-
-
+                            <CardBody className="color-of-life__body">
+                                <CardTitle className="color-of-life__body__title mb-4">
+                                    {item.title}
+                                </CardTitle>
+                                <CardSubtitle className="color-of-life__body__subtitle mb-5">
+                                    {item.subtitle}
+                                </CardSubtitle>
+                            </CardBody>
 
                             {item.caption && item.caption.map((cap) => (
                                 <CardBody className="color-of-life__body">
@@ -461,4 +655,4 @@ const SectionOne = ({match}) => {
     );
 };
 
-export default SectionOne;
+export default SectionTwo;

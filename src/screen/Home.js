@@ -8,7 +8,7 @@ import Cover from "../components/home/Cover";
 // import HomeIhNews from "../components/home/HomeIhNews";
 
 import Section1 from "../components/home/Section1";
-// import Section2 from "../components/home/Section2";
+import Section2 from "../components/home/Section2";
 // import Section3 from "../components/home/Section3";
 
 const Home = () => {
@@ -22,7 +22,7 @@ const Home = () => {
 
                 <Section1/>
 
-                {/*<Section2/>*/}
+                <Section2/>
 
                 {/*<Section3/>*/}
 
