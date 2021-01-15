@@ -12,7 +12,7 @@ import {
 import HeaderP from "../components/header/HeaderP";
 import Footer from "../components/footer/Footer";
 
-import img from '../assets/images/section1/intro.png'
+import img from '../assets/images/section1/intro01.png'
 import img2 from '../assets/images/section1/newyears.png'
 import img3 from '../assets/images/section1/essay.png'
 import img4 from '../assets/images/section1/interview.jpg'
@@ -308,8 +308,8 @@ const SectionOne = ({match}) => {
             id: "1",
             src: img,
             head: head[0],
-            title: title[0],
-            subtitle: subtitle[0],
+            title: "",
+            subtitle: "",
             caption: [
                 {
                     ctitle: "",
@@ -434,7 +434,7 @@ const SectionOne = ({match}) => {
                                 <CardBody className="color-of-life__body">
                                     <div style={{textAlign: "center"}}>
                                         {cap.src ?
-                                            <CardImg style={{width: "80%"}} className="img-fluid mb-5" src={cap.src} alt="/"/> : ""
+                                            <CardImg style={{width: "70%"}} className="img-fluid mb-5" src={cap.src} alt="/"/> : ""
                                         }
 
                                     </div>

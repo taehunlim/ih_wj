@@ -9,8 +9,12 @@
 
     .slider-content {
       position: absolute;
-      top: 50%;
-      left: 70px;
+      //top: 50%;
+      //left: 70px;
+      //width: 100%;
+
+      top: 10%;
+      left: 5%;
       width: 100%;
     }
   }
@@ -20,7 +24,7 @@
 
     width: 100%;
     margin: 0px;
-    padding: 0px 150px;
+    padding: 0px 150px !important;
     background-color: rgba(0, 0, 0, 0.3);
 
     position: absolute;
@@ -30,10 +34,12 @@
       //max-width: 400px;
       overflow: hidden;
       display: block;
+      width: 80%;
+      ;
     }
 
     @media (max-width: 1024px) {
-      padding: 0px 100px;
+      padding: 0px 150px !important;
     }
 
     @media (min-width: 768px) {

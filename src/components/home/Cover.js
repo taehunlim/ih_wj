@@ -4,9 +4,8 @@ import { Container, Row, Col } from 'reactstrap';
 import {Link} from "react-router-dom";
 
 import img1 from "../../assets/images/Cover/cover1.jpg";
-import img2 from "../../assets/images/Cover/mainSlide2.jpg";
-import img3 from "../../assets/images/Cover/mainSlide3.jpg";
-import img4 from "../../assets/images/Cover/mainSlide4.jpg";
+import img2 from "../../assets/images/Cover/cover2.jpg";
+import img3 from "../../assets/images/Cover/cover3.jpg";
 
 
 import Slider from 'react-slick';
@@ -14,27 +13,45 @@ import {IoIosArrowBack, IoIosArrowForward} from "react-icons/io/index";
 
 const Cover = () => {
 
+    const caption = [
+        (
+            <div>
+                병원에서
+                <br/> ‘보다’의 의미를 찾다
+            </div>
+        ),
+        (
+            <div>
+                코로나19로부터
+                <br/>안전한 세상
+                <br/>일산병원이 함께합니다
+            </div>
+        ),
+        (
+            <div>
+                2021년 1월 1일의
+                <br/>해가 떠오르다
+                <br/>한강에서 본 일출
+            </div>
+        )
+    ]
+
     const items = [
         {
             id: "1",
             src: img1,
-            caption: '희망을 이야기하는 YELLOW',
+            caption: caption[0],
         },
         {
             id: "2",
             src: img2,
-            caption: '변함없는 신뢰로 맞이한 생명의탄생'
+            caption: caption[1]
         },
         {
             id: "3",
             src: img3,
-            caption: '외래팀'
-        },
-        {
-            id: "4",
-            src: img4,
-            caption: ''
-        },
+            caption: caption[2]
+        }
     ];
 
     const [nav1, setNav1] = useState(null);
@@ -106,7 +123,7 @@ const Cover = () => {
                                                 <div className="text-white-50">
                                                     <h1 className="mb-3 carousel-title">{item.caption} </h1>
                                                     <div className="button-items mt-4">
-                                                        <Link to="#" className="btn btn-success mr-1">자세히 보기</Link>
+                                                        <Link to="#" className="btn btn-success mr-1">기사보기</Link>
                                                     </div>
                                                 </div>
                                             </Col>
