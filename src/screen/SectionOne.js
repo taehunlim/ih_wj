@@ -67,7 +67,9 @@ const SectionOne = ({match}) => {
         (
             <div>
                 <div className="mb-3">
-                    병원에서 '보다'의 의미를 찾다
+                    병원에서
+                    <br/>
+                    <div style={{fontWeight: "900"}}>'보다'의 의미를 찾다</div>
                 </div>
 
                 <span

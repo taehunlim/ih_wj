@@ -24,7 +24,7 @@ const Section2 = () => {
                     <Row>
                         <Col lg="12">
                             <div className="text-center mb-5">
-                                <h4>SECTION 2</h4>
+                                <h4>SECTION Ⅱ</h4>
                             </div>
                         </Col>
                     </Row>
@@ -85,14 +85,14 @@ const Section2 = () => {
                                                     <div style={{backgroundColor: "rgba(0, 0, 0, 0.3)", paddingLeft: "15px"}}>
                                                         <p>
                                                             <Link
-                                                                to="/"
+                                                                to="/sectiontwo/3"
                                                                 as="/"
                                                             >
                                                                 TEAM
                                                             </Link>
                                                         </p>
                                                         <Link
-                                                            to="/"
+                                                            to="/sectiontwo/3"
                                                             as="/"
                                                         >
                                                             맛과 영양, 안전까지 더한 최고의 식단을 위하여 영양팀
@@ -102,7 +102,7 @@ const Section2 = () => {
                                                 </div>
                                             </div>
                                             <Link
-                                                to="/"
+                                                to="/sectiontwo/3"
                                                 as="/"
                                                 className="banner-link"
                                             >
@@ -126,14 +126,14 @@ const Section2 = () => {
                                                     <div style={{backgroundColor: "rgba(0, 0, 0, 0.3)", paddingLeft: "15px"}}>
                                                         <p>
                                                             <Link
-                                                                to="/"
+                                                                to="/sectiontwo/4"
                                                                 as="/"
                                                             >
                                                                 RESEARCH
                                                             </Link>
                                                         </p>
                                                         <Link
-                                                            to="/"
+                                                            to="/sectiontwo/4"
                                                             as="/"
                                                         >
                                                             중이염과 연관된 의료 이용에 대한 편도 및 아데노이드 절제술의 효과
@@ -142,7 +142,7 @@ const Section2 = () => {
                                                 </div>
                                             </div>
                                             <Link
-                                                to="/"
+                                                to="/sectiontwo/4"
                                                 as="/"
                                                 className="banner-link"
                                             >
