@@ -17,7 +17,6 @@ import img2 from '../assets/images/section1/newyears.1.png'
 import img3 from '../assets/images/section1/essay2.png'
 import img4 from '../assets/images/section1/interview.jpg'
 
-
 import interv1 from '../assets/images/section1/interv1.1.jpg'
 import interv2 from '../assets/images/section1/interv2.1.jpg'
 
@@ -62,7 +61,7 @@ const SectionOne = ({match}) => {
         (
             <div>
                 {/*인간이 ‘본다’는 것은 <br/>*/}
-                {/*일차원적이며 최고의 사고행위*/}
+                {/*/ 일차원적이며 최고의 사고행위*/}
             </div>
         ),
         (
@@ -103,12 +102,12 @@ const SectionOne = ({match}) => {
         ),
         (
             <div>
-                {/*K-팝처럼 세계 주요 언론에 자주 오르는 단어가 K-방역(quarantine)이다. 검사 - 추적 – 격리 및 치료로 이어지는 ‘코로나19’ 대응방법은 오로지 한국만이 지닌 독특한 방식이다. 이로 인해 한국에서는 확진자 수뿐만 아니라 사망자 수도 현저하게 적다. 그리고 최근에는 AI와 빅데이터 등을 이용해 더욱 혁신적인 코로나19 대응법을 내놓고 있다.*/}
-                {/*<br/>*/}
-                {/*그러나 기술이나 의술이 아무리 발전해도 전염병은 국민 스스로 예방수칙을 잘 지키는 것이 최선이다. 한국인은 누가 시키지 않아도 방역수칙을 잘 지키며, 마스크를 잘 착용하여 ‘코로나19’ 확산을 저지하고 있다. 거리에서나, 지하철에서나, 버스에서나 마스크를 착용하지 않은 사람을 찾기는 매우 어렵다. 그러나 서양에서는 다르다.*/}
-                {/*<br/> <br/>*/}
-                {/*글 <span style={{fontWeight: "normal"}}> 구승준 번역가 · 칼럼니스트 / </span>*/}
-                {/*사진 <span style={{fontWeight: "normal"}}> 백기광 </span>*/}
+                K-팝처럼 세계 주요 언론에 자주 오르는 단어가 K-방역(quarantine)이다. 검사 - 추적 – 격리 및 치료로 이어지는 ‘코로나19’ 대응방법은 오로지 한국만이 지닌 독특한 방식이다. 이로 인해 한국에서는 확진자 수뿐만 아니라 사망자 수도 현저하게 적다. 그리고 최근에는 AI와 빅데이터 등을 이용해 더욱 혁신적인 코로나19 대응법을 내놓고 있다.
+                <br/>
+                그러나 기술이나 의술이 아무리 발전해도 전염병은 국민 스스로 예방수칙을 잘 지키는 것이 최선이다. 한국인은 누가 시키지 않아도 방역수칙을 잘 지키며, 마스크를 잘 착용하여 ‘코로나19’ 확산을 저지하고 있다. 거리에서나, 지하철에서나, 버스에서나 마스크를 착용하지 않은 사람을 찾기는 매우 어렵다. 그러나 서양에서는 다르다.
+                <br/> <br/>
+                글 <span style={{fontWeight: "normal"}}> 구승준 번역가 · 칼럼니스트 / </span>
+                사진 <span style={{fontWeight: "normal"}}> 백기광 </span>
             </div>
         ),
         (

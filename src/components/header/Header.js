@@ -24,6 +24,7 @@ const Header = () => {
         { id: 1 , idnm : "section1", navheading: "SECTION Ⅰ" },
         { id: 2 , idnm : "section2", navheading: "SECTION Ⅱ" },
         { id: 3 , idnm : "section3", navheading: "SECTION Ⅲ" },
+        { id: 4 , idnm : "service", navheading: "SERVICE" },
 
     ]);
 

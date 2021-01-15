@@ -111,7 +111,10 @@ const Section2 = () => {
                                     </Col>
                                     <Col lg={12}>
                                         <div className="single-category single-category--three space-mb--30">
-                                            <div className="single-category__image single-category__image__horizontal single-category__image--three single-category__image--three--creativehome">
+                                            <div
+                                                className="single-category__image single-category__image__horizontal single-category__image--three single-category__image--three--creativehome"
+                                                style={{backgroundColor: "darksalmon"}}
+                                            >
                                                 <img
                                                     src={img4}
                                                     className="img-fluid"
@@ -164,14 +167,14 @@ const Section2 = () => {
                                                     <div style={{backgroundColor: "rgba(0, 0, 0, 0.3)", paddingLeft: "15px"}}>
                                                         <p>
                                                             <Link
-                                                                to="/"
+                                                                to="/sectiontwo/2"
                                                                 as="/"
                                                             >
                                                                 DOCTOR 2
                                                             </Link>
                                                         </p>
                                                         <Link
-                                                            to="/"
+                                                            to="/sectiontwo/2"
                                                             as="/"
                                                         >
                                                             환자에게 새 삶을 선물하는 장기이식센터
@@ -180,7 +183,7 @@ const Section2 = () => {
                                                 </div>
                                             </div>
                                             <Link
-                                                to="/"
+                                                to="/sectiontwo/2"
                                                 as="/"
                                                 className="banner-link"
                                             >
