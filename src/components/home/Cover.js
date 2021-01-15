@@ -16,21 +16,23 @@ const Cover = () => {
     const caption = [
         (
             <div>
-                병원에서
-                <br/> ‘보다’의 의미를 찾다
+                <div style={{marginBottom: "-20px"}}> 병원에서</div>
+                <br/>
+                ‘보다’의 의미를 찾다
             </div>
         ),
         (
             <div>
-                코로나19로부터
-                <br/>안전한 세상
+                <div style={{marginBottom: "-20px"}}> 코로나19로부터 </div>
+                <br/> <div style={{marginBottom: "-20px"}}> 안전한 세상 </div>
                 <br/>일산병원이 함께합니다
             </div>
         ),
         (
             <div>
-                2021년 1월 1일의
-                <br/>해가 떠오르다
+                <div style={{marginBottom: "-20px"}}>2021년 1월 1일의</div>
+                <br/>
+                <div style={{marginBottom: "-20px"}}>해가 떠오르다</div>
                 <br/>한강에서 본 일출
             </div>
         )

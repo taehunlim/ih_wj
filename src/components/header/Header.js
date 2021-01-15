@@ -21,9 +21,9 @@ const Header = () => {
     const [headerHeight, setHeaderHeight] = useState();
 
     const [navItems] = useState([
-        { id: 1 , idnm : "section1", navheading: "SECTION1" },
-        { id: 2 , idnm : "section2", navheading: "SECTION2" },
-        { id: 3 , idnm : "section3", navheading: "SECTION3" },
+        { id: 1 , idnm : "section1", navheading: "SECTION Ⅰ" },
+        { id: 2 , idnm : "section2", navheading: "SECTION Ⅱ" },
+        { id: 3 , idnm : "section3", navheading: "SECTION Ⅲ" },
 
     ]);
 

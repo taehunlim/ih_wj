@@ -44,7 +44,7 @@ const Section2 = () => {
                                             </div>
                                             <div className="single-category__content single-category__content--three single-category__content--three--creativehome">
                                                 <div className="title">
-                                                    <div style={{backgroundColor: "rgba(0, 0, 0, 0.3)"}}>
+                                                    <div style={{backgroundColor: "rgba(0, 0, 0, 0.3)", paddingLeft: "15px"}}>
                                                         <p>
                                                             <Link
                                                                 to="/sectiontwo/1"
@@ -82,7 +82,7 @@ const Section2 = () => {
                                             </div>
                                             <div className="single-category__content single-category__content--three single-category__content--three--creativehome">
                                                 <div className="title">
-                                                    <div style={{backgroundColor: "rgba(0, 0, 0, 0.3)"}}>
+                                                    <div style={{backgroundColor: "rgba(0, 0, 0, 0.3)", paddingLeft: "15px"}}>
                                                         <p>
                                                             <Link
                                                                 to="/"
@@ -120,7 +120,7 @@ const Section2 = () => {
                                             </div>
                                             <div className="single-category__content single-category__content--three single-category__content--three--creativehome">
                                                 <div className="title">
-                                                    <div style={{backgroundColor: "rgba(0, 0, 0, 0.3)"}}>
+                                                    <div style={{backgroundColor: "rgba(0, 0, 0, 0.3)", paddingLeft: "15px"}}>
                                                         <p>
                                                             <Link
                                                                 to="/"
@@ -161,7 +161,7 @@ const Section2 = () => {
                                             </div>
                                             <div className="single-category__content single-category__content--three single-category__content--three--creativehome">
                                                 <div className="title">
-                                                    <div style={{backgroundColor: "rgba(0, 0, 0, 0.3)"}}>
+                                                    <div style={{backgroundColor: "rgba(0, 0, 0, 0.3)", paddingLeft: "15px"}}>
                                                         <p>
                                                             <Link
                                                                 to="/"
@@ -198,7 +198,7 @@ const Section2 = () => {
                                             </div>
                                             <div className="single-category__content single-category__content--three single-category__content--three--creativehome">
                                                 <div className="title">
-                                                    <div style={{backgroundColor: "rgba(0, 0, 0, 0.3)"}}>
+                                                    <div style={{backgroundColor: "rgba(0, 0, 0, 0.3)", paddingLeft: "15px"}}>
                                                         <p>
                                                             <Link
                                                                 to="/"
@@ -235,7 +235,7 @@ const Section2 = () => {
                                             </div>
                                             <div className="single-category__content single-category__content--three single-category__content--three--creativehome">
                                                 <div className="title">
-                                                    <div style={{backgroundColor: "rgba(0, 0, 0, 0.3)"}}>
+                                                    <div style={{backgroundColor: "rgba(0, 0, 0, 0.3)", paddingLeft: "15px"}}>
                                                         <p>
                                                             <Link
                                                                 to="/"
@@ -272,7 +272,7 @@ const Section2 = () => {
                                             </div>
                                             <div className="single-category__content single-category__content--three single-category__content--three--creativehome">
                                                 <div className="title">
-                                                    <div style={{backgroundColor: "rgba(0, 0, 0, 0.3)"}}>
+                                                    <div style={{backgroundColor: "rgba(0, 0, 0, 0.3)", paddingLeft: "15px"}}>
                                                         <p>
                                                             <Link
                                                                 to="/"

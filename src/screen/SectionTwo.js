@@ -609,7 +609,7 @@ const SectionTwo = ({match}) => {
                             <CardBody className="color-of-life__header">
                                 <div>
                                     <CardTitle>
-                                        SECTION 2
+                                        SECTION Ⅱ
                                     </CardTitle>
                                     <CardTitle>
                                         {item.head}
