@@ -29,11 +29,15 @@ import research0 from '../assets/images/section2/4.png';
 import research1 from '../assets/images/section2/research1.png'
 import research2 from '../assets/images/section2/research2.png'
 
-import img2 from '../assets/images/section1/newyears.1.png'
-// import img4 from '../assets/images/section1/interview.jpg'
-//
-// import interv1 from '../assets/images/section1/interv1.1.jpg'
-// import interv2 from '../assets/images/section1/interv2.1.jpg'
+import training1 from '../assets/images/section2/training1.jpg'
+import training2 from '../assets/images/section2/training2.jpg'
+import training4 from '../assets/images/section2/training4.jpg'
+
+import clinic from '../assets/images/section2/clinic.png';
+
+import moment from '../assets/images/section2/moment.jpg'
+import moment1 from '../assets/images/section2/moment1.jpg'
+import moment2 from '../assets/images/section2/moment2.jpg'
 
 
 const SectionTwo = ({match}) => {
@@ -108,18 +112,22 @@ const SectionTwo = ({match}) => {
         ),
         (
             <div>
-                캐나다 브리티시컬럼비아대학교 연수를 마치고
-                <br/>새로운 연구와 소중한 경험의 시간
+                <span style={{fontWeight: "normal"}}> 캐나다 브리티시컬럼비아대학교 연수를 마치고</span>
+                <br/> 새로운 연구와
+                <div style={{fontWeight: "900"}}> 소중한 경험의 시간</div>
             </div>
         ),
         (
             <div>
-                손발 저림, 혈액순환이 아니라 신경이 문제
+                <span style={{fontWeight: "normal"}}> 손발 저림, </span>
+                <br/>
+                혈액순환이 아니라 신경이 문제
             </div>
         ),
         (
             <div>
-                코로나19로부터 안전한 세상 일산병원이 함께합니다
+                <span style={{fontWeight: "normal"}}>코로나19로부터 안전한 세상 </span>
+                <br/>일산병원이 함께합니다
             </div>
         )
     ]
@@ -429,6 +437,119 @@ const SectionTwo = ({match}) => {
         )
     ]
 
+    const ctitle5 = [
+        (
+            <div>
+
+            </div>
+        ),
+        (
+            <div>
+                많은 연구 프로토콜을 배울 수 있었던 소중한 기회
+            </div>
+        ),
+        (
+            <div
+                style={{
+                    color: "goldenrod"
+                }}
+            >
+                캐나다 치과대학 순위 1위인 대학답게 연구에 있어서 부러울 정도로
+                <br/>
+                여러 기관에서 지원을 받을 수 있는 점이 매우 인상 깊었습니다.
+            </div>
+        )
+    ]
+
+    const ctext5 = [
+        (
+            <div>
+                저는 2019년 9월부터 2020년 8월까지 캐나다 밴쿠버에 있는 브리티 시 컬럼비아대학교(University of British Columbia · UBC)로 1년간 연수를 다녀왔습니다. 밴쿠버는 캐나다 서쪽 태평양과 인접 한곳에 있는 도시로, 위도상 북쪽에 위치하지만 겨울에도 영하로 내려가지 않고 여름에는 25도 이상 올라가지 않는, 숲과 공원이 많은 매우 아름다운 도시입니다. 특히 UBC 지역은 대학교를 기준으로 하나의 타운을 이루고 있어 UBC뿐만 아니라 두 개의 초등학교와 하나의 중등학교가 있고,
+                10년 이상 강력 범죄가 발생하지 않아 매우 안전하고 살기 좋은 지역입니다. UBC에는 투명교정장치인 인비절라인(InvisalignR)의 세계적인 권위자인 Sandra Tai 선생님께서 시간제 교수로 계시는 것을 비롯하여 디지털덴트스트리 분야에서 최근 매우 빠른 발전을 보이고 있습니다. 3차원치아이동 시뮬레이션 및 안면 골격과 연조직 분석에 대한 연구를 진행하고자 UBC 치과교정과 과장이신 Edwin Yen 교수님과 연락하게 되었고, Yen 교수님께서 흔쾌히 허락해주셔서 1년간 이에 대한 연구와 UBC 치과교정과 대학원생의 치과교정진료에 대한 슈퍼바이저 역할을 할 수 있었습니다.
+            </div>
+        ),
+        (
+            <div>
+                UBC 치과교정과는 전임교수 6명과 시간제교수 10여 명으로 구성되어 있습니다. 저의 주 업무는 8시부터 17시까지 UBC 치과교정과 외래에서 대학원생들의 치과교정치료에 대한 슈퍼바이징이었습니다. 그와 더불어 전임교수 중 한 분인 Bingshuang Zou 선생님과 저가 3D 안면스캐너의 정확성에 대한 연구를 진행했습니다. 이를 통해 임상에서 안면 연조직 디지털 데이터 수집의 편의성 증진을 도모하고자 했습니다.
+                <br/>
+                캐나다 치과대학 순위 1위인 대학답게 연구에 있어서 부러울 정도로 여러 기관에서 지원을 받을 수 있는 점이 매우 인상 깊었습니다. 특히 같이 연구 미팅을 진행하면서 연구에 대한 많은 프로토콜을 배울 수 있어매우 귀중한 기회 였습니다. 비록 연수 기간도 중 코로나19 확산으로 3월 중순부터 클리닉이 폐쇄되어 외래 진료가 중단되었고 모든 세미나와 회의가 온라인으로 진행되고 연구 데이터 수집도 잠시 중단되는 등 여러 변수가 있었지만, 디지털덴티스 트리 연구 특성상 이메일이나 클라우드 서비스 등으로 데이터들을 계속 받을 수 있어 온라인상으로, 또. 한국에 돌아와서도 계속연구를 진행할 수 있었습니다.
+            </div>
+        ),
+        (
+            <div>
+                비록 캐나다 역시 2020년 초기에 코로나19가 확산됐지만, 미국이나 유럽과 달리 발 빠르게 록다운을 결정했고 한국에 비할바는 아니지만 많은 캐나다인이 마스크 착용과 사회적 거리두기를 실천하여 큰 혼란 없이 6월 부터 점진적으로 사회활동이 재개될 수 있었습니다. 특히 록다운 기간동안 매일 저녁7 시가 되면 의료인 또는 마트 종사자들과 같은 필수 근무인력에 대한 고마움과 격려의 표시로 각 가정에서 베란다나 마당으로 나와 냄비나 프라이팬을 5분간 두드리면서 응원하는 모습은 매우 인상 깊었고 배려심 넘치는 캐나다인의 모습을 볼 수 있었습니다.
+                <br/>
+                이 글을 빌려 1년간 새로운 연구와 소중한 경험을 할 수 있도록 기회를 주신 많은 분께 감사의 말을 전하며 글 을 마칠까 합니다. <br/> 감사합니다.
+            </div>
+        )
+    ]
+
+    const ctitle6 = [
+        (
+            <div>
+
+            </div>
+        ),
+        (
+            <div style={{color: "saddlebrown"}}>
+                다양한 원인
+            </div>
+        ),
+        (
+            <div style={{color: "saddlebrown"}}>
+                정확한 진단이 중요
+            </div>
+        ),
+        (
+            <div style={{color: "saddlebrown"}}>
+                치료와 예방
+            </div>
+        )
+    ]
+
+    const ctext6 = [
+        (
+            <div>
+                일반적으로 많은 사람이 손발이 저리면 혈액순환이 되지 않는다고 생각하지만, 이는 잘못된 상식이다. 혈액순환 장애에 의한 증상은 저림이 아니라 통증으로 주로 나타나고, 손발이 창백해지거나 자주색으로 변하고 감각이 둔해지기도 한다.
+            </div>
+        ),
+        (
+            <div>
+                신경계는 뇌-척수-말초신경으로 이루어져 있고, 이 중 어디라도 이상이 생기면 손발 저림이 발생할 수 있다. 뇌에 이상이 있으면 손발 저림이 대부분 한쪽에 나타나고 두통, 어지럼증, 발음장애, 언어장애, 근력저하, 보행장애 등 다른 증상을 동반하는 경우가 많다. 특히 뇌졸중에서는 증상이 갑자기 발생하는 특징이 있고, 드물게 한쪽 손과 입술만 저리는 뇌졸중도 있다. 척수에 이상이 있을 경우에는 손발 저림이 대부분 양쪽에 나타나고 보행장애, 대소변 장애 등이 동반되며, 척추병에 의한 척수의 압박, 척수염, 척수종양 등이 원인이다.
+                <br/>
+                손발 저림은 대부분 뇌나 척수보다는 말초신경의 이상으로 발생한다. 신경뿌리병은 척수에서 나오는 신경뿌리가 눌리거나 자극을 받아 염증이 생기는 상태로, 경추에서 발생하면 팔과 손이 저리고, 요추에서 발생하면 다리와 발이 저릴 수 있다. 주로 한쪽에 나타나며 추간판탈출증이나 척추관협착증이 흔한 원인이다. 손 저림의 가장 흔한 원인은 손목굴증후군이다. 손목굴증후군은 손끝과 손바닥이 저리고 밤에 저림 증상이 심해진다. 주방 일이나 청소처럼 손을 많이 사용하는 일을 하거나 임산부, 류머티즘성관절염 환자, 갑상선기능저하증 환자, 당뇨병 환자, 투석을 받는 환자에서 잘 발생한다. 다발신경병에서 나타나는 손 발 저림은 양쪽 발 끝에서 저림이 시작하여 점차 발등, 발목으로 저림이 올라오면서 양쪽 손끝도 저리게 되는 특징을 보인다. 다발신경병은 당뇨병이 가장 흔한 원인이고, 알코올·항암 치료 등에 의해서도 발생한다.
+            </div>
+        ),
+        (
+            <div>
+                손발 저림이 지속될 때 혈액순환 장애라고 생각하고 혈액순환제만 복용하다가 치료 시기를 놓치지 말아야 한다. 손발 저림은 원인이 매우 다양하기 때문에 해당 전문분야 의사에게 진료를 받는 것이 중요하다. 의사는 병력과 진찰을 통해 신경계 이상이 있는지를 판단하고, 필요시 신경계의 어느 부위에 이상이 있는지 확인하기 위하여 신경전도검사나 근전도검사, 척추CT나 MRI, 뇌 CT나 MRI 등을 시행한다. 손발 저림의 원인을 찾기 위해 혈액검사나 뇌척수액검사 등을 추가하기도 한다. 그러나 검사를 해도 손발 저림의 원인이 밝혀지지 않는 경우도 있다.
+            </div>
+        ),
+        (
+            <div>
+                손발 저림에 대한 치료는 원인에 따라 다르고, 원인을 치료하거나 증상 완화 치료를 하면 손발 저림이 호전되거나 줄어든다. 손발 저림을 완전히 예방할 수는 없지만 원인에 따라 발생 빈도와 심한 정도를 줄일 수 있다. 되도록 손발의 반복적인 움직임을 피하고, 반복적인 움직임이 꼭 필요하다면 사이에 휴식을 취하는것이 좋다. 당뇨병 등 손발 저림을 유발할 수 있는 만성질환이 있다면 해당 질환을 적극적으로 치료하면서 신경병이 합병증으로 발생하는지 주의 깊게 관찰해야 한다.
+            </div>
+        )
+    ]
+
+    const ctitle7 = [
+        (
+            <div>
+
+            </div>
+        )
+    ]
+
+    const ctext7 = [
+        (
+            <div>
+                코로나19 전담병동은 이동동선 통제, 별도 공조시스템 및 음압시설 구축, 전담 의료진 배치 등 일반 입원병동과 철저히 분리해 감염 문제로부터 구조적 안전을 확보했습니다.
+                <br/>
+                또한 정기적으로 전직원뿐 아니라 병원 전체 시설물 및 다중이용 동선을 체크해 코로나 PCR 검사를 시행하는 등 코로나19로부터의 안전 확보에 만전을 기하고 있습니다.
+            </div>
+        )
+    ]
+
     const items = [
         {
             id: "1",
@@ -533,64 +654,72 @@ const SectionTwo = ({match}) => {
         },
         {
             id: "5",
-            src: img2,
+            src: training4,
             head: head[4],
             title: title[4],
             subtitle: subtitle[4],
             caption: [
                 {
-                    ctitle: ctitle2[0],
-                    ctext: ctext2[0]
+                    src: training1,
+                    ctitle: ctitle5[0],
+                    ctext: ctext5[0]
                 },
                 {
-                    ctitle: ctitle2[1],
-                    ctext: ctext2[1]
+                    src: training2,
+                    ctitle: ctitle5[1],
+                    ctext: ctext5[1]
                 },
                 {
-                    ctitle: ctitle2[2],
-                    ctext: ctext2[2]
+                    ctitle: ctitle5[2],
+                    ctext: ctext5[2]
                 }
             ],
         },
         {
             id: "6",
-            src: img2,
+            src: clinic,
             head: head[5],
             title: title[5],
             subtitle: subtitle[5],
             caption: [
                 {
-                    ctitle: ctitle2[0],
-                    ctext: ctext2[0]
+                    ctitle: ctitle6[0],
+                    ctext: ctext6[0]
                 },
                 {
-                    ctitle: ctitle2[1],
-                    ctext: ctext2[1]
+                    ctitle: ctitle6[1],
+                    ctext: ctext6[1]
                 },
                 {
-                    ctitle: ctitle2[2],
-                    ctext: ctext2[2]
+                    ctitle: ctitle6[2],
+                    ctext: ctext6[2]
+                },
+                {
+                    ctitle: ctitle6[3],
+                    ctext: ctext6[3]
                 }
             ],
         },
         {
             id: "7",
-            src: img2,
+            src: moment,
             head: head[6],
             title: title[6],
             subtitle: subtitle[6],
             caption: [
                 {
-                    ctitle: ctitle2[0],
-                    ctext: ctext2[0]
+                    src: moment1,
+                    ctitle: "",
+                    ctext: ""
                 },
                 {
-                    ctitle: ctitle2[1],
-                    ctext: ctext2[1]
+                    src: moment2,
+                    ctitle: ctitle7[0],
+                    ctext: ctext7[0]
                 },
                 {
-                    ctitle: ctitle2[2],
-                    ctext: ctext2[2]
+                    ctitle: ctitle7[2],
+                    ctext: ctext7[2]
                 }
             ],
         },

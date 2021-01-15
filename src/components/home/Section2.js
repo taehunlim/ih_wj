@@ -12,7 +12,7 @@ import img2 from "../../assets/images/section2/2.jpg";
 import img3 from "../../assets/images/section2/3.jpg";
 import img4 from "../../assets/images/section2/4.png";
 import img5 from "../../assets/images/section2/5.jpg";
-import img6 from "../../assets/images/section2/6.jpg";
+import img6 from "../../assets/images/section2/6.png";
 import img7 from "../../assets/images/section2/7.jpg";
 
 const Section2 = () => {
@@ -204,14 +204,14 @@ const Section2 = () => {
                                                     <div style={{backgroundColor: "rgba(0, 0, 0, 0.3)", paddingLeft: "15px"}}>
                                                         <p>
                                                             <Link
-                                                                to="/"
+                                                                to="/sectiontwo/5"
                                                                 as="/"
                                                             >
                                                                 TRAINING
                                                             </Link>
                                                         </p>
                                                         <Link
-                                                            to="/"
+                                                            to="/sectiontwo/5"
                                                             as="/"
                                                         >
                                                             새로운 연구와 소중한 경험의 시간
@@ -220,7 +220,7 @@ const Section2 = () => {
                                                 </div>
                                             </div>
                                             <Link
-                                                to="/"
+                                                to="/sectiontwo/5"
                                                 as="/"
                                                 className="banner-link"
                                             >
@@ -241,14 +241,14 @@ const Section2 = () => {
                                                     <div style={{backgroundColor: "rgba(0, 0, 0, 0.3)", paddingLeft: "15px"}}>
                                                         <p>
                                                             <Link
-                                                                to="/"
+                                                                to="/sectiontwo/6"
                                                                 as="/"
                                                             >
                                                                 CLINIC
                                                             </Link>
                                                         </p>
                                                         <Link
-                                                            to="/"
+                                                            to="/sectiontwo/6"
                                                             as="/"
                                                         >
                                                             겨울철 특히 심해지는 손발 저림과 시림
@@ -257,7 +257,7 @@ const Section2 = () => {
                                                 </div>
                                             </div>
                                             <Link
-                                                to="/"
+                                                to="/sectiontwo/6"
                                                 as="/"
                                                 className="banner-link"
                                             >
@@ -278,14 +278,14 @@ const Section2 = () => {
                                                     <div style={{backgroundColor: "rgba(0, 0, 0, 0.3)", paddingLeft: "15px"}}>
                                                         <p>
                                                             <Link
-                                                                to="/"
+                                                                to="/sectiontwo/7"
                                                                 as="/"
                                                             >
                                                                 MOMENT
                                                             </Link>
                                                         </p>
                                                         <Link
-                                                            to="/"
+                                                            to="/sectiontwo/7"
                                                             as="/"
                                                         >
                                                             코로나19로부터 안전한 세상 일산병원이 함께합니다
@@ -294,7 +294,7 @@ const Section2 = () => {
                                                 </div>
                                             </div>
                                             <Link
-                                                to="/"
+                                                to="/sectiontwo/7"
                                                 as="/"
                                                 className="banner-link"
                                             >
