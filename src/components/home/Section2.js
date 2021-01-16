@@ -47,14 +47,14 @@ const Section2 = () => {
                                                     <div style={{backgroundColor: "rgba(0, 0, 0, 0.3)", paddingLeft: "15px"}}>
                                                         <p>
                                                             <Link
-                                                                to="/sectiontwo/1"
+                                                                to="/section/2/1"
                                                                 as="/"
                                                             >
                                                                 DOCTOR 1
                                                             </Link>
                                                         </p>
                                                         <Link
-                                                            to="/sectiontwo/1"
+                                                            to="/section/2/1"
                                                             as="/"
                                                         >
                                                             끊임없이 연구하고 노력하다 영상의학과 김태환 교수
@@ -64,7 +64,7 @@ const Section2 = () => {
                                                 </div>
                                             </div>
                                             <Link
-                                                to="/sectiontwo/1"
+                                                to="/section/2/1"
                                                 as="/"
                                                 className="banner-link"
                                             >
@@ -85,14 +85,14 @@ const Section2 = () => {
                                                     <div style={{backgroundColor: "rgba(0, 0, 0, 0.3)", paddingLeft: "15px"}}>
                                                         <p>
                                                             <Link
-                                                                to="/sectiontwo/3"
+                                                                to="/section/2/3"
                                                                 as="/"
                                                             >
                                                                 TEAM
                                                             </Link>
                                                         </p>
                                                         <Link
-                                                            to="/sectiontwo/3"
+                                                            to="/section/2/3"
                                                             as="/"
                                                         >
                                                             맛과 영양, 안전까지 더한 최고의 식단을 위하여 영양팀
@@ -102,7 +102,7 @@ const Section2 = () => {
                                                 </div>
                                             </div>
                                             <Link
-                                                to="/sectiontwo/3"
+                                                to="/section/2/3"
                                                 as="/"
                                                 className="banner-link"
                                             >
@@ -126,14 +126,14 @@ const Section2 = () => {
                                                     <div style={{backgroundColor: "rgba(0, 0, 0, 0.3)", paddingLeft: "15px"}}>
                                                         <p>
                                                             <Link
-                                                                to="/sectiontwo/4"
+                                                                to="/section/2/4"
                                                                 as="/"
                                                             >
                                                                 RESEARCH
                                                             </Link>
                                                         </p>
                                                         <Link
-                                                            to="/sectiontwo/4"
+                                                            to="/sectiont/2/4"
                                                             as="/"
                                                         >
                                                             중이염과 연관된 의료 이용에 대한 편도 및 아데노이드 절제술의 효과
@@ -142,7 +142,7 @@ const Section2 = () => {
                                                 </div>
                                             </div>
                                             <Link
-                                                to="/sectiontwo/4"
+                                                to="/section/2/4"
                                                 as="/"
                                                 className="banner-link"
                                             >
@@ -167,14 +167,14 @@ const Section2 = () => {
                                                     <div style={{backgroundColor: "rgba(0, 0, 0, 0.3)", paddingLeft: "15px"}}>
                                                         <p>
                                                             <Link
-                                                                to="/sectiontwo/2"
+                                                                to="/section/2/2"
                                                                 as="/"
                                                             >
                                                                 DOCTOR 2
                                                             </Link>
                                                         </p>
                                                         <Link
-                                                            to="/sectiontwo/2"
+                                                            to="/section/2/2"
                                                             as="/"
                                                         >
                                                             환자에게 새 삶을 선물하는 장기이식센터
@@ -183,7 +183,7 @@ const Section2 = () => {
                                                 </div>
                                             </div>
                                             <Link
-                                                to="/sectiontwo/2"
+                                                to="/section/2/2"
                                                 as="/"
                                                 className="banner-link"
                                             >
@@ -204,14 +204,14 @@ const Section2 = () => {
                                                     <div style={{backgroundColor: "rgba(0, 0, 0, 0.3)", paddingLeft: "15px"}}>
                                                         <p>
                                                             <Link
-                                                                to="/sectiontwo/5"
+                                                                to="/section/2/5"
                                                                 as="/"
                                                             >
                                                                 TRAINING
                                                             </Link>
                                                         </p>
                                                         <Link
-                                                            to="/sectiontwo/5"
+                                                            to="/section/2/5"
                                                             as="/"
                                                         >
                                                             새로운 연구와 소중한 경험의 시간
@@ -220,7 +220,7 @@ const Section2 = () => {
                                                 </div>
                                             </div>
                                             <Link
-                                                to="/sectiontwo/5"
+                                                to="/section/2/5"
                                                 as="/"
                                                 className="banner-link"
                                             >
@@ -241,14 +241,14 @@ const Section2 = () => {
                                                     <div style={{backgroundColor: "rgba(0, 0, 0, 0.3)", paddingLeft: "15px"}}>
                                                         <p>
                                                             <Link
-                                                                to="/sectiontwo/6"
+                                                                to="/section/2/6"
                                                                 as="/"
                                                             >
                                                                 CLINIC
                                                             </Link>
                                                         </p>
                                                         <Link
-                                                            to="/sectiontwo/6"
+                                                            to="/section/2/6"
                                                             as="/"
                                                         >
                                                             겨울철 특히 심해지는 손발 저림과 시림
@@ -257,7 +257,7 @@ const Section2 = () => {
                                                 </div>
                                             </div>
                                             <Link
-                                                to="/sectiontwo/6"
+                                                to="/section/2/6"
                                                 as="/"
                                                 className="banner-link"
                                             >
@@ -278,14 +278,14 @@ const Section2 = () => {
                                                     <div style={{backgroundColor: "rgba(0, 0, 0, 0.3)", paddingLeft: "15px"}}>
                                                         <p>
                                                             <Link
-                                                                to="/sectiontwo/7"
+                                                                to="/section/2/7"
                                                                 as="/"
                                                             >
                                                                 MOMENT
                                                             </Link>
                                                         </p>
                                                         <Link
-                                                            to="/sectiontwo/7"
+                                                            to="/section/2/7"
                                                             as="/"
                                                         >
                                                             코로나19로부터 안전한 세상 일산병원이 함께합니다
@@ -294,7 +294,7 @@ const Section2 = () => {
                                                 </div>
                                             </div>
                                             <Link
-                                                to="/sectiontwo/7"
+                                                to="/section/2/7"
                                                 as="/"
                                                 className="banner-link"
                                             >

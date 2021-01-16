@@ -354,25 +354,30 @@
 
               color: white;
               //color: $black--two;
+              //
 
-              @include respond(large-desktop) {
-                font-size: 25px;
-                line-height: 35px;
-              }
+
+
 
               @include respond(small-desktop) {
                 font-size: 25px;
                 line-height: 35px;
               }
 
-              @include respond(large-mobile) {
-                font-size: 25px;
+              @media (max-width: 991px) {
+                font-size: 20px;
                 line-height: 35px;
               }
 
-              //&:hover {
-              //  color: $black--two;
-              //}
+              @include respond(large-mobile) {
+                font-size: 18px;
+                line-height: 35px;
+              }
+
+
+              &:hover {
+                color: $black--two;
+              }
               &:hover {
                 color: $blue--three;
               }
@@ -397,6 +402,23 @@
             //&:hover {
             //  color: $red--one;
             //}
+
+
+
+            @include respond(small-desktop) {
+              font-size: 15px;
+              line-height: 35px;
+            }
+
+            @media (max-width: 991px) {
+              font-size: 10px;
+              line-height: 35px;
+            }
+
+            @include respond(large-mobile) {
+              font-size: 10px;
+              line-height: 35px;
+            }
           }
         }
       }

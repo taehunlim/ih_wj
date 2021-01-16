@@ -44,14 +44,14 @@ const Section1 = () => {
                                                     <div style={{backgroundColor: "rgba(0, 0, 0, 0.3)", paddingLeft: "15px"}}>
                                                         <p>
                                                             <Link
-                                                                to="/sectionone/1"
+                                                                to="/section/1/1"
                                                                 as="/"
                                                             >
                                                                 INTRO
                                                             </Link>
                                                         </p>
                                                         <Link
-                                                            to="/sectionone/1"
+                                                            to="/section/1/1"
                                                             as="/"
                                                         >
                                                             따뜻한 마음을 담아 2021년을 바라봅니다
@@ -60,7 +60,7 @@ const Section1 = () => {
                                                 </div>
                                             </div>
                                             <Link
-                                                to="/sectionone/1"
+                                                to="/section/1/1"
                                                 as="/"
                                                 className="banner-link"
                                             >
@@ -81,14 +81,14 @@ const Section1 = () => {
                                                     <div style={{backgroundColor: "rgba(0, 0, 0, 0.3)", paddingLeft: "15px"}}>
                                                         <p>
                                                             <Link
-                                                                to="/sectionone/3"
+                                                                to="/section/1/3"
                                                                 as="/"
                                                             >
                                                                 ESSAY
                                                             </Link>
                                                         </p>
                                                         <Link
-                                                            to="/sectionone/3"
+                                                            to="/section/1/3"
                                                             as="/"
                                                         >
                                                             인간이‘본다’는 것은 일차원적이며 최고의 사고행위
@@ -97,7 +97,7 @@ const Section1 = () => {
                                                 </div>
                                             </div>
                                             <Link
-                                                to="/sectionone/3"
+                                                to="/section/1/3"
                                                 as="/"
                                                 className="banner-link"
                                             >
@@ -122,14 +122,14 @@ const Section1 = () => {
                                                     <div style={{backgroundColor: "rgba(0, 0, 0, 0.3)", paddingLeft: "15px"}}>
                                                         <p>
                                                             <Link
-                                                                to="/sectionone/4"
+                                                                to="/section/1/4"
                                                                 as="/"
                                                             >
                                                                 INTERVIEW
                                                             </Link>
                                                         </p>
                                                         <Link
-                                                            to="/sectionone/4"
+                                                            to="/section/1/4"
                                                             as="/"
                                                         >
                                                             병원에서‘보다’의 의미를 찾다
@@ -138,7 +138,7 @@ const Section1 = () => {
                                                 </div>
                                             </div>
                                             <Link
-                                                to="/sectionone/4"
+                                                to="/section/1/4"
                                                 as="/"
                                                 className="banner-link"
                                             >
@@ -159,14 +159,14 @@ const Section1 = () => {
                                                     <div style={{backgroundColor: "rgba(0, 0, 0, 0.3)", paddingLeft: "15px"}}>
                                                         <p>
                                                             <Link
-                                                                to="/sectionone/2"
+                                                                to="/section/1/2"
                                                                 as="/"
                                                             >
                                                                 신년사
                                                             </Link>
                                                         </p>
                                                         <Link
-                                                            to="/sectionone/2"
+                                                            to="/section/1/2"
                                                             as="/"
                                                         >
                                                             2021년 희망찬 새해가 밝았습니다
@@ -175,7 +175,7 @@ const Section1 = () => {
                                                 </div>
                                             </div>
                                             <Link
-                                                to="/sectionone/2"
+                                                to="/section/1/2"
                                                 as="/"
                                                 className="banner-link"
                                             >
