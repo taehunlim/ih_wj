@@ -9,9 +9,8 @@ import {
 } from 'reactstrap';
 import {IoIosMenu} from 'react-icons/io'
 
-import logo from '../../assets/images/logo.jpg'
+import logo from '../../assets/images/logo_top.png'
 import MobileMenu from "./elements/MobileMenu";
-// import ScrollspyNav from "./elements/scrollSpy";
 
 const Header = () => {
 
@@ -21,22 +20,22 @@ const Header = () => {
     const [headerHeight, setHeaderHeight] = useState();
 
     const [navItems] = useState([
-        { id: 1 , idnm : "coloroflife", navheading: "COLOR of Life" },
-        { id: 2 , idnm : "ihoflife", navheading: "IH of Life" },
-        { id: 3 , idnm : "ihnews", navheading: "IH News" },
+        { id: 1 , idnm : "section1", navheading: "SECTION Ⅰ" },
+        { id: 2 , idnm : "section2", navheading: "SECTION Ⅱ" },
+        { id: 3 , idnm : "section3", navheading: "SECTION Ⅲ" },
         { id: 4 , idnm : "service", navheading: "SERVICE" },
+
     ]);
 
-    // let TargetId = navItems.map((item) => item.idnm);
 
     useEffect(() => {
         const header = document.querySelector("nav");
         setHeaderTop(header.offsetTop)
         setHeaderHeight(header.offsetHeight);
         window.addEventListener("scroll", handleScroll)
-        scroll > headerTop
-            ? (document.body.style.paddingTop = `${headerHeight}px`)
-            : (document.body.style.padding = 0);
+
+        document.body.style.paddingTop = `${headerHeight}px`
+
 
         return () => {
             window.removeEventListener("scroll", handleScroll)

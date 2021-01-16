@@ -6,7 +6,8 @@ import {
 } from 'reactstrap';
 // import {Link} from "react-router-dom";
 
-import { FaFacebookF, FaBloggerB, FaTwitter, FaMailBulk } from "react-icons/fa";
+import { FaFacebookF, FaBloggerB, FaTwitter } from "react-icons/fa";
+import {GoMailRead} from 'react-icons/go'
 
 const Service = () => {
 
@@ -65,7 +66,7 @@ const Service = () => {
                             <div className="blog-box mb-4 mb-xl-0">
                                 <div className="position-relative">
                                     <a href="https://docs.google.com/forms/d/e/1FAIpQLScsK3i7h-PjxH9vbklEFnTtWbInzWX05VovCjXDHFA0Xv7-Fw/viewform?vc=0&c=0&w=1&flr=0" target="_blank" rel="noreferrer">
-                                        <FaMailBulk/>
+                                        <GoMailRead/>
                                     </a>
                                 </div>
                             </div>

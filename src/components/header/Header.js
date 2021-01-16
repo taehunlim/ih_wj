@@ -30,14 +30,25 @@ const Header = () => {
 
     // let TargetId = navItems.map((item) => item.idnm);
 
+    // useEffect(() => {
+    //     const header = document.querySelector("nav");
+    //     setHeaderTop(header.offsetTop)
+    //     setHeaderHeight(header.offsetHeight);
+    //     window.addEventListener("scroll", handleScroll)
+    //     scroll > headerTop
+    //         ? (document.body.style.paddingTop = `${headerHeight}px`)
+    //         : (document.body.style.padding = 0);
+    //
+    //     return () => {
+    //         window.removeEventListener("scroll", handleScroll)
+    //     }
+    // }, [headerTop, headerHeight, scroll])
+
     useEffect(() => {
         const header = document.querySelector("nav");
         setHeaderTop(header.offsetTop)
         setHeaderHeight(header.offsetHeight);
         window.addEventListener("scroll", handleScroll)
-        scroll > headerTop
-            ? (document.body.style.paddingTop = `${headerHeight}px`)
-            : (document.body.style.padding = 0);
 
         return () => {
             window.removeEventListener("scroll", handleScroll)

@@ -1,6 +1,5 @@
 import React, {Fragment, useState, useEffect} from 'react';
 
-import { Container, Row, Col } from 'reactstrap';
 import {Link} from "react-router-dom";
 
 import img1 from "../../assets/images/Cover/cover1.jpg";
@@ -13,26 +12,43 @@ import {IoIosArrowBack, IoIosArrowForward} from "react-icons/io/index";
 
 const Cover = () => {
 
+    const head = [
+        (
+            <div>
+                SECTION Ⅰ
+            </div>
+        ),
+        (
+            <div>
+                SECTION Ⅱ
+            </div>
+        ),
+        (
+            <div>
+                SECTION Ⅲ
+            </div>
+        )
+    ]
+
     const caption = [
         (
             <div>
-                <div style={{marginBottom: "-20px"}}> 병원에서</div>
-                <br/>
+                <div> 병원에서</div>
                 ‘보다’의 의미를 찾다
             </div>
         ),
         (
             <div>
-                <div style={{marginBottom: "-20px"}}> 코로나19로부터 </div>
-                <br/> <div style={{marginBottom: "-20px"}}> 안전한 세상 </div>
+                코로나19로부터
+                <br/>안전한 세상
                 <br/>일산병원이 함께합니다
             </div>
         ),
         (
             <div>
-                <div style={{marginBottom: "-20px"}}>2021년 1월 1일의</div>
+                2021년 1월 1일의
                 <br/>
-                <div style={{marginBottom: "-20px"}}>해가 떠오르다</div>
+                해가 떠오르다
                 <br/>한강에서 본 일출
             </div>
         )
@@ -42,19 +58,27 @@ const Cover = () => {
         {
             id: "1",
             src: img1,
+            url: 4,
+            head: head[0],
             caption: caption[0],
         },
         {
             id: "2",
             src: img2,
+            url: 7,
+            head: head[1],
             caption: caption[1]
         },
         {
             id: "3",
             src: img3,
+            url: 3,
+            head: head[2],
             caption: caption[2]
         }
     ];
+
+    console.log(items[0].url)
 
     const [nav1, setNav1] = useState(null);
     const [nav2, setNav2] = useState(null);
@@ -112,25 +136,30 @@ const Cover = () => {
                     >
 
                         {items.map((item) =>
-
-                            <div className="slick-slider">
-                                <div className="slider-img">
+                            <div key={item.id}>
+                                <div className="">
                                     <img src={item.src} className="img-fluid" alt="/"/>
                                 </div>
 
-                                <div className="slider-content">
-                                    <Container>
-                                        <Row className="align-items-center">
-                                            <Col lg={5}>
-                                                <div className="text-white-50">
-                                                    <h1 className="mb-3 carousel-title">{item.caption} </h1>
-                                                    <div className="button-items mt-4">
-                                                        <Link to="#" className="btn btn-success mr-1">기사보기</Link>
-                                                    </div>
-                                                </div>
-                                            </Col>
-                                        </Row>
-                                    </Container>
+
+                                <div key={item.id} className="slider-content">
+                                    <h2 className="color-title space-mb--20">
+                                        {item.head}
+                                    </h2>
+                                    <h1
+                                        className="main-title space-mb--30"
+                                    >
+                                        {item.caption}
+                                    </h1>
+
+                                    <Link
+                                        key={item.id}
+                                        to={`/section/${item.id}/${item.url}`}
+                                        as="/"
+                                        className="ih-button ih-button--medium"
+                                    >
+                                        기사 보기
+                                    </Link>
                                 </div>
 
                             </div>
@@ -144,9 +173,7 @@ const Cover = () => {
                             ref={slider => (setSlider2(slider))}
                             style={{width:"70%"}}
                         >
-
                             {items.map((slide) =>
-
                                 <div className="slick-thumb-slide" key={slide.id}>
                                     <img className="slick-slide-image img-fluid" src={slide.src} alt="/" />
                                 </div>
