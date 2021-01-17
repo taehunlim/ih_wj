@@ -739,7 +739,7 @@ const SectionTwo = ({match}) => {
 
             <Fragment>
                 <section>
-                    <Container style={{padding: "0px 100px", width: "90%"}}>
+                    <Container>
                         <Card className="color-of-life">
                             <CardBody className="color-of-life__header">
                                 <div>
@@ -752,16 +752,23 @@ const SectionTwo = ({match}) => {
                                 </div>
                             </CardBody>
 
-                            <CardImg top className="img-fluid mb-3" src={item.src} alt="/" />
 
-                            <CardBody className="color-of-life__body">
-                                <CardTitle className="color-of-life__body__title mb-4">
-                                    {item.title}
-                                </CardTitle>
-                                <CardSubtitle className="color-of-life__body__subtitle mb-5">
-                                    {item.subtitle}
-                                </CardSubtitle>
-                            </CardBody>
+                            {item.src ?
+                                <CardImg top className="img-fluid mb-3" src={item.src} alt="/" />
+                            : ""}
+
+
+                            {item.title && item.subtitle ?
+                                <CardBody className="color-of-life__body">
+                                    <CardTitle className="color-of-life__body__title mb-4">
+                                        {item.title}
+                                    </CardTitle>
+                                    <CardSubtitle className="color-of-life__body__subtitle mb-5">
+                                        {item.subtitle}
+                                    </CardSubtitle>
+                                </CardBody>
+                            : ""}
+
 
                             {item.caption && item.caption.map((cap) => (
                                 <CardBody className="color-of-life__body">
@@ -769,14 +776,20 @@ const SectionTwo = ({match}) => {
                                         {cap.src ?
                                             <CardImg style={{width: "60%"}} className="img-fluid mb-5" src={cap.src} alt="/"/> : ""
                                         }
-
                                     </div>
-                                    <CardSubtitle className="color-of-life__body__subtitle mb-3">
-                                        {cap.ctitle}
-                                    </CardSubtitle>
-                                    <CardText className="color-of-life__body__text mb-5">
-                                        {cap.ctext}
-                                    </CardText>
+
+                                    {cap.ctitle && cap.ctext ?
+                                        <div>
+                                            <CardSubtitle className="color-of-life__body__subtitle mb-3">
+                                                {cap.ctitle}
+                                            </CardSubtitle>
+                                            <CardText className="color-of-life__body__text mb-5">
+                                                {cap.ctext}
+                                            </CardText>
+                                        </div>
+
+                                    : ""}
+
                                 </CardBody>
                             ))}
                         </Card>

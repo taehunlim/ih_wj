@@ -171,7 +171,7 @@ const Cover = () => {
                             {...settingsThumbs}
                             asNavFor={nav1}
                             ref={slider => (setSlider2(slider))}
-                            style={{width:"70%"}}
+                            className="thumb"
                         >
                             {items.map((slide) =>
                                 <div className="slick-thumb-slide" key={slide.id}>

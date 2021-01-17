@@ -141,18 +141,45 @@
       padding: 0px 150px !important;
     }
 
-    @media (min-width: 768px) {
-      padding: 0px 70px;
-    }
 
-    @media (max-width: 767px) {
-      padding: 0px 30px;
+    @media (max-width: 425px) {
+      padding: 0px 100px !important;
     }
 
     .slick-thumb-slide {
       img {
         padding: 10px;
       }
+    }
+
+    .thumb {
+      width: 70%;
+
+      @media (max-width: 425px) {
+        width: 100%;
+      }
+    }
+  }
+
+
+  .slick-next:before,
+  .slick-prev:before {
+    font-size: 40px;
+
+    @media (max-width: 1024px) {
+      font-size: 35px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 28px;
+    }
+
+    @media (max-width: 425px) {
+      font-size: 20px;
+    }
+
+    @media (max-width: 375px) {
+      font-size: 15px;
     }
   }
 }

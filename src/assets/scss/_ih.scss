@@ -32,6 +32,27 @@
   }
 }
 
+.home-sns {
+  text-align: center;
+  font-size: 100px;
+
+  @media (max-width: 768px) {
+    font-size: 70px;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 55px;
+  }
+
+  @media (max-width: 375px) {
+    font-size: 45px;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 40px;
+  }
+}
+
 .section-col {
 
   //@media (max-width: 1024px) {
@@ -53,24 +74,10 @@
 
 .section-col__l {
 
-  //@media (max-width: 1024px) {
-  //  height: 420px;
-  //}
-  //
-  //@media (max-width: 768px) {
-  //  height: 294px;
-  //}
-  //
-  //@include respond(small-mobile) {
-  //  height: 212px;
-  //}
-
-  @include respond(small-mobile) {
+  @media (max-width: 767px) {
     padding-left: 5px;
   }
-}
 
-.section-col__l {
 
   //@media (max-width: 1024px) {
   //  height: 420px;
@@ -84,9 +91,25 @@
   //  height: 212px;
   //}
 
-  @include respond(small-mobile) {
+}
+
+.section-col__r {
+
+  @media (max-width: 767px) {
     padding-right: 5px;
   }
+
+  //@media (max-width: 1024px) {
+  //  height: 420px;
+  //}
+  //
+  //@media (max-width: 768px) {
+  //  height: 294px;
+  //}
+  //
+  //@include respond(small-mobile) {
+  //  height: 212px;
+  //}
 }
 
 .single-category {
@@ -175,14 +198,20 @@
       }
 
       @media (max-width: 768px) {
-        height: 294px;
+        height: 308px;
       }
 
+      @media (max-width: 425px) {
+        height: 205px;
+      }
 
-      @include respond(large-mobile) {
+      @media (max-width: 375px) {
         height: 180px;
       }
 
+      @media (max-width: 320px) {
+        height: 180px;
+      }
     }
 
     &__square {
@@ -196,9 +225,12 @@
         height: 132px;
       }
 
+      @media (max-width: 425px) {
+        height: 85px;
+      }
 
-      @include respond(large-mobile) {
-        height: 75px;
+      @media (max-width: 375px) {
+        height: 63px;
       }
 
     }
@@ -214,8 +246,16 @@
         height: 147px;
       }
 
-      @include respond(large-mobile) {
+      @media (max-width: 425px) {
         height: 90px;
+      }
+
+      @media (max-width: 375px) {
+        height: 75px;
+      }
+
+      @media (max-width: 320px) {
+        height: 67px;
       }
 
     }
@@ -437,8 +477,6 @@
               //
 
 
-
-
               @include respond(small-desktop) {
                 font-size: 25px;
                 line-height: 35px;
@@ -449,9 +487,19 @@
                 line-height: 35px;
               }
 
-              @include respond(large-mobile) {
-                font-size: 18px;
-                line-height: 35px;
+              @media (max-width: 425px) {
+                font-size: 16px;
+                line-height: 20px;
+              }
+
+              @media (max-width: 375px) {
+                font-size: 13px;
+                line-height: 15px;
+              }
+
+              @media (max-width: 375px) {
+                font-size: 10px;
+                line-height: 15px;
               }
 
 
@@ -484,7 +532,6 @@
             //}
 
 
-
             @include respond(small-desktop) {
               font-size: 15px;
               line-height: 35px;
@@ -498,6 +545,12 @@
             @include respond(large-mobile) {
               font-size: 10px;
               line-height: 35px;
+            }
+          }
+
+          .mobile {
+            @media (max-width: 425px) {
+              display: none;
             }
           }
         }

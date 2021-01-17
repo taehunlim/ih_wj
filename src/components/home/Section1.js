@@ -26,7 +26,7 @@ const Section1 = () => {
                         </Col>
                     </Row>
 
-                    <Container>
+                    <Container className="ih">
                         <Row>
                             <Col xs={6} sm={6} md={6} lg={6} className="section-col">
                                 <Row>
@@ -51,6 +51,7 @@ const Section1 = () => {
                                                             </Link>
                                                         </p>
                                                         <Link
+                                                            className="mobile"
                                                             to="/section/1/1"
                                                             as="/"
                                                         >
@@ -88,6 +89,7 @@ const Section1 = () => {
                                                             </Link>
                                                         </p>
                                                         <Link
+                                                            className="mobile"
                                                             to="/section/1/3"
                                                             as="/"
                                                         >
@@ -129,6 +131,7 @@ const Section1 = () => {
                                                             </Link>
                                                         </p>
                                                         <Link
+                                                            className="mobile"
                                                             to="/section/1/4"
                                                             as="/"
                                                         >
@@ -166,6 +169,7 @@ const Section1 = () => {
                                                             </Link>
                                                         </p>
                                                         <Link
+                                                            className="mobile"
                                                             to="/section/1/2"
                                                             as="/"
                                                         >

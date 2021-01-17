@@ -5,7 +5,7 @@ import Footer from "../components/footer/Footer";
 
 import Cover from "../components/home/Cover";
 
-
+import IhLetter from "../components/IhLetter";
 
 const SectionThree = () => {
 
@@ -16,6 +16,8 @@ const SectionThree = () => {
             <HeaderP/>
 
             <Cover/>
+
+            <IhLetter/>
 
             <Footer/>
 

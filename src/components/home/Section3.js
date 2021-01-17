@@ -47,14 +47,15 @@ const Section3 = () => {
                                                     <div style={{backgroundColor: "rgba(0, 0, 0, 0.3)", paddingLeft: "15px"}}>
                                                         <p>
                                                             <Link
-                                                                to="/"
+                                                                to="/section/3/1"
                                                                 as="/"
                                                             >
                                                                 AROUND
                                                             </Link>
                                                         </p>
                                                         <Link
-                                                            to="/"
+                                                            className="mobile"
+                                                            to="/section/3/1"
                                                             as="/"
                                                         >
                                                             2021년 1월 1일의 해가 떠오르다 한강에서 본 일출
@@ -64,7 +65,7 @@ const Section3 = () => {
                                                 </div>
                                             </div>
                                             <Link
-                                                to="/"
+                                                to="/section/3/1"
                                                 as="/"
                                                 className="banner-link"
                                             >
@@ -85,14 +86,15 @@ const Section3 = () => {
                                                     <div style={{backgroundColor: "rgba(0, 0, 0, 0.3)", paddingLeft: "15px"}}>
                                                         <p>
                                                             <Link
-                                                                to="/"
+                                                                to="/section/3/2"
                                                                 as="/"
                                                             >
                                                                 FOOD
                                                             </Link>
                                                         </p>
                                                         <Link
-                                                            to="/"
+                                                            className="mobile"
+                                                            to="/section/3/2"
                                                             as="/"
                                                         >
                                                             지금이 제철! 영양 가득한 바다 맛, 굴
@@ -102,7 +104,7 @@ const Section3 = () => {
                                                 </div>
                                             </div>
                                             <Link
-                                                to="/"
+                                                to="/section/3/2"
                                                 as="/"
                                                 className="banner-link"
                                             >
@@ -127,14 +129,15 @@ const Section3 = () => {
                                                     <div style={{backgroundColor: "rgba(0, 0, 0, 0.3)", paddingLeft: "15px"}}>
                                                         <p>
                                                             <Link
-                                                                to="/"
+                                                                to="/section/3/4"
                                                                 as="/"
                                                             >
                                                                 ISSUE
                                                             </Link>
                                                         </p>
                                                         <Link
-                                                            to="/"
+                                                            className="mobile"
+                                                            to="/section/3/4"
                                                             as="/"
                                                         >
                                                             '코로나19 확진자 전담 치료병동' 운영
@@ -144,14 +147,14 @@ const Section3 = () => {
                                                 </div>
                                             </div>
                                             <Link
-                                                to="/"
+                                                to="/section/3/4"
                                                 as="/"
                                                 className="banner-link"
                                             >
                                             </Link>
                                         </div>
                                     </Col>
-                                    <Col xs={6} sm={6} md={6} lg={6}>
+                                    <Col xs={6} sm={6} md={6} lg={6} className="section-col__r">
                                         <div className="single-category single-category--three space-mb--15">
                                             <div className="single-category__image single-category__image__square single-category__image--three single-category__image--three--creativehome">
                                                 <img
@@ -165,14 +168,15 @@ const Section3 = () => {
                                                     <div style={{backgroundColor: "rgba(0, 0, 0, 0.3)", paddingLeft: "15px"}}>
                                                         <p>
                                                             <Link
-                                                                to="/"
+                                                                to="/section/3/5"
                                                                 as="/"
                                                             >
                                                                 IH NEWS
                                                             </Link>
                                                         </p>
                                                         <Link
-                                                            to="/"
+                                                            className="mobile"
+                                                            to="/section/3/5"
                                                             as="/"
                                                         >
                                                             김성우 병원장, 공로상 수상 외
@@ -182,14 +186,14 @@ const Section3 = () => {
                                                 </div>
                                             </div>
                                             <Link
-                                                to="/"
+                                                to="/section/3/5"
                                                 as="/"
                                                 className="banner-link"
                                             >
                                             </Link>
                                         </div>
                                     </Col>
-                                    <Col xs={6} sm={6} md={6} lg={6}>
+                                    <Col xs={6} sm={6} md={6} lg={6} className="section-col__l">
                                         <div className="single-category single-category--three space-mb--15">
                                             <div className="single-category__image single-category__image__square single-category__image--three single-category__image--three--creativehome">
                                                 <img
@@ -203,24 +207,25 @@ const Section3 = () => {
                                                     <div style={{backgroundColor: "rgba(0, 0, 0, 0.3)", paddingLeft: "15px"}}>
                                                         <p>
                                                             <Link
-                                                                to="/"
+                                                                to="/section/3/6"
                                                                 as="/"
                                                             >
-                                                                IH TODAY 일산병원 소식
+                                                                IH TODAY
                                                             </Link>
                                                         </p>
                                                         <Link
-                                                            to="/"
+                                                            className="mobile"
+                                                            to="/section/3/6"
                                                             as="/"
                                                         >
-                                                            인간이‘본다’는 것은 일차원적이며 최고의 사고행위
+                                                            일산병원 소식
                                                         </Link>
                                                     </div>
 
                                                 </div>
                                             </div>
                                             <Link
-                                                to="/"
+                                                to="/section/3/6"
                                                 as="/"
                                                 className="banner-link"
                                             >
@@ -241,14 +246,15 @@ const Section3 = () => {
                                                     <div style={{backgroundColor: "rgba(0, 0, 0, 0.3)", paddingLeft: "15px"}}>
                                                         <p>
                                                             <Link
-                                                                to="/"
+                                                                to="/section/3/7"
                                                                 as="/"
                                                             >
                                                                 IH LETTER
                                                             </Link>
                                                         </p>
                                                         <Link
-                                                            to="/"
+                                                            className="mobile"
+                                                            to="/section/3/7"
                                                             as="/"
                                                         >
                                                             독자 의견
@@ -258,7 +264,7 @@ const Section3 = () => {
                                                 </div>
                                             </div>
                                             <Link
-                                                to="/"
+                                                to="/section/3/7"
                                                 as="/"
                                                 className="banner-link"
                                             >
@@ -270,7 +276,7 @@ const Section3 = () => {
 
                             <Col lg={12} className="section-col">
                                 <Row>
-                                    <Col xs={6} sm={6} md={6} lg={6} >
+                                    <Col xs={6} sm={6} md={6} lg={6} className="section-col__r">
                                         <div className="single-category single-category--three space-mb--30">
                                             <div className="single-category__image single-category__image__horizontal single-category__image--three single-category__image--three--creativehome">
                                                 <img
@@ -284,14 +290,15 @@ const Section3 = () => {
                                                     <div style={{backgroundColor: "rgba(0, 0, 0, 0.3)", paddingLeft: "15px"}}>
                                                         <p>
                                                             <Link
-                                                                to="/"
+                                                                to="/section/3/3"
                                                                 as="/"
                                                             >
                                                                 TREND
                                                             </Link>
                                                         </p>
                                                         <Link
-                                                            to="/"
+                                                            className="mobile"
+                                                            to="/section/3/3"
                                                             as="/"
                                                         >
                                                             당근에서 겟한 물건 나에겐 N차 신상
@@ -301,14 +308,14 @@ const Section3 = () => {
                                                 </div>
                                             </div>
                                             <Link
-                                                to="/"
+                                                to="/section/3/3"
                                                 as="/"
                                                 className="banner-link"
                                             >
                                             </Link>
                                         </div>
                                     </Col>
-                                    <Col xs={6} sm={6} md={6} lg={6} >
+                                    <Col xs={6} sm={6} md={6} lg={6} className="section-col__l" >
                                         <div className="single-category single-category--three space-mb--30">
                                             <div className="single-category__image single-category__image__horizontal single-category__image--three single-category__image--three--creativehome">
                                                 <img
@@ -322,14 +329,14 @@ const Section3 = () => {
                                                     <div style={{backgroundColor: "rgba(0, 0, 0, 0.3)", paddingLeft: "15px"}}>
                                                         <p>
                                                             <Link
-                                                                to="/"
+                                                                to="/section/3/8"
                                                                 as="/"
                                                             >
                                                                 진료일정표
                                                             </Link>
                                                         </p>
                                                         <Link
-                                                            to="/"
+                                                            to="/section/3/8"
                                                             as="/"
                                                         >
 
@@ -339,7 +346,7 @@ const Section3 = () => {
                                                 </div>
                                             </div>
                                             <Link
-                                                to="/"
+                                                to="/section/3/8"
                                                 as="/"
                                                 className="banner-link"
                                             >

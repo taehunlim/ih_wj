@@ -13,17 +13,17 @@ const Service = () => {
 
     return (
         <Fragment>
-            <section className="section" id="service" style={{marginBottom: "100px"}}>
+            <section className="section" id="service" style={{marginBottom: "50px"}}>
                 <Container>
                     <Row>
                         <Col lg="12">
-                            <div className="text-center mb-5">
+                            <div className="text-center mb-3">
                                 <h4>Service</h4>
                             </div>
                         </Col>
                     </Row>
 
-                    <Row style={{textAlignLast: "center", fontSize: "100px"}}>
+                    <Row className="home-sns">
 
                         <Col>
                             <div className="blog-box mb-4 mb-xl-0">

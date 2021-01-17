@@ -56,6 +56,7 @@ const Section2 = () => {
                                                             </Link>
                                                         </p>
                                                         <Link
+                                                            className="mobile"
                                                             to="/section/2/1"
                                                             as="/"
                                                         >
@@ -94,6 +95,7 @@ const Section2 = () => {
                                                             </Link>
                                                         </p>
                                                         <Link
+                                                            className="mobile"
                                                             to="/section/2/3"
                                                             as="/"
                                                         >
@@ -135,6 +137,7 @@ const Section2 = () => {
                                                             </Link>
                                                         </p>
                                                         <Link
+                                                            className="mobile"
                                                             to="/sectiont/2/4"
                                                             as="/"
                                                         >
@@ -176,6 +179,7 @@ const Section2 = () => {
                                                             </Link>
                                                         </p>
                                                         <Link
+                                                            className="mobile"
                                                             to="/section/2/2"
                                                             as="/"
                                                         >
@@ -192,7 +196,7 @@ const Section2 = () => {
                                             </Link>
                                         </div>
                                     </Col>
-                                    <Col xs={6} sm={6} md={6} lg={6}>
+                                    <Col xs={6} sm={6} md={6} lg={6} className="section-col__r">
                                         <div className="single-category single-category--three space-mb--30">
                                             <div className="single-category__image single-category__image__horizontal single-category__image--three single-category__image--three--creativehome">
                                                 <img
@@ -213,6 +217,7 @@ const Section2 = () => {
                                                             </Link>
                                                         </p>
                                                         <Link
+                                                            className="mobile"
                                                             to="/section/2/5"
                                                             as="/"
                                                         >
@@ -229,7 +234,7 @@ const Section2 = () => {
                                             </Link>
                                         </div>
                                     </Col>
-                                    <Col xs={6} sm={6} md={6} lg={6}>
+                                    <Col xs={6} sm={6} md={6} lg={6} className="section-col__l">
                                         <div className="single-category single-category--three space-mb--30">
                                             <div className="single-category__image single-category__image__horizontal single-category__image--three single-category__image--three--creativehome">
                                                 <img
@@ -250,6 +255,7 @@ const Section2 = () => {
                                                             </Link>
                                                         </p>
                                                         <Link
+                                                            className="mobile"
                                                             to="/section/2/6"
                                                             as="/"
                                                         >
@@ -287,6 +293,7 @@ const Section2 = () => {
                                                             </Link>
                                                         </p>
                                                         <Link
+                                                            className="mobile"
                                                             to="/section/2/7"
                                                             as="/"
                                                         >

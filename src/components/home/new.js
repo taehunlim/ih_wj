@@ -6,7 +6,7 @@ import img1 from "../../assets/images/section3/1.jpg";
 import img2 from "../../assets/images/section3/2.jpg";
 import img3 from "../../assets/images/section3/3.png";
 import img4 from "../../assets/images/section3/4.JPG";
-import img5 from "../../assets/images/section3/5.JPG";
+import img5 from "../../assets/images/section3/5P.JPG";
 import img6 from "../../assets/images/section3/6.jpg";
 import img7 from "../../assets/images/section3/7.jpg";
 import img8 from "../../assets/images/section3/8.jpg";
