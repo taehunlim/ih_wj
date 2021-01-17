@@ -37,6 +37,22 @@
 
       transform: translate(0, -100%);
 
+      @media (max-width: 991px) {
+        top: 60%
+      }
+
+      @include respond(large-mobile) {
+
+      }
+
+      @include respond(small-mobile) {
+        top: 70%
+      }
+
+      @include respond(extra-small-mobile) {
+        top: 78%;
+      }
+
       .color-title {
         font-size: 16px;
         font-weight: 600;
@@ -50,6 +66,8 @@
           margin-bottom: 5px;
         }
 
+
+
         &--blue {
           color: #68aaeb;
         }
@@ -61,6 +79,10 @@
         line-height: 1.4;
 
         color: black;
+
+        @media (max-width: 991px) {
+          font-size: 30px;
+        }
 
         @include respond(large-mobile) {
           font-size: 30px;
@@ -78,8 +100,17 @@
       }
 
       .ih-button {
+
+
+
+        @include respond(small-mobile) {
+          font-size: 12px;
+
+          padding: 10px 15px;
+        }
+
         @include respond (extra-small-mobile) {
-          font-size: 10px;
+          font-size: 8px;
 
           padding: 10px 15px;
         }

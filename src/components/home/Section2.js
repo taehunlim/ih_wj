@@ -22,16 +22,18 @@ const Section2 = () => {
             <section className="section" id="section2">
                 <Container>
                     <Row>
-                        <Col lg="12">
+                        <Col lg="12" className="section-col">
                             <div className="text-center mb-5">
                                 <h4>SECTION Ⅱ</h4>
                             </div>
                         </Col>
                     </Row>
 
-                    <Container style={{padding: "0px 100px"}}>
+                    <Container
+                        // style={{padding: "0px 100px"}}
+                    >
                         <Row>
-                            <Col sm={6} md={6} lg={6}>
+                            <Col xs={6} sm={6} md={6} lg={6} className="section-col">
                                 <Row>
                                     <Col lg={12}>
                                         <div className="single-category single-category--three space-mb--30">
@@ -151,7 +153,7 @@ const Section2 = () => {
                                     </Col>
                                 </Row>
                             </Col>
-                            <Col sm={6} md={6} lg={6}>
+                            <Col xs={6} sm={6} md={6} lg={6} className="section-col">
                                 <Row>
                                     <Col lg={12}>
                                         <div className="single-category single-category--three space-mb--30">
@@ -190,7 +192,7 @@ const Section2 = () => {
                                             </Link>
                                         </div>
                                     </Col>
-                                    <Col sm={6} md={6} lg={6}>
+                                    <Col xs={6} sm={6} md={6} lg={6}>
                                         <div className="single-category single-category--three space-mb--30">
                                             <div className="single-category__image single-category__image__horizontal single-category__image--three single-category__image--three--creativehome">
                                                 <img
@@ -227,7 +229,7 @@ const Section2 = () => {
                                             </Link>
                                         </div>
                                     </Col>
-                                    <Col sm={6} md={6} lg={6}>
+                                    <Col xs={6} sm={6} md={6} lg={6}>
                                         <div className="single-category single-category--three space-mb--30">
                                             <div className="single-category__image single-category__image__horizontal single-category__image--three single-category__image--three--creativehome">
                                                 <img

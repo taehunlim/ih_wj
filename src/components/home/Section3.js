@@ -29,9 +29,9 @@ const Section3 = () => {
                         </Col>
                     </Row>
 
-                    <Container style={{padding: "0px 100px"}}>
+                    <Container>
                         <Row>
-                            <Col sm={6} md={6} lg={6}>
+                            <Col xs={6} sm={6} md={6} lg={6} className="section-col">
                                 <Row>
                                     <Col lg={12}>
                                         <div className="single-category single-category--three space-mb--30">
@@ -44,20 +44,23 @@ const Section3 = () => {
                                             </div>
                                             <div className="single-category__content single-category__content--three single-category__content--three--creativehome">
                                                 <div className="title">
-                                                    <p>
+                                                    <div style={{backgroundColor: "rgba(0, 0, 0, 0.3)", paddingLeft: "15px"}}>
+                                                        <p>
+                                                            <Link
+                                                                to="/"
+                                                                as="/"
+                                                            >
+                                                                AROUND
+                                                            </Link>
+                                                        </p>
                                                         <Link
                                                             to="/"
                                                             as="/"
                                                         >
-                                                            AROUND
+                                                            2021년 1월 1일의 해가 떠오르다 한강에서 본 일출
                                                         </Link>
-                                                    </p>
-                                                    <Link
-                                                        to="/"
-                                                        as="/"
-                                                    >
-                                                        2021년 1월 1일의 해가 떠오르다 한강에서 본 일출
-                                                    </Link>
+                                                    </div>
+
                                                 </div>
                                             </div>
                                             <Link
@@ -79,20 +82,23 @@ const Section3 = () => {
                                             </div>
                                             <div className="single-category__content single-category__content--three single-category__content--three--creativehome">
                                                 <div className="title">
-                                                    <p>
+                                                    <div style={{backgroundColor: "rgba(0, 0, 0, 0.3)", paddingLeft: "15px"}}>
+                                                        <p>
+                                                            <Link
+                                                                to="/"
+                                                                as="/"
+                                                            >
+                                                                FOOD
+                                                            </Link>
+                                                        </p>
                                                         <Link
                                                             to="/"
                                                             as="/"
                                                         >
-                                                            FOOD
+                                                            지금이 제철! 영양 가득한 바다 맛, 굴
                                                         </Link>
-                                                    </p>
-                                                    <Link
-                                                        to="/"
-                                                        as="/"
-                                                    >
-                                                        지금이 제철! 영양 가득한 바다 맛, 굴
-                                                    </Link>
+                                                    </div>
+
                                                 </div>
                                             </div>
                                             <Link
@@ -105,7 +111,7 @@ const Section3 = () => {
                                     </Col>
                                 </Row>
                             </Col>
-                            <Col sm={6} md={6} lg={6}>
+                            <Col xs={6} sm={6} md={6} lg={6} className="section-col">
                                 <Row>
                                     <Col lg={12}>
                                         <div className="single-category single-category--three space-mb--30">
@@ -118,20 +124,23 @@ const Section3 = () => {
                                             </div>
                                             <div className="single-category__content single-category__content--three single-category__content--three--creativehome">
                                                 <div className="title">
-                                                    <p>
+                                                    <div style={{backgroundColor: "rgba(0, 0, 0, 0.3)", paddingLeft: "15px"}}>
+                                                        <p>
+                                                            <Link
+                                                                to="/"
+                                                                as="/"
+                                                            >
+                                                                ISSUE
+                                                            </Link>
+                                                        </p>
                                                         <Link
                                                             to="/"
                                                             as="/"
                                                         >
-                                                            ISSUE
+                                                            '코로나19 확진자 전담 치료병동' 운영
                                                         </Link>
-                                                    </p>
-                                                    <Link
-                                                        to="/"
-                                                        as="/"
-                                                    >
-                                                        '코로나19 확진자 전담 치료병동' 운영
-                                                    </Link>
+                                                    </div>
+
                                                 </div>
                                             </div>
                                             <Link
@@ -142,7 +151,7 @@ const Section3 = () => {
                                             </Link>
                                         </div>
                                     </Col>
-                                    <Col lg={6}>
+                                    <Col xs={6} sm={6} md={6} lg={6}>
                                         <div className="single-category single-category--three space-mb--15">
                                             <div className="single-category__image single-category__image__square single-category__image--three single-category__image--three--creativehome">
                                                 <img
@@ -153,20 +162,23 @@ const Section3 = () => {
                                             </div>
                                             <div className="single-category__content single-category__content--three single-category__content--three--creativehome">
                                                 <div className="title">
-                                                    <p>
+                                                    <div style={{backgroundColor: "rgba(0, 0, 0, 0.3)", paddingLeft: "15px"}}>
+                                                        <p>
+                                                            <Link
+                                                                to="/"
+                                                                as="/"
+                                                            >
+                                                                IH NEWS
+                                                            </Link>
+                                                        </p>
                                                         <Link
                                                             to="/"
                                                             as="/"
                                                         >
-                                                            IH NEWS
+                                                            김성우 병원장, 공로상 수상 외
                                                         </Link>
-                                                    </p>
-                                                    <Link
-                                                        to="/"
-                                                        as="/"
-                                                    >
-                                                        김성우 병원장, 공로상 수상 외
-                                                    </Link>
+                                                    </div>
+
                                                 </div>
                                             </div>
                                             <Link
@@ -177,7 +189,7 @@ const Section3 = () => {
                                             </Link>
                                         </div>
                                     </Col>
-                                    <Col lg={6}>
+                                    <Col xs={6} sm={6} md={6} lg={6}>
                                         <div className="single-category single-category--three space-mb--15">
                                             <div className="single-category__image single-category__image__square single-category__image--three single-category__image--three--creativehome">
                                                 <img
@@ -188,20 +200,23 @@ const Section3 = () => {
                                             </div>
                                             <div className="single-category__content single-category__content--three single-category__content--three--creativehome">
                                                 <div className="title">
-                                                    <p>
+                                                    <div style={{backgroundColor: "rgba(0, 0, 0, 0.3)", paddingLeft: "15px"}}>
+                                                        <p>
+                                                            <Link
+                                                                to="/"
+                                                                as="/"
+                                                            >
+                                                                IH TODAY 일산병원 소식
+                                                            </Link>
+                                                        </p>
                                                         <Link
                                                             to="/"
                                                             as="/"
                                                         >
-                                                            IH TODAY 일산병원 소식
+                                                            인간이‘본다’는 것은 일차원적이며 최고의 사고행위
                                                         </Link>
-                                                    </p>
-                                                    <Link
-                                                        to="/"
-                                                        as="/"
-                                                    >
-                                                        인간이‘본다’는 것은 일차원적이며 최고의 사고행위
-                                                    </Link>
+                                                    </div>
+
                                                 </div>
                                             </div>
                                             <Link
@@ -212,7 +227,7 @@ const Section3 = () => {
                                             </Link>
                                         </div>
                                     </Col>
-                                    <Col lg={12}>
+                                    <Col xs={12} sm={12} md={12} lg={12}>
                                         <div className="single-category single-category--three space-mb--30">
                                             <div className="single-category__image single-category__image__horizontal single-category__image--three single-category__image--three--creativehome">
                                                 <img
@@ -223,20 +238,23 @@ const Section3 = () => {
                                             </div>
                                             <div className="single-category__content single-category__content--three single-category__content--three--creativehome">
                                                 <div className="title">
-                                                    <p>
+                                                    <div style={{backgroundColor: "rgba(0, 0, 0, 0.3)", paddingLeft: "15px"}}>
+                                                        <p>
+                                                            <Link
+                                                                to="/"
+                                                                as="/"
+                                                            >
+                                                                IH LETTER
+                                                            </Link>
+                                                        </p>
                                                         <Link
                                                             to="/"
                                                             as="/"
                                                         >
-                                                            IH LETTER
+                                                            독자 의견
                                                         </Link>
-                                                    </p>
-                                                    <Link
-                                                        to="/"
-                                                        as="/"
-                                                    >
-                                                        독자 의견
-                                                    </Link>
+                                                    </div>
+
                                                 </div>
                                             </div>
                                             <Link
@@ -250,9 +268,9 @@ const Section3 = () => {
                                 </Row>
                             </Col>
 
-                            <Col lg={12}>
+                            <Col lg={12} className="section-col">
                                 <Row>
-                                    <Col lg={6}>
+                                    <Col xs={6} sm={6} md={6} lg={6} >
                                         <div className="single-category single-category--three space-mb--30">
                                             <div className="single-category__image single-category__image__horizontal single-category__image--three single-category__image--three--creativehome">
                                                 <img
@@ -263,20 +281,23 @@ const Section3 = () => {
                                             </div>
                                             <div className="single-category__content single-category__content--three single-category__content--three--creativehome">
                                                 <div className="title">
-                                                    <p>
+                                                    <div style={{backgroundColor: "rgba(0, 0, 0, 0.3)", paddingLeft: "15px"}}>
+                                                        <p>
+                                                            <Link
+                                                                to="/"
+                                                                as="/"
+                                                            >
+                                                                TREND
+                                                            </Link>
+                                                        </p>
                                                         <Link
                                                             to="/"
                                                             as="/"
                                                         >
-                                                            TREND
+                                                            당근에서 겟한 물건 나에겐 N차 신상
                                                         </Link>
-                                                    </p>
-                                                    <Link
-                                                        to="/"
-                                                        as="/"
-                                                    >
-                                                        당근에서 겟한 물건 나에겐 N차 신상
-                                                    </Link>
+                                                    </div>
+
                                                 </div>
                                             </div>
                                             <Link
@@ -287,7 +308,7 @@ const Section3 = () => {
                                             </Link>
                                         </div>
                                     </Col>
-                                    <Col lg={6}>
+                                    <Col xs={6} sm={6} md={6} lg={6} >
                                         <div className="single-category single-category--three space-mb--30">
                                             <div className="single-category__image single-category__image__horizontal single-category__image--three single-category__image--three--creativehome">
                                                 <img
@@ -298,20 +319,23 @@ const Section3 = () => {
                                             </div>
                                             <div className="single-category__content single-category__content--three single-category__content--three--creativehome">
                                                 <div className="title">
-                                                    <p>
+                                                    <div style={{backgroundColor: "rgba(0, 0, 0, 0.3)", paddingLeft: "15px"}}>
+                                                        <p>
+                                                            <Link
+                                                                to="/"
+                                                                as="/"
+                                                            >
+                                                                진료일정표
+                                                            </Link>
+                                                        </p>
                                                         <Link
                                                             to="/"
                                                             as="/"
                                                         >
-                                                            진료일정표
-                                                        </Link>
-                                                    </p>
-                                                    <Link
-                                                        to="/"
-                                                        as="/"
-                                                    >
 
-                                                    </Link>
+                                                        </Link>
+                                                    </div>
+
                                                 </div>
                                             </div>
                                             <Link

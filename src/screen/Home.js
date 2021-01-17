@@ -9,7 +9,7 @@ import Cover from "../components/home/Cover";
 
 import Section1 from "../components/home/Section1";
 import Section2 from "../components/home/Section2";
-// import Section3 from "../components/home/Section3";
+import Section3 from "../components/home/Section3";
 
 import Service from "../components/home/Service";
 
@@ -26,7 +26,7 @@ const Home = () => {
 
                 <Section2/>
 
-                {/*<Section3/>*/}
+                <Section3/>
 
                 <Service/>
 

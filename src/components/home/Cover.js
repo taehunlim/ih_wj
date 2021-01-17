@@ -72,7 +72,7 @@ const Cover = () => {
         {
             id: "3",
             src: img3,
-            url: 3,
+            url: 1,
             head: head[2],
             caption: caption[2]
         }
@@ -100,10 +100,10 @@ const Cover = () => {
     };
 
     const settingsThumbs = {
-        slidesToShow: 3,
+        slidesToShow: 2,
         slidesToScroll: 1,
         asNavFor: '.slider-for',
-        centerMode: true,
+        // centerMode: true,
         swipeToSlide: true,
         focusOnSelect: true,
         centerPadding: '5px',

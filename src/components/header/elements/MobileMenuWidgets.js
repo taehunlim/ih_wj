@@ -1,11 +1,11 @@
 import React from 'react'
 import {
   IoIosPhonePortrait,
-  IoMdMail,
-  IoLogoYoutube,
-  IoLogoFacebook,
-  IoLogoInstagram,
+  // IoMdMail,
+
 } from "react-icons/io";
+import {FaBloggerB, FaFacebookF, FaTwitter} from "react-icons/fa/index";
+import {GoMailRead} from "react-icons/go/index";
 
 const MobileMenuWidgets = () => {
   return (
@@ -14,36 +14,28 @@ const MobileMenuWidgets = () => {
         <ul>
           <li>
             <IoIosPhonePortrait />
-            <a href="tel://12452456012">(1245) 123-1234 </a>
+            <a href="tel:031-900-0114" title="전화걸기">(031) 900-0114</a>,
+            <a href="tel:031-900-3114" title="전화걸기">3114</a>
           </li>
-          <li>
-            <IoMdMail />
-            <a href="mailto:info@yourdomain.com">info@yourdomain.com</a>
-          </li>
+          {/*<li>*/}
+          {/*  <IoMdMail />*/}
+          {/*  <a href="mailto:info@yourdomain.com">info@yourdomain.com</a>*/}
+          {/*</li>*/}
         </ul>
       </div>
 
       <div className="social-widget">
-        <a
-            href="/"
-            target="_blank"
-            rel="noreferrer"
-        >
-          <IoLogoFacebook />
+        <a href="https://blog.naver.com/hello_health" target="_blank" rel="noreferrer">
+          <FaBloggerB/>
         </a>
-        <a
-            href="/"
-            target="_blank"
-            rel="noreferrer"
-        >
-          <IoLogoInstagram/>
+        <a href="https://www.facebook.com/nhimc.hello.health" target="_blank" rel="noreferrer">
+          <FaFacebookF/>
         </a>
-        <a
-            href="/"
-            target="_blank"
-            rel="noreferrer"
-        >
-          <IoLogoYoutube/>
+        <a href="https://twitter.com/Hello_Health" target="_blank" rel="noreferrer">
+          <FaTwitter/>
+        </a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScsK3i7h-PjxH9vbklEFnTtWbInzWX05VovCjXDHFA0Xv7-Fw/viewform?vc=0&c=0&w=1&flr=0" target="_blank" rel="noreferrer">
+          <GoMailRead/>
         </a>
       </div>
     </div>
