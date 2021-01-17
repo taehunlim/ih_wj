@@ -297,103 +297,72 @@ const SectionThree = ({match}) => {
 
             <div className="">
                 <Row>
-                    <Col lg={12}>
-                        <table className="ih-article">
-                            {/*<tbody>*/}
+                    {/*<Col lg={6}>*/}
 
-                            <tbody style={{borderBottom: "1px solid"}}>
-                            <tr>
-                                <td style={{width: "10%"}}>
-                                    유종하 <br/> 진단검사의학과
-                                </td>
-                                <td style={{width: "15%"}}>
-                                    대한진단검사의학회<br/>
-                                    우수연제상
+                    {/*    <div className="">*/}
+                    {/*        <CardBody className="color-of-life__header pt-0 pb-0" style={{backgroundColor: "powderblue"}}>*/}
+                    {/*            <div className="d-flex align-items-center">*/}
+                    {/*                <img src={icon} alt="/"/>*/}
 
-                                </td>
-                                <td style={{width: "15%"}}>
-                                    2020년 진단검사의학회 <br/>국제학술대회
+                    {/*                <CardBody className="pt-0 pb-0">*/}
+                    {/*                    <CardTitle style={{fontSize: "24px"}}>*/}
+                    {/*                        포상*/}
+                    {/*                    </CardTitle>*/}
+                    {/*                </CardBody>*/}
 
-                                </td>
-                                <td style={{width: "10%"}}>
-                                    2020.09
+                    {/*            </div>*/}
+                    {/*        </CardBody>*/}
 
-                                </td>
-                                <td style={{width: "40%"}}>
-                                    Construction of Bone Marrow Report Registry Using Clinical Data <br/> Warehouse
+                    {/*        <div className="">*/}
+                    {/*            <h5>2020년 일산병원 우수 홍보인</h5>*/}
+                    {/*        </div>*/}
+                    {/*        <table className="ih-article">*/}
+                    {/*            /!*<tbody>*!/*/}
 
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </Col>
+                    {/*            <tbody style={{borderBottom: "1px solid"}}>*/}
+                    {/*            <tr>*/}
+                    {/*                <td style={{width: "30%"}}>*/}
+                    {/*                    최우수상*/}
+                    {/*                </td>*/}
+                    {/*                <td style={{width: "70%", textAlign: "end"}}>*/}
+                    {/*                    호흡기내과 한창훈*/}
+                    {/*                </td>*/}
 
-                    <Col>
-
-                        <div className="">
-                            <CardBody className="color-of-life__header pt-0 pb-0" style={{backgroundColor: "powderblue"}}>
-                                <div className="d-flex align-items-center">
-                                    <img src={icon} alt="/"/>
-
-                                    <CardBody className="pt-0 pb-0">
-                                        <CardTitle style={{fontSize: "24px"}}>
-                                            포상
-                                        </CardTitle>
-                                    </CardBody>
-
-                                </div>
-                            </CardBody>
-
-                            <div className="">
-                                <h5>2020년 일산병원 우수 홍보인</h5>
-                            </div>
-                            <table className="ih-article">
-                                {/*<tbody>*/}
-
-                                <tbody style={{borderBottom: "1px solid"}}>
-                                <tr>
-                                    <td style={{width: "30%"}}>
-                                        최우수상
-                                    </td>
-                                    <td style={{width: "70%", textAlign: "end"}}>
-                                        호흡기내과 한창훈
-                                    </td>
-
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                    {/*            </tr>*/}
+                    {/*            </tbody>*/}
+                    {/*        </table>*/}
+                    {/*    </div>*/}
 
 
 
 
-                        <div className="">
+                    {/*    <div className="">*/}
 
-                            <div className="">
-                                <h5>하반기 친절직원</h5>
-                            </div>
-                            <table className="ih-article">
-                                {/*<tbody>*/}
+                    {/*        <div className="">*/}
+                    {/*            <h5>하반기 친절직원</h5>*/}
+                    {/*        </div>*/}
+                    {/*        <table className="ih-article">*/}
+                    {/*            /!*<tbody>*!/*/}
 
-                                <tbody style={{borderBottom: "1px solid"}}>
-                                <tr>
-                                    <td style={{width: "30%"}}>
-                                        최우수상
-                                    </td>
-                                    <td style={{width: "70%", textAlign: "end"}}>
-                                        호흡기내과 한창훈
-                                    </td>
+                    {/*            <tbody style={{borderBottom: "1px solid"}}>*/}
+                    {/*            <tr>*/}
+                    {/*                <td style={{width: "30%"}}>*/}
+                    {/*                    최우수상*/}
+                    {/*                </td>*/}
+                    {/*                <td style={{width: "70%", textAlign: "end"}}>*/}
+                    {/*                    호흡기내과 한창훈*/}
+                    {/*                </td>*/}
 
-                                </tr>
-                                </tbody>
+                    {/*            </tr>*/}
+                    {/*            </tbody>*/}
 
-                            </table>
-                        </div>
+                    {/*        </table>*/}
+                    {/*    </div>*/}
 
-                    </Col>
+                    {/*</Col>*/}
 
 
-                    <Col>
+                    <Col lg={6}>
 
                         <div className="">
                             <CardBody className="color-of-life__header pt-0 pb-0" style={{backgroundColor: "powderblue"}}>

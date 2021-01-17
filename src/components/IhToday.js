@@ -13,7 +13,10 @@ import {
 
 import icon1 from "../assets/images/section3/today/icon1.jpg";
 import icon2 from "../assets/images/section3/today/icon2.jpg";
+import icon3 from '../assets/images/section3/today/icon3.jpg'
 import icon4 from "../assets/images/section3/today/icon4.jpg";
+import icon5 from '../assets/images/section3/today/icon5.jpg'
+import icon6 from "../assets/images/section3/today/icon6.jpg";
 
 
 const IhToday = ({item}) => {
@@ -307,9 +310,175 @@ const IhToday = ({item}) => {
             </div>
 
 
+            <Col lg={12} className="mb-5">
+
+                <Row>
+                    <Col lg={6}>
+                        <div className="">
+                            {item.merry ?
+                                <CardBody className="color-of-life__header pt-0 pb-0" style={{backgroundColor: "powderblue"}}>
+                                    <div className="d-flex align-items-center">
+                                        <img src={icon6} alt="/"/>
+
+                                        <CardBody className="pt-0 pb-0">
+                                            <CardTitle style={{fontSize: "24px"}}>
+                                                결혼
+                                            </CardTitle>
+                                        </CardBody>
+
+                                    </div>
+                                </CardBody> : ""
+                            }
+
+                            <table className="ih-article">
+                                {/*<tbody>*/}
+
+                                {item.merry ? item.merry.map((m) => (
+
+                                        <tbody style={{borderBottom: "1px solid"}}>
+                                        <tr>
+                                            <td style={{width: "20%"}}>
+                                                {m.mDate}
+                                            </td>
+                                            <td>
+                                                {m.mName}
+                                            </td>
+                                            <td style={{width: "60%", textAlign: "end"}}>
+                                                {m.mDm}
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    ))
+                                    : ""}
+
+                            </table>
+                        </div>
+                    </Col>
 
 
+                    <Col lg={6}>
+                        <div className="">
+                            {item.childbirth ?
+                                <CardBody className="color-of-life__header pt-0 pb-0" style={{backgroundColor: "powderblue"}}>
+                                    <div className="d-flex align-items-center">
+                                        <img src={icon5} alt="/"/>
 
+                                        <CardBody className="pt-0 pb-0">
+                                            <CardTitle style={{fontSize: "24px"}}>
+                                                출산
+                                            </CardTitle>
+                                        </CardBody>
+
+                                    </div>
+                                </CardBody> : ""
+                            }
+                            <table className="ih-article">
+                                {/*<tbody>*/}
+
+                                {item.childbirth ? item.childbirth.map((b) => (
+                                        <tbody style={{borderBottom: "1px solid"}}>
+                                        <tr>
+                                            <td style={{width: "20%"}}>
+                                                {b.bDate}
+                                            </td>
+                                            <td>
+                                                {b.bName}
+                                            </td>
+                                            <td style={{width: "60%", textAlign: "end"}}>
+                                                {b.bDm}
+                                            </td>
+
+                                        </tr>
+                                        </tbody>
+                                    ))
+                                    : ""}
+                            </table>
+                        </div>
+                    </Col>
+                </Row>
+
+            </Col>
+
+            <Col lg={12} className="mb-5">
+                <Row>
+                    <Col lg={6}>
+                        <div className="">
+                            {item.outstanding ?
+                                <CardBody className="color-of-life__header pt-0 pb-0" style={{backgroundColor: "powderblue"}}>
+                                    <div className="d-flex align-items-center">
+                                        <img src={icon3} alt="/"/>
+
+                                        <CardBody className="pt-0 pb-0">
+                                            <CardTitle style={{fontSize: "24px"}}>
+                                                2020년 일산병원 우수 홍보인
+                                            </CardTitle>
+                                        </CardBody>
+
+                                    </div>
+                                </CardBody> : ""
+                            }
+                            <table className="ih-article">
+                                {/*<tbody>*/}
+
+                                {item.outstanding ? item.outstanding.map((o) => (
+                                        <tbody style={{borderBottom: "1px solid"}}>
+                                        <tr>
+                                            <td style={{width: "30%"}}>
+                                                {o.oAward}
+                                            </td>
+                                            <td className="text-center">
+                                                {o.oDm}
+                                            </td>
+                                            <td style={{width: "50%", textAlign: "end"}}>
+                                                {o.oName}
+                                            </td>
+
+                                        </tr>
+                                        </tbody>
+                                    ))
+                                    : ""}
+                            </table>
+                        </div>
+                    </Col>
+
+                    <Col>
+                        <div className="">
+                            {item.kind ?
+                                <CardBody className="color-of-life__header pt-0 pb-0" style={{backgroundColor: "powderblue"}}>
+                                    <div className="d-flex align-items-center">
+                                        <img src={icon3} alt="/"/>
+
+                                        <CardBody className="pt-0 pb-0">
+                                            <CardTitle style={{fontSize: "24px"}}>
+                                                하반기 친절직원
+                                            </CardTitle>
+                                        </CardBody>
+
+                                    </div>
+                                </CardBody> : ""
+                            }
+                            <table className="ih-article">
+                                {/*<tbody>*/}
+
+                                {item.kind ? item.kind.map((k) => (
+                                        <tbody style={{borderBottom: "1px solid"}}>
+                                        <tr>
+                                            <td style={{width: "50%"}}>
+                                                {k.kName}
+                                            </td>
+                                            <td style={{width: "50%", textAlign: "end"}}>
+                                                {k.kDm}
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    ))
+                                    : ""}
+                            </table>
+                        </div>
+                    </Col>
+                </Row>
+
+            </Col>
 
         </Fragment>
     );
