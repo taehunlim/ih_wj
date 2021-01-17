@@ -6,11 +6,12 @@ import {
     CardText,
     CardImg,
     CardTitle,
-    CardSubtitle
+    CardSubtitle,
 } from 'reactstrap';
 
 import HeaderP from "../components/header/HeaderP";
 import Footer from "../components/footer/Footer";
+import IhToday from "../components/IhToday";
 
 import around1 from '../assets/images/section3/around1.jpg'
 import around2 from '../assets/images/section3/around2.jpg'
@@ -51,11 +52,16 @@ import treatment3 from '../assets/images/section3/treatment/3.png'
 import treatment4 from '../assets/images/section3/treatment/4.png'
 
 
-import clinic from '../assets/images/section2/clinic.png';
+import today1 from "../assets/images/section3/today/1.jpg"
+import today2 from "../assets/images/section3/today/2.jpg"
+import today3 from "../assets/images/section3/today/3.jpg"
+import today4 from "../assets/images/section3/today/4.jpg"
+import today5 from "../assets/images/section3/today/5.jpg"
+import today6 from "../assets/images/section3/today/6.jpg"
+
 
 import moment from '../assets/images/section2/moment.jpg'
-import moment1 from '../assets/images/section2/moment1.jpg'
-import moment2 from '../assets/images/section2/moment2.jpg'
+
 
 
 const SectionThree = ({match}) => {
@@ -535,69 +541,618 @@ const SectionThree = ({match}) => {
 
     const ctitle6 = [
         (
-            <div>
 
-            </div>
+            <span style={{borderBottom: "1px solid"}}>
+                <span style={{fontWeight: "normal"}}>10.01. </span>
+                YTN뉴스
+            </span>
         ),
         (
-            <div style={{color: "saddlebrown"}}>
-                다양한 원인
-            </div>
+
+            <span style={{borderBottom: "1px solid"}}>
+               <span style={{fontWeight: "normal"}}>11.05. </span>
+                KBS아침마당
+            </span>
         ),
         (
-            <div style={{color: "saddlebrown"}}>
-                정확한 진단이 중요
-            </div>
+            <span style={{borderBottom: "1px solid"}}>
+                 <span style={{fontWeight: "normal"}}>11.18. </span>
+                JTBC뉴스
+            </span>
         ),
         (
-            <div style={{color: "saddlebrown"}}>
-                치료와 예방
-            </div>
-        )
+            <span style={{borderBottom: "1px solid"}}>
+                 <span style={{fontWeight: "normal"}}>12.14. </span>
+                YTN뉴스 [제보는Y]
+            </span>
+        ),
+        (
+            <span style={{borderBottom: "1px solid"}}>
+                <span style={{fontWeight: "normal"}}>12.19. </span>
+                YTN뉴스
+            </span>
+        ),
+        (
+            <span style={{borderBottom: "1px solid"}}>
+                <span style={{fontWeight: "normal"}}>12.29. </span>
+                KBS굿모닝대한민국
+            </span>
+        ),
     ]
 
     const ctext6 = [
         (
             <div>
-                일반적으로 많은 사람이 손발이 저리면 혈액순환이 되지 않는다고 생각하지만, 이는 잘못된 상식이다. 혈액순환 장애에 의한 증상은 저림이 아니라 통증으로 주로 나타나고, 손발이 창백해지거나 자주색으로 변하고 감각이 둔해지기도 한다.
+                뉴스연휴에 갑자기 열나는 우리 아이, 어떻게 해야 하나?
             </div>
         ),
         (
             <div>
-                신경계는 뇌-척수-말초신경으로 이루어져 있고, 이 중 어디라도 이상이 생기면 손발 저림이 발생할 수 있다. 뇌에 이상이 있으면 손발 저림이 대부분 한쪽에 나타나고 두통, 어지럼증, 발음장애, 언어장애, 근력저하, 보행장애 등 다른 증상을 동반하는 경우가 많다. 특히 뇌졸중에서는 증상이 갑자기 발생하는 특징이 있고, 드물게 한쪽 손과 입술만 저리는 뇌졸중도 있다. 척수에 이상이 있을 경우에는 손발 저림이 대부분 양쪽에 나타나고 보행장애, 대소변 장애 등이 동반되며, 척추병에 의한 척수의 압박, 척수염, 척수종양 등이 원인이다.
+                노인건강-건강검진
+            </div>
+        ),
+        (
+            <div>
+                숨 막힐까 조마... 산후조리원 곳곳 ‘신생아 셀프 수유’
+            </div>
+        ),
+        (
+            <div>
+                신생아 입에 젖병이... 생명 위협하는 ‘셀프수유’ 덜미
+            </div>
+        ),
+        (
+            <div>
+                “드디어 병원에”... 자택 대기 환자 일부 병원 배정
+            </div>
+        ),
+        (
+            <div>
+                국가건강검진
+            </div>
+        )
+    ]
+
+
+    const date = [
+        (
+            <div>
+                <span className="border-bottom--dark">2020.<br/>10. 05.</span><br/>
+                <span className="font-weight-bold">경향신문</span>
+            </div>
+        ),
+        (
+            <div>
+                <span className="border-bottom--dark">2020.<br/>11. 25.</span><br/>
+                <span className="font-weight-bold">조선일보</span>
+            </div>
+        ),
+        (
+            <div>
+                <span className="border-bottom--dark">2020.<br/>10. 17.</span><br/>
+                <span className="font-weight-bold">동아일보</span>
+            </div>
+        ),
+        (
+            <div>
+                <span className="border-bottom--dark">2020.<br/>11. 27.</span><br/>
+                <span className="font-weight-bold">경향신문</span>
+            </div>
+        ),
+
+
+        (
+            <div>
+                <span className="border-bottom--dark">2020.<br/>10. 21.</span><br/>
+                <span className="font-weight-bold">국민일보</span>
+            </div>
+        ),
+        (
+            <div>
+                <span className="border-bottom--dark">2020.<br/>12. 04.</span><br/>
+                <span className="font-weight-bold">헬스조선</span>
+            </div>
+        ),
+        (
+            <div>
+                <span className="border-bottom--dark">2020.<br/>10. 27.</span><br/>
+                <span className="font-weight-bold">헬스경향</span>
+            </div>
+        ),
+        (
+            <div>
+                <span className="border-bottom--dark">2020.<br/>12. 08.</span><br/>
+                <span className="font-weight-bold">경향신문</span>
+            </div>
+        ),
+
+
+        (
+            <div>
+                <span className="border-bottom--dark">2020.<br/>10. 29.</span><br/>
+                <span className="font-weight-bold">뉴스1</span>
+            </div>
+        ),
+        (
+            <div>
+                <span className="border-bottom--dark">2020.<br/>12. 08.</span><br/>
+                <span className="font-weight-bold">메디게이트뉴스</span>
+            </div>
+        ),
+        (
+            <div>
+                <span className="border-bottom--dark">2020.<br/>10. 30.</span><br/>
+                <span className="font-weight-bold">연합뉴스</span>
+            </div>
+        ),
+        (
+            <div>
+                <span className="border-bottom--dark">2020.<br/>12. 15.</span><br/>
+                <span className="font-weight-bold">헤럴드경제</span>
+            </div>
+        ),
+
+
+        (
+            <div>
+                <span className="border-bottom--dark">2020.<br/>11. 10.</span><br/>
+                <span className="font-weight-bold">서울신문</span>
+            </div>
+        ),
+        (
+            <div>
+                <span className="border-bottom--dark">2020.<br/>12. 15.</span><br/>
+                <span className="font-weight-bold">메디파나뉴스</span>
+            </div>
+        ),
+        (
+            <div>
+                <span className="border-bottom--dark">2020.<br/>11. 18.</span><br/>
+                <span className="font-weight-bold">연합뉴스</span>
+            </div>
+        ),
+        (
+            <div>
+                <span className="border-bottom--dark">2020.<br/>12. 31.</span><br/>
+                <span className="font-weight-bold">국민일보</span>
+            </div>
+        )
+    ]
+    const write = [
+        (
+            <div>
+                <span className="font-weight-bold">[기고]마스크, 면역의 한 가지 형태</span><br/>
+                <span className="">감염내과 최흔 교수</span>
+            </div>
+        ),
+        (
+            <div>
+                <span className="font-weight-bold">10代 입원, 위장염이 1위</span><br/>
+                <span className="">소아청소년과 유지형 교수</span>
+            </div>
+        ),
+        (
+            <div>
+                <span className="font-weight-bold">‘취업난’ 엎친데 ‘코로나’ 덮친 20대, 사회 첫발부터 <br/> 좌절감</span><br/>
+                <span className="">정신건강의학과 박선영 교수</span>
+            </div>
+        ),
+        (
+            <div>
+                <span className="font-weight-bold">골든타임 다투는 심뇌혈관질환, 진료·검사·상담<br/> ‘하루에’</span><br/>
+                <span className=""></span>
+            </div>
+        ),
+
+
+        (
+            <div>
+                <span className="font-weight-bold">건보 일산병원, 고위험 산모·신생아 통합치료 권역 <br/>거점 국민일보 ‘우뚝’</span>
                 <br/>
-                손발 저림은 대부분 뇌나 척수보다는 말초신경의 이상으로 발생한다. 신경뿌리병은 척수에서 나오는 신경뿌리가 눌리거나 자극을 받아 염증이 생기는 상태로, 경추에서 발생하면 팔과 손이 저리고, 요추에서 발생하면 다리와 발이 저릴 수 있다. 주로 한쪽에 나타나며 추간판탈출증이나 척추관협착증이 흔한 원인이다. 손 저림의 가장 흔한 원인은 손목굴증후군이다. 손목굴증후군은 손끝과 손바닥이 저리고 밤에 저림 증상이 심해진다. 주방 일이나 청소처럼 손을 많이 사용하는 일을 하거나 임산부, 류머티즘성관절염 환자, 갑상선기능저하증 환자, 당뇨병 환자, 투석을 받는 환자에서 잘 발생한다. 다발신경병에서 나타나는 손 발 저림은 양쪽 발 끝에서 저림이 시작하여 점차 발등, 발목으로 저림이 올라오면서 양쪽 손끝도 저리게 되는 특징을 보인다. 다발신경병은 당뇨병이 가장 흔한 원인이고, 알코올·항암 치료 등에 의해서도 발생한다.
+                <span className="">감염내과 최흔 교수</span>
             </div>
         ),
         (
             <div>
-                손발 저림이 지속될 때 혈액순환 장애라고 생각하고 혈액순환제만 복용하다가 치료 시기를 놓치지 말아야 한다. 손발 저림은 원인이 매우 다양하기 때문에 해당 전문분야 의사에게 진료를 받는 것이 중요하다. 의사는 병력과 진찰을 통해 신경계 이상이 있는지를 판단하고, 필요시 신경계의 어느 부위에 이상이 있는지 확인하기 위하여 신경전도검사나 근전도검사, 척추CT나 MRI, 뇌 CT나 MRI 등을 시행한다. 손발 저림의 원인을 찾기 위해 혈액검사나 뇌척수액검사 등을 추가하기도 한다. 그러나 검사를 해도 손발 저림의 원인이 밝혀지지 않는 경우도 있다.
+                <span className="font-weight-bold">기억'을 잡아라... 뇌 재활’로 藥 한계 보충</span><br/>
+                <span className="">신경과 이준홍 교수</span>
             </div>
         ),
         (
             <div>
-                손발 저림에 대한 치료는 원인에 따라 다르고, 원인을 치료하거나 증상 완화 치료를 하면 손발 저림이 호전되거나 줄어든다. 손발 저림을 완전히 예방할 수는 없지만 원인에 따라 발생 빈도와 심한 정도를 줄일 수 있다. 되도록 손발의 반복적인 움직임을 피하고, 반복적인 움직임이 꼭 필요하다면 사이에 휴식을 취하는것이 좋다. 당뇨병 등 손발 저림을 유발할 수 있는 만성질환이 있다면 해당 질환을 적극적으로 치료하면서 신경병이 합병증으로 발생하는지 주의 깊게 관찰해야 한다.
+                <span className="font-weight-bold">일상 속 흔한 ‘입병(구내염)’...꼭 피곤해서만은 아냐</span><br/>
+                <span className="">소화기내과 이용강 교수</span>
             </div>
-        )
-    ]
-
-    const ctitle7 = [
+        ),
         (
             <div>
-
+                <span className="font-weight-bold">3개월 넘게 속 쓰리고 더부룩...알고 보니 <br/>‘기능성 소화불량’</span><br/>
+                <span className=""></span>
             </div>
-        )
-    ]
+        ),
 
-    const ctext7 = [
+
         (
             <div>
-                코로나19 전담병동은 이동동선 통제, 별도 공조시스템 및 음압시설 구축, 전담 의료진 배치 등 일반 입원병동과 철저히 분리해 감염 문제로부터 구조적 안전을 확보했습니다.
+                <span className="font-weight-bold">“생활치료센터, 감염병 대유행시 의료붕괴 막는데<br/> 효과적”</span><br/>
+                <span className="">재활의학과 김형섭 교수</span>
+            </div>
+        ),
+        (
+            <div>
+                <span className="font-weight-bold">코로나19 확진자 데이터로 사망예측 이어 환자분류<br/> AI 개발</span><br/>
+                <span className="">연구소안창식교수</span>
+            </div>
+        ),
+        (
+            <div>
+                <span className="font-weight-bold">일산병원, ‘희망둥이 성장발달 클리닉’ 운영</span><br/>
+                <span className=""></span>
+            </div>
+        ),
+        (
+            <div>
+                <span className="font-weight-bold">고단백 다이어트의 함정...과다 섭취, 신장·대장 망가져요</span><br/>
+                <span className="">가정의학과 최영은 교수</span>
+            </div>
+        ),
+
+
+        (
+            <div>
+                <span className="font-weight-bold">아토피와 닮은 듯 다른 ‘건선’... 샤워하면 더 가려워요</span><br/>
+                <span className="">피부과 조남준 교수</span>
+            </div>
+        ),
+        (
+            <div>
+                <span className="font-weight-bold">건보 일산병원, 급성심장정지조사 유공기관 복지부장관상</span>수상<br/>
                 <br/>
-                또한 정기적으로 전직원뿐 아니라 병원 전체 시설물 및 다중이용 동선을 체크해 코로나 PCR 검사를 시행하는 등 코로나19로부터의 안전 확보에 만전을 기하고 있습니다.
+                <span className=""></span>
+            </div>
+        ),
+        (
+            <div>
+                <span className="font-weight-bold">바람만 스쳐도 아프다는 ‘통풍’ 환자 5년간 35.8% 증가</span><br/>
+                <span className="">류마티스내과 박진수 교수</span>
+            </div>
+        ),
+        (
+            <div>
+                <span className="font-weight-bold">건보 일산병원, 우수한 방역 조치로 감염 확산 막아</span><br/>
+                <span className=""></span>
             </div>
         )
     ]
+
+
+    const winner = [
+        (
+            <div>
+                유종하 <br/>진단검사의학과
+            </div>
+        ),
+        (
+            <div>
+                노성현<br/>신경외과
+            </div>
+        ),
+        (
+            <div>
+                유종하 <br/>진단검사의학과
+            </div>
+        ),
+        (
+            <div>
+                지용우 <br/>안과
+            </div>
+        ),
+        (
+            <div>
+                김의혁 <br/>산부인과
+            </div>
+        ),
+        (
+            <div>
+                노성현 <br/>신경외과
+            </div>
+        ),
+        (
+            <div>
+                김의혁 <br/>산부인과
+            </div>
+        ),
+        (
+            <div>
+                이장우 <br/>재활의학과
+            </div>
+        ),
+        (
+            <div>
+                김의혁 <br/>산부인과
+            </div>
+        ),
+        (
+            <div>
+                이만우 <br/>소화기내과
+            </div>
+        ),
+        (
+            <div>
+                배소희 <br/>영상의학과
+            </div>
+        ),
+        (
+            <div>
+                유종하 <br/>진단검사의학과
+            </div>
+        )
+    ]
+    const cName = [
+        (
+            <div>
+                대한진단검사의학회 <br/>
+                우수연제상
+            </div>
+        ),
+        (
+            <div>
+                나누리 학술상
+            </div>
+        ),
+        (
+            <div>
+                우수논문상
+            </div>
+        ),
+        (
+            <div>
+                구연상
+            </div>
+        ),
+        (
+            <div>
+                포스터상
+            </div>
+        ),
+        (
+            <div>
+                대한산부인과초음파학회 <br/>
+                우수논문상
+            </div>
+        ),
+        (
+            <div>
+
+                제 60차 대한신경외과 추계학술 <br/>
+                대회 척추부분 정환영 학술상
+            </div>
+        ),
+        (
+            <div>
+                대한산부인과초음파학회 <br/>
+                우수논문상
+            </div>
+        ),
+        (
+            <div>
+                최우수 구연상
+            </div>
+        ),
+        (
+            <div>
+                제 47회 한국모자보건학회 <br/>
+                추계학술대회 구연발표 대상
+            </div>
+        ),
+        (
+            <div>
+
+                DISTINGUISHED POSTER <br/> AWARD
+            </div>
+        ),
+        (
+            <div>
+                뇌기능 연구회 논문상 우수상
+            </div>
+        )
+    ]
+    const conference = [
+        (
+            <div>
+                2020년 진단검사의학회 <br/>
+                국제학술대회
+            </div>
+        ),
+        (
+            <div>
+                제 34차 대한척추신경외과학회 <br/>
+                정기학술대회
+            </div>
+        ),
+        (
+            <div>
+                대한임상화학회
+            </div>
+        ),
+        (
+            <div>
+                대한안과학회
+            </div>
+        ),
+        (
+            <div>
+                대한안과학회
+            </div>
+        ),
+        (
+            <div>
+                대한산부인과초음파학회
+            </div>
+        ),
+        (
+            <div>
+                대한신경외과학회
+            </div>
+        ),
+        (
+            <div>
+                대한산부인과초음파학회
+            </div>
+        ),
+        (
+            <div>
+                대한심장호흡재활의학회
+            </div>
+        ),
+        (
+            <div>
+                제 47회 한국모자보건학회 추계학술대회
+            </div>
+        ),
+        (
+            <div>
+                International Digestive Endoscopy <br/>
+                Network 2020(IDEN2020)
+            </div>
+        ),
+        (
+            <div>
+                뇌기능 연구회
+            </div>
+        )
+    ]
+    const cDate = [
+        (
+            <div>
+                2020.09
+            </div>
+        ),
+        (
+            <div>
+                2020.09
+            </div>
+        ),
+        (
+            <div>
+                2020.10
+            </div>
+        ),
+        (
+            <div>
+                2020.10
+            </div>
+        ),
+        (
+            <div>
+                2020.10
+            </div>
+        ),
+        (
+            <div>
+                2020.11
+            </div>
+        ),
+        (
+            <div>
+                2020.10
+            </div>
+        ),
+        (
+            <div>
+                2020.11
+            </div>
+        ),
+        (
+            <div>
+                2020.11
+            </div>
+        ),
+        (
+            <div>
+                2020.11
+            </div>
+        ),
+        (
+            <div>
+                2020.09
+            </div>
+        ),
+        (
+            <div>
+                2020.11
+            </div>
+        ),
+    ]
+    const content = [
+        (
+            <div>
+                Construction of Bone Marrow Report Registry Using Clinical Data <br/>
+                Warehouse
+            </div>
+        ),
+        (
+            <div>
+                Modified Global Alignment and Proportion Scoring with Body Mass Index and Bone Mineral Density (GAPB) analysis in Global Alignment and Proportion (GAP) score of each 3 categories for predicting mechanical complications after Adult Spinal Deformity Surgery
+            </div>
+        ),
+        (
+            <div>
+                현장검사 분석 기기인 ABL90 FLEX PLUS의 <br/>
+                크레아티닌 분석능 평가
+            </div>
+        ),
+        (
+            <div>
+                프로테옴 분석 기반의 경도인지장애와 알츠하이머 <br/>
+                특이적 눈물 바이오마커 발굴
+            </div>
+        ),
+        (
+            <div>
+                파킨슨병 마우스 모델에서 망막의 기능 및 구조적 변화 연구
+            </div>
+        ),
+        (
+            <div>
+                Benefits and risks of induction of labor at 39 or more weeks in uncomplicated nulliparous women:
+                a retrospective, observational study.
+            </div>
+        ),
+        (
+            <div>
+                Modified global alignment and proportion scoring with body mass index and bone mineral density (GAPB) for improving predictions of mechanical complications after adult spinal deformity surgery
+            </div>
+        ),
+        (
+            <div>
+                Benefits and risks of induction of labor at 39 or more weeks in uncomplicated nulliparous women:
+                a retrospective, observational study.
+            </div>
+        ),
+        (
+            <div>
+                Current status of cardiac rehabilitation in Korea
+            </div>
+        ),
+        (
+            <div>
+                저출산시대의 고위험임산부 전국 현황 및 고위험임산부 <br/>
+                지원 정책 개선방향에 대한 연구
+            </div>
+        ),
+        (
+            <div>
+                Associated risk factors for loss to surveillance follow up in patients with gastric neoplasms after endoscopic submucosal dissection
+            </div>
+        ),
+        (
+            <div>
+                Robust performance of deep learning for distinguishing glioblastoma from single brain metastasis using radiomics features: model development and validation
+            </div>
+        )
+    ]
+
 
     const items = [
         {
@@ -762,28 +1317,207 @@ const SectionThree = ({match}) => {
         },
         {
             id: "6",
-            src: clinic,
             head: head[5],
-            title: title[5],
-            subtitle: subtitle[5],
-            caption: [
+            airing: [
                 {
+                    src: today1,
                     ctitle: ctitle6[0],
                     ctext: ctext6[0]
                 },
                 {
+                    src: today2,
                     ctitle: ctitle6[1],
                     ctext: ctext6[1]
                 },
                 {
+                    src: today3,
                     ctitle: ctitle6[2],
                     ctext: ctext6[2]
                 },
                 {
+                    src: today4,
                     ctitle: ctitle6[3],
                     ctext: ctext6[3]
+                },
+                {
+                    src: today5,
+                    ctitle: ctitle6[4],
+                    ctext: ctext6[4]
+                },
+                {
+                    src: today6,
+                    ctitle: ctitle6[5],
+                    ctext: ctext6[5]
                 }
             ],
+            article: [
+                {
+
+                    date: date[0],
+                    write: write[0]
+                },
+                {
+
+                    date: date[1],
+                    write: write[1]
+                },
+                {
+
+                    date: date[2],
+                    write: write[2]
+                },
+                {
+
+                    date: date[3],
+                    write: write[3]
+                },
+                {
+
+                    date: date[4],
+                    write: write[4]
+                },
+                {
+
+                    date: date[5],
+                    write: write[5]
+                },
+                {
+
+                    date: date[6],
+                    write: write[6]
+                },
+                {
+
+                    date: date[7],
+                    write: write[7]
+                },
+                {
+
+                    date: date[8],
+                    write: write[8]
+                },
+                {
+
+                    date: date[9],
+                    write: write[9]
+                },
+                {
+
+                    date: date[10],
+                    write: write[10]
+                },
+                {
+
+                    date: date[11],
+                    write: write[11]
+                },
+                {
+
+                    date: date[12],
+                    write: write[12]
+                },
+                {
+
+                    date: date[13],
+                    write: write[13]
+                },
+                {
+
+                    date: date[14],
+                    write: write[14]
+                },
+                {
+
+                    date: date[15],
+                    write: write[15]
+                },
+            ],
+            celebration: [
+                {
+                    winner: winner[0],
+                    cName: cName[0],
+                    conference: conference[0],
+                    cDate: cDate[0],
+                    content: content[0]
+                },
+                {
+                    winner: winner[1],
+                    cName: cName[1],
+                    conference: conference[1],
+                    cDate: cDate[1],
+                    content: content[1]
+                },
+                {
+                    winner: winner[2],
+                    cName: cName[2],
+                    conference: conference[2],
+                    cDate: cDate[2],
+                    content: content[2]
+                },
+                {
+                    winner: winner[3],
+                    cName: cName[3],
+                    conference: conference[3],
+                    cDate: cDate[3],
+                    content: content[3]
+                },
+                {
+                    winner: winner[4],
+                    cName: cName[4],
+                    conference: conference[4],
+                    cDate: cDate[4],
+                    content: content[4]
+                },
+                {
+                    winner: winner[5],
+                    cName: cName[5],
+                    conference: conference[5],
+                    cDate: cDate[5],
+                    content: content[5]
+                },
+                {
+                    winner: winner[6],
+                    cName: cName[6],
+                    conference: conference[6],
+                    cDate: cDate[6],
+                    content: content[6]
+                },
+                {
+                    winner: winner[7],
+                    cName: cName[7],
+                    conference: conference[7],
+                    cDate: cDate[7],
+                    content: content[7]
+                },
+                {
+                    winner: winner[8],
+                    cName: cName[8],
+                    conference: conference[8],
+                    cDate: cDate[8],
+                    content: content[8]
+                },
+                {
+                    winner: winner[9],
+                    cName: cName[9],
+                    conference: conference[9],
+                    cDate: cDate[9],
+                    content: content[9]
+                },
+                {
+                    winner: winner[10],
+                    cName: cName[10],
+                    conference: conference[10],
+                    cDate: cDate[10],
+                    content: content[10]
+                },
+                {
+                    winner: winner[11],
+                    cName: cName[11],
+                    conference: conference[11],
+                    cDate: cDate[11],
+                    content: content[11]
+                }
+            ]
         },
         {
             id: "7",
@@ -793,18 +1527,7 @@ const SectionThree = ({match}) => {
             subtitle: subtitle[6],
             caption: [
                 {
-                    src: moment1,
-                    ctitle: "",
-                    ctext: ""
-                },
-                {
-                    src: moment2,
-                    ctitle: ctitle7[0],
-                    ctext: ctext7[0]
-                },
-                {
-                    ctitle: ctitle7[2],
-                    ctext: ctext7[2]
+
                 }
             ],
         },
@@ -853,7 +1576,7 @@ const SectionThree = ({match}) => {
 
             <Fragment>
                 <section>
-                    <Container style={{padding: "0px 100px", width: "80%"}}>
+                    <Container style={{padding: "0px 100px", width: "90%"}}>
                         <Card className="color-of-life">
                             <CardBody className="color-of-life__header">
                                 <div>
@@ -879,7 +1602,7 @@ const SectionThree = ({match}) => {
                                 </CardSubtitle>
                             </CardBody>
 
-                            {item.caption && item.caption.map((cap) => (
+                            {item.caption ? item.caption.map((cap) => (
                                 <CardBody className="color-of-life__body">
                                     <div style={{textAlign: "center"}}>
                                         {cap.src ?
@@ -894,7 +1617,11 @@ const SectionThree = ({match}) => {
                                         {cap.ctext}
                                     </CardText>
                                 </CardBody>
-                            ))}
+                            )): ""}
+
+
+                            <IhToday item={item}/>
+
                         </Card>
                     </Container>
                 </section>

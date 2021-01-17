@@ -739,7 +739,7 @@ const SectionTwo = ({match}) => {
 
             <Fragment>
                 <section>
-                    <Container style={{padding: "0px 100px", width: "80%"}}>
+                    <Container style={{padding: "0px 100px", width: "90%"}}>
                         <Card className="color-of-life">
                             <CardBody className="color-of-life__header">
                                 <div>
