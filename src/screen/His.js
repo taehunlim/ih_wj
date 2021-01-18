@@ -42,7 +42,7 @@ import img19 from '../assets/images/list/index_2016Spring.png'
 import img20 from '../assets/images/list/index_2016NewYear.png'
 
 
-const History = () => {
+const His = () => {
     return (
         <Fragment>
 
@@ -413,4 +413,4 @@ const History = () => {
     );
 };
 
-export default History;
+export default His;

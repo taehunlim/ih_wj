@@ -73,7 +73,13 @@ const Header = () => {
 
                     <div
                         className="ml-5"
-                        style={{fontSize: "24px", color: "white", fontWeight: "bold"}}>
+                        style={{
+                            fontSize: "24px",
+                            color: "navy",
+                            fontWeight: "bold",
+                            border: "2px solid",
+                            borderRadius: "10px"
+                        }}>
                         <Link to="/hisotry">
                             지난호 보기
                         </Link>

@@ -4,7 +4,7 @@ import Home from "./screen/Home";
 import SectionOne from "./screen/SectionOne";
 import SectionTwo from "./screen/SectionTwo";
 import SectionThree from "./screen/SectionThree";
-import History from "./screen/History";
+import His from "./screen/His";
 
 import ScrollToTop from "./components/scrollToTop";
 
@@ -17,10 +17,10 @@ function App() {
           <ScrollToTop/>
           <Switch>
               <Route path="/" exact render={props => <Home {...props}/>}/>
-              <Route pat="/" render={props => <History {...props}/>}/>
               <Route path="/section/1/:id" render={props => <SectionOne {...props}/>}/>
               <Route path="/section/2/:id" render={props => <SectionTwo {...props}/>}/>
               <Route path="/section/3/:id" render={props => <SectionThree {...props}/>}/>
+              <Route pat="/history" render={props => <His {...props}/>}/>
               <Redirect to="/" />
           </Switch>
       </BrowserRouter>
