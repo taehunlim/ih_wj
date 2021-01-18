@@ -7,6 +7,7 @@ import {
     NavItem,
     NavLink
 } from 'reactstrap';
+import {Link} from 'react-router-dom'
 import {IoIosMenu} from 'react-icons/io'
 
 import logo from '../../assets/images/logo_top.png'
@@ -70,6 +71,14 @@ const Header = () => {
                         <img src={logo} alt="" height="19" className="logo logo-dark"/>
                     </NavbarBrand>
 
+                    <div
+                        className="ml-5"
+                        style={{fontSize: "24px", color: "white", fontWeight: "bold"}}>
+                        <Link to="/hisotry">
+                            지난호 보기
+                        </Link>
+                    </div>
+
                     <ScrollspyNav
                         scrollTargetIds={TargetId}
                         scrollDuration="300"
@@ -77,6 +86,7 @@ const Header = () => {
                         activeNavClass="active"
                     >
                         <Nav className="ml-auto navbar-nav d-none d-lg-flex" id="topnav-menu">
+
                             {navItems.map((item, key) => (
                                 <NavItem key={key} className={item.navheading === "COLOR of Life" ? "active" : ""}>
                                     <NavLink href={"#" + item.idnm}>{item.navheading}</NavLink>

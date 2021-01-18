@@ -221,7 +221,7 @@ const Section2 = () => {
                                                             to="/section/2/5"
                                                             as="/"
                                                         >
-                                                            새로운 연구와 소중한 경험의 시간
+                                                            새로운 연구와 소중한 경험
                                                         </Link>
                                                     </div>
                                                 </div>
