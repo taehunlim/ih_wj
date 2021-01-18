@@ -20,6 +20,12 @@ import img4 from '../assets/images/section1/interview.jpg'
 import interv1 from '../assets/images/section1/interv1.1.jpg'
 import interv2 from '../assets/images/section1/interv2.1.jpg'
 
+// import {Swiper, SwiperSlide} from 'swiper/react';
+// import SwiperCore, {EffectFade, Navigation, Pagination, Autoplay} from 'swiper'
+//
+//
+// SwiperCore.use([Navigation, Pagination, EffectFade, Autoplay])
+
 
 const SectionOne = ({match}) => {
 
@@ -467,6 +473,8 @@ const SectionOne = ({match}) => {
                                 </CardBody>
                             ))}
                         </Card>
+
+
                     </Container>
                 </section>
             </Fragment>

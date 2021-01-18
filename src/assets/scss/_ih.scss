@@ -33,7 +33,7 @@
 }
 
 .fluid {
-  @media (max-width: 1024px) {
+  @media (min-width: 1024px) {
     width: 60%;
   }
 }
@@ -56,6 +56,11 @@
 
   @media (max-width: 320px) {
     font-size: 40px;
+  }
+
+  &__col {
+    border: solid;
+    border-right: none;
   }
 }
 
@@ -80,7 +85,7 @@
 
 .home-sns__link {
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
 
   @media (max-width: 768px) {
     font-size: 15px;

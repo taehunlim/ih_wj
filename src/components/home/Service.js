@@ -31,7 +31,7 @@ const Service = () => {
 
                     <Row className="home-sns">
 
-                        <Col>
+                        <Col className="">
                             <div className="blog-box mb-4 mb-xl-0">
                                 <div className="position-relative">
                                     <a href="https://blog.naver.com/hello_health" target="_blank" rel="noreferrer">
@@ -43,20 +43,19 @@ const Service = () => {
                                 </div>
                             </div>
                         </Col>
-                        <Col>
+                        <Col className="">
                             <div className="blog-box mb-4 mb-xl-0">
                                 <div className="position-relative">
                                     <a href="https://www.facebook.com/nhimc.hello.health" target="_blank" rel="noreferrer">
                                         <FaFacebookF/>
                                         <div className="home-sns__link">
-                                            Face<br/>
-                                            Book
+                                            FaceBook
                                         </div>
                                     </a>
                                 </div>
                             </div>
                         </Col>
-                        <Col>
+                        <Col className="">
                             <div className="blog-box mb-4 mb-xl-0">
                                 <div className="position-relative">
                                     <a href="https://twitter.com/Hello_Health" target="_blank" rel="noreferrer">
@@ -68,20 +67,22 @@ const Service = () => {
                                 </div>
                             </div>
                         </Col>
-                        <Col>
+                        <Col className="">
                             <div className="blog-box mb-4 mb-xl-0">
                                 <div className="position-relative">
                                     <a href="https://docs.google.com/forms/d/e/1FAIpQLScsK3i7h-PjxH9vbklEFnTtWbInzWX05VovCjXDHFA0Xv7-Fw/viewform?vc=0&c=0&w=1&flr=0" target="_blank" rel="noreferrer">
                                         <GoMailRead/>
                                         <div className="home-sns__link">
-                                            독자의견
-                                            <br/>메일 보내기
+                                            독자의견 메일
                                         </div>
                                     </a>
                                 </div>
                             </div>
                         </Col>
-                        <Col>
+                        <Col
+                            // className="home-sns__col"
+                            // style={{borderRight: "solid"}}
+                        >
                             <div className="blog-box mb-4 mb-xl-0">
                                 <div className="position-relative">
                                     <button
