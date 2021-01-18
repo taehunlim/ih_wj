@@ -1103,6 +1103,26 @@
           color: $black;
         }
       }
+
+      &__button {
+
+        padding: 0px;
+
+        margin-left: 20px;
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        &:hover {
+          color: $black;
+        }
+
+        svg {
+          font-size: 22px;
+
+        }
+      }
     }
   }
 

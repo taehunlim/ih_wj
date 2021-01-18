@@ -143,7 +143,7 @@ const Cover = () => {
 
 
                                 <div key={item.id} className="slider-content">
-                                    <h2 className="color-title space-mb--20">
+                                    <h2 className="color-title space-mb--20" style={{fontWeight: "bold"}}>
                                         {item.head}
                                     </h2>
                                     <h1

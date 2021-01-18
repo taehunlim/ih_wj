@@ -259,7 +259,7 @@ const Section2 = () => {
                                                             to="/section/2/6"
                                                             as="/"
                                                         >
-                                                            손발 저림, 혈액순환이 아니라 신경이 문제
+                                                            손발 저림 신경이 문제
                                                         </Link>
                                                     </div>
                                                 </div>

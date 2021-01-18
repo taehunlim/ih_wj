@@ -78,6 +78,27 @@
   }
 }
 
+.home-sns__link {
+  text-align: center;
+  font-size: 30px;
+
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 15px;
+  }
+
+  @media (max-width: 375px) {
+    font-size: 12px;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 10px;
+  }
+}
+
 .section-col__l {
 
   @media (max-width: 767px) {

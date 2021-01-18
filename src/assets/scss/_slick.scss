@@ -41,16 +41,14 @@
         top: 60%
       }
 
-      @include respond(large-mobile) {
-
+      @media (max-width: 425px) {
+        top: 50%;
+        left: 30%;
       }
 
-      @include respond(small-mobile) {
-        top: 70%
-      }
-
-      @include respond(extra-small-mobile) {
-        top: 78%;
+      @media (max-width: 325px) {
+        top: 60%;
+        left: 30%;
       }
 
       .color-title {

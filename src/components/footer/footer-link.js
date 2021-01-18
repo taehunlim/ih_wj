@@ -1,11 +1,18 @@
-import React, {Fragment} from 'react';
+import React, {Fragment, useState} from 'react';
 import { Row, Col } from "reactstrap";
 import logo from "../../assets/images/logo.jpg";
 import { FaFacebookF, FaBloggerB, FaTwitter } from "react-icons/fa";
 import {GoMailRead} from "react-icons/go/index";
 
+import {FaFilePdf} from "react-icons/fa/index";
+import {Modal} from "react-bootstrap";
+import {LightgalleryItem, LightgalleryProvider} from "react-lightgallery";
+import pdf from "../../assets/pdf/ih.pdf";
+
 
 const FooterLink = () => {
+
+    const [modal, setModal] = useState(false)
     return (
         <Fragment>
             <Row>
@@ -32,7 +39,30 @@ const FooterLink = () => {
                         <a href="https://docs.google.com/forms/d/e/1FAIpQLScsK3i7h-PjxH9vbklEFnTtWbInzWX05VovCjXDHFA0Xv7-Fw/viewform?vc=0&c=0&w=1&flr=0" target="_blank" rel="noreferrer">
                             <GoMailRead/>
                         </a>
-                    </div>
+
+                        <button
+                            className="button"
+                            onClick={() => setModal(true)}>
+                            <FaFilePdf/>
+                        </button>
+
+                        <Modal
+                            show={modal}
+                        >
+                            <Modal.Header
+                                closeButton
+                                style={{width: "800px", backgroundColor: "powderblue"}}
+                                onHide={() => setModal(false)}
+                            >
+
+                            </Modal.Header>
+                            <LightgalleryProvider>
+                                <LightgalleryItem group="any">
+                                    <embed src={pdf} width="800px" height="800px" />
+                                </LightgalleryItem>
+                            </LightgalleryProvider>
+                        </Modal>
+                </div>
                 </Col>
 
             </Row>

@@ -5,6 +5,16 @@
 
 /*----------  default style  ----------*/
 
+.button {
+  border: none;
+  background: none;
+  svg {
+    margin: 15px;
+    color : white;
+  }
+}
+
+
 .ih-button {
   font-weight: 500;
 

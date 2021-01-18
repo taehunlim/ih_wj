@@ -1,13 +1,19 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {
   IoIosPhonePortrait,
   // IoMdMail,
 
 } from "react-icons/io";
-import {FaBloggerB, FaFacebookF, FaTwitter} from "react-icons/fa/index";
+import {FaBloggerB, FaFacebookF, FaFilePdf, FaTwitter} from "react-icons/fa/index";
 import {GoMailRead} from "react-icons/go/index";
+import {Modal} from "react-bootstrap";
+import {LightgalleryItem, LightgalleryProvider} from "react-lightgallery";
+import pdf from "../../../assets/pdf/ih.pdf";
 
 const MobileMenuWidgets = () => {
+
+  const [modal, setModal] = useState(false)
+
   return (
     <div className="offcanvas-mobile-menu__widgets">
       <div className="contact-widget space-mb--30">
@@ -37,6 +43,31 @@ const MobileMenuWidgets = () => {
         <a href="https://docs.google.com/forms/d/e/1FAIpQLScsK3i7h-PjxH9vbklEFnTtWbInzWX05VovCjXDHFA0Xv7-Fw/viewform?vc=0&c=0&w=1&flr=0" target="_blank" rel="noreferrer">
           <GoMailRead/>
         </a>
+
+        <button
+            style={{border: "none", background: "none"}}
+            className="social-widget__button"
+            onClick={() => setModal(true)}>
+          <FaFilePdf/>
+        </button>
+
+        <Modal
+            show={modal}
+        >
+          <Modal.Header
+              closeButton
+              style={{width: "350px", backgroundColor: "powderblue"}}
+              onHide={() => setModal(false)}
+          >
+
+          </Modal.Header>
+          <LightgalleryProvider>
+            <LightgalleryItem group="any">
+              <embed src={pdf} width="350px" height="800px" />
+            </LightgalleryItem>
+          </LightgalleryProvider>
+        </Modal>
+
       </div>
     </div>
   );

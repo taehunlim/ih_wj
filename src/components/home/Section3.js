@@ -339,7 +339,7 @@ const Section3 = () => {
                                                             to="/section/3/8"
                                                             as="/"
                                                         >
-
+                                                            ※ 진료일정은 병원사정에 의해 변경될 수 있습니다.
                                                         </Link>
                                                     </div>
 
