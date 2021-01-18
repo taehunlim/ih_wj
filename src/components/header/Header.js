@@ -66,21 +66,24 @@ const Header = () => {
                 scroll > headerTop ? "nav-sticky" : ""
             }`}>
                 <Container>
-                    <NavbarBrand className="navbar-logo " href="/">
+                    <NavbarBrand className="navbar-logo" style={{textAlign: "-webkit-center"}} href="/">
                         <img src={logo} alt="" height="19" className="logo logo-light"/>
                         <img src={logo} alt="" height="19" className="logo logo-dark"/>
+                        <h5 style={{color: "white"}}>
+                            vol.21 2021 winter 신년호
+                        </h5>
                     </NavbarBrand>
 
                     <div
                         className="ml-5"
                         style={{
                             fontSize: "24px",
-                            color: "navy",
+                            color: "white",
                             fontWeight: "bold",
-                            border: "2px solid",
-                            borderRadius: "10px"
+                            border: "1px solid",
+                            borderRadius: "15px"
                         }}>
-                        <Link to="/hisotry">
+                        <Link to="/hisotry" style={{padding: "5px"}}>
                             지난호 보기
                         </Link>
                     </div>

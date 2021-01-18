@@ -30,7 +30,7 @@ const IhNews = ({item}) => {
 
                     <Row className="mb-5 justify-content-center">
                         {item.news ? item.news.map((c) => (
-                            <Col md={6} lg={4} className="pl-2 pr-2">
+                            <Col md={4} lg={4} className="">
                                 <CardBody className="color-of-life__body">
                                     <div style={{textAlign: "center"}}>
                                         {c.src ?
@@ -38,7 +38,7 @@ const IhNews = ({item}) => {
                                         }
 
                                     </div>
-                                    <CardSubtitle className="color-of-life__body__subtitle mb-3">
+                                    <CardSubtitle className="color-of-life__body__subtitle mb-3 text-center">
                                         {c.ctitle}
                                     </CardSubtitle>
                                     <CardText className="color-of-life__body__text mb-5">

@@ -31,7 +31,7 @@ import issue3 from '../assets/images/section3/issue3.png';
 import issue4 from '../assets/images/section3/issue4.JPG';
 
 
-import news1 from '../assets/images/section3/news/1.JPG'
+import news1 from '../assets/images/section3/news/1.png'
 import news2 from '../assets/images/section3/news/2.JPG'
 import news3 from '../assets/images/section3/news/3.JPG'
 import news4 from '../assets/images/section3/news/4.jpg'
