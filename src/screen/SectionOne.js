@@ -12,7 +12,7 @@ import {
 import HeaderP from "../components/header/HeaderP";
 import Footer from "../components/footer/Footer";
 
-import img from '../assets/images/section1/intro02.png'
+import img from '../assets/images/section1/intro01.png'
 import img2 from '../assets/images/section1/newyears.1.png'
 import img3 from '../assets/images/section1/essay2.png'
 import img4 from '../assets/images/section1/interview.jpg'
@@ -432,7 +432,7 @@ const SectionOne = ({match}) => {
                                 </div>
                             </CardBody>
 
-                            <CardImg top className="img-fluid mb-3" src={item.src} alt="/" />
+                            <CardImg top style={{alignSelf: "center"}} className="img-fluid mb-3" src={item.src} alt="/" />
 
                             {item.title || item.subtitle ?
                                 <CardBody className="color-of-life__body text-center">

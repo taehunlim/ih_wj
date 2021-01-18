@@ -10,7 +10,7 @@ import {Link} from "react-router-dom";
 import img1 from "../../assets/images/section2/1.jpg";
 import img2 from "../../assets/images/section2/2.jpg";
 import img3 from "../../assets/images/section2/3.jpg";
-import img4 from "../../assets/images/section2/4.png";
+import img4 from "../../assets/images/section2/4.jpeg";
 import img5 from "../../assets/images/section2/5.jpg";
 import img6 from "../../assets/images/section2/6.png";
 import img7 from "../../assets/images/section2/7.jpg";
@@ -52,7 +52,7 @@ const Section2 = () => {
                                                                 to="/section/2/1"
                                                                 as="/"
                                                             >
-                                                                DOCTOR 1
+                                                                DOCTORS 1
                                                             </Link>
                                                         </p>
                                                         <Link
@@ -117,7 +117,7 @@ const Section2 = () => {
                                         <div className="single-category single-category--three space-mb--30">
                                             <div
                                                 className="single-category__image single-category__image__horizontal single-category__image--three single-category__image--three--creativehome"
-                                                style={{backgroundColor: "darksalmon"}}
+                                                // style={{backgroundColor: "darksalmon"}}
                                             >
                                                 <img
                                                     src={img4}
@@ -175,7 +175,7 @@ const Section2 = () => {
                                                                 to="/section/2/2"
                                                                 as="/"
                                                             >
-                                                                DOCTOR 2
+                                                                DOCTORS 2
                                                             </Link>
                                                         </p>
                                                         <Link
@@ -259,7 +259,7 @@ const Section2 = () => {
                                                             to="/section/2/6"
                                                             as="/"
                                                         >
-                                                            겨울철 특히 심해지는 손발 저림과 시림
+                                                            손발 저림, 혈액순환이 아니라 신경이 문제
                                                         </Link>
                                                     </div>
                                                 </div>

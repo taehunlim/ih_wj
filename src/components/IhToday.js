@@ -58,8 +58,27 @@ const IhToday = ({item}) => {
                                                 {c.ctitle}
                                             </CardSubtitle>
                                             <CardText className="color-of-life__body__text mb-5">
-                                                {c.ctext}
+                                                <Row>
+                                                    <Col xs={9} sm={9} md={9} lg={9}>
+                                                        {c.ctext}
+                                                    </Col>
+
+                                                    <Col xs={3} sm={3} md={3} lg={3}>
+                                                        <a
+                                                            className="ih-button"
+                                                            href={c.url}
+                                                            target="_blank"
+                                                            title="새창팝업"
+                                                            rel="noreferrer">
+                                                            기사<br/>보기
+                                                        </a>
+                                                    </Col>
+
+                                                </Row>
+
                                             </CardText>
+
+
                                         </CardBody>
                                     </Col>
                                 )): ""}
@@ -103,7 +122,8 @@ const IhToday = ({item}) => {
                                                     <td style={{textAlign: "end"}}>
                                                         <a
                                                             className="ih-button"
-                                                            href="/" target="_blank"
+                                                            href={c.wUrl}
+                                                            target="_blank"
                                                             title="새창팝업"
                                                             rel="noreferrer">
                                                             기사<br/>보기
@@ -188,145 +208,11 @@ const IhToday = ({item}) => {
                                         </table>
                                     </Col>
 
-                                    {/*<Col>*/}
 
-                                    {/*    <div className="">*/}
-                                    {/*        <CardBody className="color-of-life__header pt-0 pb-0" style={{backgroundColor: "powderblue"}}>*/}
-                                    {/*            <div className="d-flex align-items-center">*/}
-                                    {/*                <img src={icon}/>*/}
-
-                                    {/*                <CardBody className="pt-0 pb-0">*/}
-                                    {/*                    <CardTitle style={{fontSize: "24px"}}>*/}
-                                    {/*                        포상*/}
-                                    {/*                    </CardTitle>*/}
-                                    {/*                </CardBody>*/}
-
-                                    {/*            </div>*/}
-                                    {/*        </CardBody>*/}
-
-                                    {/*        <div className="">*/}
-                                    {/*            <h5>2020년 일산병원 우수 홍보인</h5>*/}
-                                    {/*        </div>*/}
-                                    {/*        <table className="ih-article">*/}
-                                    {/*            /!*<tbody>*!/*/}
-
-                                    {/*            <tbody style={{borderBottom: "1px solid"}}>*/}
-                                    {/*            <tr>*/}
-                                    {/*                <td style={{width: "30%"}}>*/}
-                                    {/*                    최우수상*/}
-                                    {/*                </td>*/}
-                                    {/*                <td style={{width: "70%", textAlign: "end"}}>*/}
-                                    {/*                    호흡기내과 한창훈*/}
-                                    {/*                </td>*/}
-
-                                    {/*            </tr>*/}
-                                    {/*            </tbody>*/}
-                                    {/*        </table>*/}
-                                    {/*    </div>*/}
-
-
-
-
-                                    {/*    <div className="">*/}
-
-                                    {/*        <div className="">*/}
-                                    {/*            <h5>하반기 친절직원</h5>*/}
-                                    {/*        </div>*/}
-                                    {/*        <table className="ih-article">*/}
-                                    {/*            /!*<tbody>*!/*/}
-
-                                    {/*            <tbody style={{borderBottom: "1px solid"}}>*/}
-                                    {/*            <tr>*/}
-                                    {/*                <td style={{width: "30%"}}>*/}
-                                    {/*                    최우수상*/}
-                                    {/*                </td>*/}
-                                    {/*                <td style={{width: "70%", textAlign: "end"}}>*/}
-                                    {/*                    호흡기내과 한창훈*/}
-                                    {/*                </td>*/}
-
-                                    {/*            </tr>*/}
-                                    {/*            </tbody>*/}
-
-                                    {/*        </table>*/}
-                                    {/*    </div>*/}
-
-                                    {/*</Col>*/}
-
-
-                                    {/*<Col>*/}
-
-                                    {/*    <div className="">*/}
-                                    {/*        <CardBody className="color-of-life__header pt-0 pb-0" style={{backgroundColor: "powderblue"}}>*/}
-                                    {/*            <div className="d-flex align-items-center">*/}
-                                    {/*                <img src={icon}/>*/}
-
-                                    {/*                <CardBody className="pt-0 pb-0">*/}
-                                    {/*                    <CardTitle style={{fontSize: "24px"}}>*/}
-                                    {/*                        결혼*/}
-                                    {/*                    </CardTitle>*/}
-                                    {/*                </CardBody>*/}
-
-                                    {/*            </div>*/}
-                                    {/*        </CardBody>*/}
-
-                                    {/*        <table className="ih-article">*/}
-                                    {/*            /!*<tbody>*!/*/}
-
-                                    {/*            <tbody style={{borderBottom: "1px solid"}}>*/}
-                                    {/*            <tr>*/}
-                                    {/*                <td style={{width: "30%"}}>*/}
-                                    {/*                    최우수상*/}
-                                    {/*                </td>*/}
-                                    {/*                <td style={{width: "70%", textAlign: "end"}}>*/}
-                                    {/*                    호흡기내과 한창훈*/}
-                                    {/*                </td>*/}
-
-                                    {/*            </tr>*/}
-                                    {/*            </tbody>*/}
-                                    {/*        </table>*/}
-                                    {/*    </div>*/}
-
-
-
-
-                                    {/*    <div className="">*/}
-                                    {/*        <CardBody className="color-of-life__header pt-0 pb-0" style={{backgroundColor: "powderblue"}}>*/}
-                                    {/*            <div className="d-flex align-items-center">*/}
-                                    {/*                <img src={icon}/>*/}
-
-                                    {/*                <CardBody className="pt-0 pb-0">*/}
-                                    {/*                    <CardTitle style={{fontSize: "24px"}}>*/}
-                                    {/*                        출산*/}
-                                    {/*                    </CardTitle>*/}
-                                    {/*                </CardBody>*/}
-
-                                    {/*            </div>*/}
-                                    {/*        </CardBody>*/}
-                                    {/*        <table className="ih-article">*/}
-                                    {/*            /!*<tbody>*!/*/}
-
-                                    {/*            <tbody style={{borderBottom: "1px solid"}}>*/}
-                                    {/*            <tr>*/}
-                                    {/*                <td style={{width: "30%"}}>*/}
-                                    {/*                    최우수상*/}
-                                    {/*                </td>*/}
-                                    {/*                <td style={{width: "70%", textAlign: "end"}}>*/}
-                                    {/*                    호흡기내과 한창훈*/}
-                                    {/*                </td>*/}
-
-                                    {/*            </tr>*/}
-                                    {/*            </tbody>*/}
-
-                                    {/*        </table>*/}
-                                    {/*    </div>*/}
-
-                                    {/*</Col>*/}
                                 </Row>
                             </div>
                         </div>
                         : ""}
-
-
 
                     <Col lg={12} className="mb-5">
                         <Row>

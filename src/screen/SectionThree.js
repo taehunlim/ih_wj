@@ -590,7 +590,7 @@ const SectionThree = ({match}) => {
     const ctext6 = [
         (
             <div>
-                뉴스연휴에 갑자기 열나는 우리 아이, 어떻게 해야 하나?
+                뉴스 연휴에 갑자기 열 나는 우리 아이, 어떻게 해야 하나?
             </div>
         ),
         (
@@ -1936,7 +1936,6 @@ const SectionThree = ({match}) => {
             </span>
         ),
     ]
-
     const letterB = [
         (
             <div style={{fontSize: "18px"}}>
@@ -1944,7 +1943,6 @@ const SectionThree = ({match}) => {
             </div>
         )
     ]
-
 
     const items = [
         {
@@ -2040,9 +2038,6 @@ const SectionThree = ({match}) => {
                 }
             ],
         },
-
-
-
         {
             id: "5",
             src: news1,
@@ -2114,114 +2109,151 @@ const SectionThree = ({match}) => {
                 {
                     src: today1,
                     ctitle: ctitle6[0],
-                    ctext: ctext6[0]
+                    ctext: ctext6[0],
+                    url: "https://www.ytn.co.kr/_ln/0103_202010010444124800"
+
                 },
                 {
                     src: today2,
                     ctitle: ctitle6[1],
-                    ctext: ctext6[1]
+                    ctext: ctext6[1],
+                    url: ""
+
                 },
                 {
                     src: today3,
                     ctitle: ctitle6[2],
-                    ctext: ctext6[2]
+                    ctext: ctext6[2],
+                    url: "http://news.jtbc.joins.com/article/article.aspx?news_id=NB11979727"
+
                 },
                 {
                     src: today4,
                     ctitle: ctitle6[3],
-                    ctext: ctext6[3]
+                    ctext: ctext6[3],
+                    url: "https://www.ytn.co.kr/_ln/0103_202012140451285603"
+
                 },
                 {
                     src: today5,
                     ctitle: ctitle6[4],
-                    ctext: ctext6[4]
+                    ctext: ctext6[4],
+                    url: "https://www.ytn.co.kr/_ln/0103_202012192204378398"
+
                 },
                 {
                     src: today6,
                     ctitle: ctitle6[5],
-                    ctext: ctext6[5]
+                    ctext: ctext6[5],
+                    url: ""
                 }
             ],
             article: [
                 {
 
                     date: date[0],
-                    write: write[0]
+                    write: write[0],
+                    wUrl: "http://news.khan.co.kr/kh_news/khan_art_view.html?artid=202010050300025\n"
                 },
                 {
 
                     date: date[1],
-                    write: write[1]
+                    write: write[1],
+                    wUrl: "https://www.chosun.com/national/welfare-medical/2020/11/25/GMOAP524XZHSDKU75YFC5HGATI/"
                 },
                 {
 
                     date: date[2],
-                    write: write[2]
+                    write: write[2],
+                    wUrl: "https://www.donga.com/news/article/all/20201017/103464046/1"
                 },
                 {
 
                     date: date[3],
-                    write: write[3]
+                    write: write[3],
+                    wUrl: "http://news.khan.co.kr/kh_news/khan_art_view.html?artid=202011272038005"
+
                 },
                 {
 
                     date: date[4],
-                    write: write[4]
+                    write: write[4],
+                    wUrl: "http://news.kmib.co.kr/article/view.asp?arcid=0015132746"
+
                 },
                 {
 
                     date: date[5],
-                    write: write[5]
+                    write: write[5],
+                    wUrl: "https://health.chosun.com/site/data/html_dir/2020/12/04/2020120402313.html"
+
                 },
                 {
 
                     date: date[6],
-                    write: write[6]
+                    write: write[6],
+                    wUrl: "http://www.k-health.com/news/articleView.html?idxno=50676"
+
                 },
                 {
 
                     date: date[7],
-                    write: write[7]
+                    write: write[7],
+                    wUrl: "http://news.khan.co.kr/kh_news/khan_art_view.html?artid=202012081044002&code=900303"
                 },
                 {
 
                     date: date[8],
-                    write: write[8]
+                    write: write[8],
+                    wUrl: "https://www.news1.kr/articles/?4102600"
                 },
                 {
 
                     date: date[9],
-                    write: write[9]
+                    write: write[9],
+                    wUrl: "http://www.medigatenews.com/news/2937363257"
                 },
                 {
 
                     date: date[10],
-                    write: write[10]
+                    write: write[10],
+                    wUrl: "https://www.yna.co.kr/view/AKR20201030043300060?input=2405m"
+
                 },
                 {
 
                     date: date[11],
-                    write: write[11]
+                    write: write[11],
+                    wUrl: "http://biz.heraldcorp.com/view.php?ud=20201215000597"
+
                 },
                 {
 
                     date: date[12],
-                    write: write[12]
+                    write: write[12],
+                    wUrl: "http://www.seoul.co.kr/news/newsView.php?id=20201111017003"
+
                 },
                 {
 
                     date: date[13],
-                    write: write[13]
+                    write: write[13],
+                    wUrl: "http://www.medipana.com/news/news_viewer.asp?NewsNum=268407"
+
                 },
                 {
 
                     date: date[14],
-                    write: write[14]
+                    write: write[14],
+                    wUrl: "http://yna.kr/AKR20201118066900530?did=2405m"
+
                 },
                 {
 
                     date: date[15],
-                    write: write[15]
+                    write: write[15],
+                    wUrl: "http://news.kmib.co.kr/article/view.asp?arcid=0015379716"
+
                 },
             ],
             celebration: [

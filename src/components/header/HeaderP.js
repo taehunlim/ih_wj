@@ -170,7 +170,7 @@ const Header = () => {
                                                 <Col lg={11}>
                                                     INTERVIEW
                                                     <br/>
-                                                    병원에서‘보다’의 의미를 찾다
+                                                    병원에서 ‘보다’의 의미를 찾다
                                                 </Col>
 
                                             </Row>
@@ -202,7 +202,7 @@ const Header = () => {
 
                                                 </Col>
                                                 <Col lg={11}>
-                                                    DOCTOR 1
+                                                    DOCTORS 1
                                                     <br/>
                                                     끊임없이 연구하고 노력하다
                                                     영상의학과 김태환 교수
@@ -222,7 +222,7 @@ const Header = () => {
                                                     </div>
                                                 </Col>
                                                 <Col lg={11}>
-                                                    DOCTOR 2
+                                                    DOCTORS 2
                                                     <br/>
                                                     환자에게 새 삶을 선물하는 장기이식센터
                                                 </Col>
@@ -301,7 +301,7 @@ const Header = () => {
                                                 <Col lg={11}>
                                                     CLINIC
                                                     <br/>
-                                                    겨울철 특히 심해지는 손발 저림과 시림
+                                                    손발 저림, 혈액순환이 아니라 신경이 문제
 
                                                 </Col>
                                             </Row>
@@ -354,6 +354,7 @@ const Header = () => {
                                                 <Col lg={11}>
                                                     AROUND
                                                     <br/>
+                                                    2021년 1월 1일의 해가 떠오르다. 한강에서 본 일출
                                                 </Col>
                                             </Row>
                                         </a>

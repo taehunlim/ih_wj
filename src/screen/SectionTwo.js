@@ -25,7 +25,7 @@ import team2 from '../assets/images/section2/team2.jpg'
 import team3 from '../assets/images/section2/team3.jpg'
 import team4 from '../assets/images/section2/team4.jpg'
 
-import research0 from '../assets/images/section2/4.png';
+import research0 from '../assets/images/section2/4.jpeg';
 import research1 from '../assets/images/section2/research1.png'
 import research2 from '../assets/images/section2/research2.png'
 
