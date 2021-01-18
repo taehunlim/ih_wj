@@ -97,17 +97,16 @@ const Header = () => {
                                                         className="sub-menu--mega__title__img"
                                                         style={{backgroundImage : `url(${sec101})`}}
                                                     >
-
                                                     </div>
 
                                                 </Col>
-                                                <Col lg={2}>
+                                                <Col lg={11}>
                                                     INTRO
+                                                    <div>
+                                                        따뜻한 마음을 담아 2021년을 바라봅니다
+                                                    </div>
                                                 </Col>
 
-                                                <Col lg={9}>
-                                                    따뜻한 마음을 담아 2021년을 바라봅니다
-                                                </Col>
                                             </Row>
                                         </a>
                                     </li>
@@ -124,12 +123,11 @@ const Header = () => {
                                                     </div>
 
                                                 </Col>
-                                                <Col lg={2}>
+                                                <Col lg={11}>
                                                     신년사
-                                                </Col>
-
-                                                <Col lg={9}>
-                                                    2021년 희망찬 새해가 밝았습니다
+                                                    <div>
+                                                        2021년 희망찬 새해가 밝았습니다
+                                                    </div>
                                                 </Col>
                                             </Row>
                                         </a>
@@ -147,12 +145,12 @@ const Header = () => {
                                                     </div>
 
                                                 </Col>
-                                                <Col lg={2}>
+                                                <Col lg={11}>
                                                     ESSAY
+                                                    <br/>
+                                                    인간이‘본다’는 것은 일차원적이며 최고의 사고행위
                                                 </Col>
 
-                                                <Col lg={9}>
-                                                    인간이‘본다’는 것은 일차원적이며 최고의 사고행위                                                </Col>
                                             </Row>
                                         </a>
                                     </li>
@@ -169,11 +167,9 @@ const Header = () => {
                                                     </div>
 
                                                 </Col>
-                                                <Col lg={2}>
+                                                <Col lg={11}>
                                                     INTERVIEW
-                                                </Col>
-
-                                                <Col lg={9}>
+                                                    <br/>
                                                     병원에서‘보다’의 의미를 찾다
                                                 </Col>
 
@@ -205,11 +201,9 @@ const Header = () => {
                                                     </div>
 
                                                 </Col>
-                                                <Col lg={2}>
+                                                <Col lg={11}>
                                                     DOCTOR 1
-                                                </Col>
-
-                                                <Col lg={9}>
+                                                    <br/>
                                                     끊임없이 연구하고 노력하다
                                                     영상의학과 김태환 교수
                                                 </Col>
@@ -227,11 +221,9 @@ const Header = () => {
                                                     >
                                                     </div>
                                                 </Col>
-                                                <Col lg={2}>
+                                                <Col lg={11}>
                                                     DOCTOR 2
-                                                </Col>
-
-                                                <Col lg={9}>
+                                                    <br/>
                                                     환자에게 새 삶을 선물하는 장기이식센터
                                                 </Col>
                                             </Row>
@@ -248,12 +240,11 @@ const Header = () => {
                                                     >
                                                     </div>
                                                 </Col>
-                                                <Col lg={2}>
+                                                <Col lg={11}>
                                                     TEAM
+                                                    <br/>
+                                                    맛과 영양, 안전까지 더한 최고의 식단을 위하여 영양팀
                                                 </Col>
-
-                                                <Col lg={9}>
-                                                    맛과 영양, 안전까지 더한 최고의 식단을 위하여 영양팀                                               </Col>
                                             </Row>
                                         </a>
                                     </li>
@@ -268,11 +259,9 @@ const Header = () => {
                                                     >
                                                     </div>
                                                 </Col>
-                                                <Col lg={2}>
+                                                <Col lg={11}>
                                                     RESEARCH
-                                                </Col>
-
-                                                <Col lg={9}>
+                                                    <br/>
                                                     중이염과 연관된 의료 이용에 대한 편도 및 아데노이드 절제술의 효과
                                                 </Col>
 
@@ -290,11 +279,9 @@ const Header = () => {
                                                     >
                                                     </div>
                                                 </Col>
-                                                <Col lg={2}>
+                                                <Col lg={11}>
                                                     TRAINING
-                                                </Col>
-
-                                                <Col lg={9}>
+                                                    <br/>
                                                     새로운 연구와 소중한 경험의 시간
                                                 </Col>
                                             </Row>
@@ -311,12 +298,11 @@ const Header = () => {
                                                     >
                                                     </div>
                                                 </Col>
-                                                <Col lg={2}>
+                                                <Col lg={11}>
                                                     CLINIC
-                                                </Col>
-
-                                                <Col lg={9}>
+                                                    <br/>
                                                     겨울철 특히 심해지는 손발 저림과 시림
+
                                                 </Col>
                                             </Row>
                                         </a>
@@ -332,11 +318,9 @@ const Header = () => {
                                                     >
                                                     </div>
                                                 </Col>
-                                                <Col lg={2}>
+                                                <Col lg={11}>
                                                     MOMENT
-                                                </Col>
-
-                                                <Col lg={9}>
+                                                    <br/>
                                                     코로나19로부터 안전한 세상 일산병원이 함께합니다
                                                 </Col>
                                             </Row>
@@ -367,13 +351,9 @@ const Header = () => {
                                                     </div>
 
                                                 </Col>
-                                                <Col lg={2}>
+                                                <Col lg={11}>
                                                     AROUND
-                                                </Col>
-
-                                                <Col lg={9}>
-                                                    2021년 1월 1일의 해가 떠오르다
-                                                    한강에서 본 일출
+                                                    <br/>
                                                 </Col>
                                             </Row>
                                         </a>
@@ -389,12 +369,11 @@ const Header = () => {
                                                     >
                                                     </div>
                                                 </Col>
-                                                <Col lg={2}>
+                                                <Col lg={11}>
                                                     FOOD
+                                                    <br/>
+                                                    지금이 제철! 영양 가득한 바다 맛, 굴
                                                 </Col>
-
-                                                <Col lg={9}>
-                                                    지금이 제철! 영양 가득한 바다 맛, 굴                                                </Col>
                                             </Row>
                                         </a>
                                     </li>
@@ -409,12 +388,11 @@ const Header = () => {
                                                     >
                                                     </div>
                                                 </Col>
-                                                <Col lg={2}>
+                                                <Col lg={11}>
                                                     TREND
+                                                    <br/>
+                                                    당근에서 겟한 물건 나에겐 N차 신상
                                                 </Col>
-
-                                                <Col lg={9}>
-                                                    당근에서 겟한 물건 나에겐 N차 신상                                              </Col>
                                             </Row>
                                         </a>
                                     </li>
@@ -429,14 +407,11 @@ const Header = () => {
                                                     >
                                                     </div>
                                                 </Col>
-                                                <Col lg={2}>
+                                                <Col lg={11}>
                                                     ISSUE
-                                                </Col>
-
-                                                <Col lg={9}>
+                                                    <br/>
                                                     ‘코로나19 확진자 전담 치료병동’ 운영
                                                 </Col>
-
                                             </Row>
                                         </a>
                                     </li>
@@ -451,12 +426,11 @@ const Header = () => {
                                                     >
                                                     </div>
                                                 </Col>
-                                                <Col lg={2}>
+                                                <Col lg={11}>
                                                     IH NEWS
+                                                    <br/>
+                                                    김성우 병원장, 공로상 수상 외
                                                 </Col>
-
-                                                <Col lg={9}>
-                                                    김성우 병원장, 공로상 수상 외                                                </Col>
                                             </Row>
                                         </a>
                                     </li>
@@ -471,11 +445,9 @@ const Header = () => {
                                                     >
                                                     </div>
                                                 </Col>
-                                                <Col lg={2}>
+                                                <Col lg={11}>
                                                     IH TODAY
-                                                </Col>
-
-                                                <Col lg={9}>
+                                                    <br/>
                                                     일산병원 소식
                                                 </Col>
                                             </Row>
@@ -492,11 +464,9 @@ const Header = () => {
                                                     >
                                                     </div>
                                                 </Col>
-                                                <Col lg={2}>
+                                                <Col lg={11}>
                                                     IH LETTER
-                                                </Col>
-
-                                                <Col lg={9}>
+                                                    <br/>
                                                     독자의견
                                                 </Col>
                                             </Row>
@@ -513,12 +483,8 @@ const Header = () => {
                                                     >
                                                     </div>
                                                 </Col>
-                                                <Col lg={2}>
+                                                <Col lg={11}>
                                                     진료일정표
-                                                </Col>
-
-                                                <Col lg={9}>
-
                                                 </Col>
                                             </Row>
                                         </a>
@@ -545,12 +511,8 @@ const Header = () => {
                                                     </div>
 
                                                 </Col>
-                                                <Col lg={2}>
+                                                <Col lg={11}>
                                                     BLOG
-                                                </Col>
-
-                                                <Col lg={9}>
-
                                                 </Col>
                                             </Row>
                                         </a>
@@ -565,12 +527,8 @@ const Header = () => {
                                                     </div>
 
                                                 </Col>
-                                                <Col lg={2}>
+                                                <Col lg={11}>
                                                     FACEBOOK
-                                                </Col>
-
-                                                <Col lg={9}>
-
                                                 </Col>
                                             </Row>
                                         </a>
@@ -585,12 +543,8 @@ const Header = () => {
                                                     </div>
 
                                                 </Col>
-                                                <Col lg={2}>
+                                                <Col lg={11}>
                                                     TWITTER
-                                                </Col>
-
-                                                <Col lg={9}>
-
                                                 </Col>
                                             </Row>
                                         </a>
@@ -605,12 +559,8 @@ const Header = () => {
                                                     </div>
 
                                                 </Col>
-                                                <Col lg={2}>
+                                                <Col lg={11}>
                                                     독자의견 메일
-                                                </Col>
-
-                                                <Col lg={9}>
-
                                                 </Col>
                                             </Row>
                                         </a>

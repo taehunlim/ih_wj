@@ -123,7 +123,7 @@ const IhToday = ({item}) => {
 
 
                     {item.celebration ?
-                        <div>
+                        <div className="fix-need">
                             <CardBody className="color-of-life__header pt-0 pb-0" style={{backgroundColor: "powderblue"}}>
                                 <div className="d-flex align-items-center">
                                     <img src={icon4} alt="/"/>
@@ -137,26 +137,26 @@ const IhToday = ({item}) => {
                                 </div>
                             </CardBody>
 
-                            <div className="">
+                            <div>
                                 <Row className="mb-5">
                                     <Col lg={12}>
                                         <table className="ih-celebration">
 
                                             <thead style={{backgroundColor: "powderblue", color: "white"}}>
                                             <tr>
-                                                <th>
+                                                <th style={{width: "15%"}}>
                                                     수상자
                                                 </th>
-                                                <th>
+                                                <th style={{width: "15%"}}>
                                                     수상명
                                                 </th>
-                                                <th>
+                                                <th style={{width: "15%"}}>
                                                     학술대회명
                                                 </th>
-                                                <th>
+                                                <th style={{width: "15%"}}>
                                                     수상년월
                                                 </th>
-                                                <th>
+                                                <th style={{width: "40%"}}>
                                                     수상내용
                                                 </th>
                                             </tr>
@@ -166,7 +166,7 @@ const IhToday = ({item}) => {
                                             {item.celebration ? item.celebration.map((c) => (
                                                 <tbody style={{borderBottom: "1px solid"}}>
                                                 <tr>
-                                                    <td style={{width: "10%"}}>
+                                                    <td style={{width: "15%"}}>
                                                         {c.winner}
                                                     </td>
                                                     <td style={{width: "15%"}}>
@@ -175,7 +175,7 @@ const IhToday = ({item}) => {
                                                     <td style={{width: "15%"}}>
                                                         {c.conference}
                                                     </td>
-                                                    <td style={{width: "10%"}}>
+                                                    <td style={{width: "15%"}}>
                                                         {c.cDate}
                                                     </td>
                                                     <td style={{width: "40%"}}>

@@ -774,7 +774,7 @@ const SectionTwo = ({match}) => {
                                 <CardBody className="color-of-life__body">
                                     <div style={{textAlign: "center"}}>
                                         {cap.src ?
-                                            <CardImg style={{width: "60%"}} className="img-fluid mb-5" src={cap.src} alt="/"/> : ""
+                                            <CardImg className="img-fluid fluid mb-5" src={cap.src} alt="/"/> : ""
                                         }
                                     </div>
 

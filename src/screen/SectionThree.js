@@ -47,10 +47,8 @@ import news12 from '../assets/images/section3/news/12.png'
 
 
 
-import treatment1 from '../assets/images/section3/treatment/1.png'
-import treatment2 from '../assets/images/section3/treatment/2.png'
-import treatment3 from '../assets/images/section3/treatment/3.png'
-import treatment4 from '../assets/images/section3/treatment/4.png'
+import treatment1 from '../assets/images/section3/schedule/schedule.png'
+import treatment2 from '../assets/images/section3/schedule/schedule2.png'
 
 
 import today1 from "../assets/images/section3/today/1.jpg"
@@ -2596,17 +2594,7 @@ const SectionThree = ({match}) => {
                     src: treatment2,
                     ctitle: "",
                     ctext: ""
-                },
-                {
-                    src: treatment3,
-                    ctitle: "",
-                    ctext: ""
-                },
-                {
-                    src: treatment4,
-                    ctitle: "",
-                    ctext: ""
-                },
+                }
             ],
         },
     ]
@@ -2658,7 +2646,7 @@ const SectionThree = ({match}) => {
                                 <CardBody className="color-of-life__body">
                                     <div style={{textAlign: "center"}}>
                                         {cap.src ?
-                                            <CardImg style={{width: "60%"}} className="img-fluid mb-5" src={cap.src} alt="/"/> : ""
+                                            <CardImg className="img-fluid fluid mb-5" src={cap.src} alt="/"/> : ""
                                         }
 
                                     </div>

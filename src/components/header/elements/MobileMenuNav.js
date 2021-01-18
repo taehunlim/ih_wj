@@ -53,23 +53,23 @@ const MobileMenuNav = ({getActiveStatus}) => {
                     </Link>
                     <ul className="mobile-sub-menu">
                         <li className="menu-item-has-children">
-                            <Link to="/monthly/1">
+                            <Link to="/section/1/1">
                                 INTRO
                             </Link>
                         </li>
 
                         <li className="menu-item-has-children">
-                            <Link to="/monthly/2">
+                            <Link to="/section/1/2">
                                 신년사
                             </Link>
                         </li>
                         <li className="menu-item-has-children">
-                            <Link to="/monthly/2">
+                            <Link to="/section/1/3">
                                 ESSAY
                             </Link>
                         </li>
                         <li className="menu-item-has-children">
-                            <Link to="/monthly/2">
+                            <Link to="/section/1/4">
                                 INTERVIEW
                             </Link>
                         </li>
@@ -82,43 +82,43 @@ const MobileMenuNav = ({getActiveStatus}) => {
                     </Link>
                     <ul className="mobile-sub-menu">
                         <li className="menu-item-has-children">
-                            <Link to="/monthly/2">
+                            <Link to="/section/2/1">
                                 DOCTOR 1
                             </Link>
                         </li>
 
                         <li className="menu-item-has-children">
-                            <Link to="/monthly/2">
+                            <Link to="/section/2/2">
                                 DOCTOR 2
                             </Link>
                         </li>
 
                         <li className="menu-item-has-children">
-                            <Link to="/monthly/2">
+                            <Link to="/section/2/3">
                                 TEAM
                             </Link>
                         </li>
 
                         <li className="menu-item-has-children">
-                            <Link to="/monthly/2">
+                            <Link to="/section/2/4">
                                 RESEARCH
                             </Link>
                         </li>
 
                         <li className="menu-item-has-children">
-                            <Link to="/monthly/2">
+                            <Link to="/section/2/5">
                                 TRAINING
                             </Link>
                         </li>
 
                         <li className="menu-item-has-children">
-                            <Link to="/monthly/2">
+                            <Link to="/section/2/6">
                                 CLINIC
                             </Link>
                         </li>
 
                         <li className="menu-item-has-children">
-                            <Link to="/monthly/2">
+                            <Link to="/section/2/7">
                                 MOMENT
                             </Link>
                         </li>
@@ -131,49 +131,49 @@ const MobileMenuNav = ({getActiveStatus}) => {
                     </Link>
                     <ul className="mobile-sub-menu">
                         <li className="menu-item-has-children">
-                            <Link to="/">
+                            <Link to="/section/3/1">
                                 AROUND
                             </Link>
                         </li>
 
                         <li className="menu-item-has-children">
-                            <Link to="/">
+                            <Link to="/section/3/2">
                                 FOOD
                             </Link>
                         </li>
 
                         <li className="menu-item-has-children">
-                            <Link to="/monthly/2">
+                            <Link to="/section/3/3">
                                 TREND
                             </Link>
                         </li>
 
                         <li className="menu-item-has-children">
-                            <Link to="/monthly/2">
+                            <Link to="/section/3/4">
                                 ISSUE
                             </Link>
                         </li>
 
                         <li className="menu-item-has-children">
-                            <Link to="/monthly/2">
+                            <Link to="/section/3/5">
                                 IH NEWS
                             </Link>
                         </li>
 
                         <li className="menu-item-has-children">
-                            <Link to="/monthly/2">
+                            <Link to="/section/3/6">
                                 IH TODAY
                             </Link>
                         </li>
 
                         <li className="menu-item-has-children">
-                            <Link to="/monthly/2">
+                            <Link to="/section/3/7">
                                 IH LETTER
                             </Link>
                         </li>
 
                         <li className="menu-item-has-children">
-                            <Link to="/monthly/2">
+                            <Link to="/section/3/8">
                                 진료일정표
                             </Link>
                         </li>

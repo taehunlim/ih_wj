@@ -21,7 +21,7 @@ const MobileMenu = ({ active, getActive }) => {
                 <div className="offcanvas-mobile-menu__content-wrapper">
                     <div
                         className="offcanvas-mobile-menu__content"
-                        style={{ backgroundColor: "#e49600" }}
+                        // style={{ backgroundColor: "powderblue" }}
                     >
                         {/*<MobileMenuSearch/>*/}
 
