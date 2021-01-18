@@ -9,6 +9,7 @@ import Section2 from "../components/home/Section2";
 import Section3 from "../components/home/Section3";
 import Service from "../components/home/Service";
 
+
 const Home = () => {
     return (
         <Fragment>

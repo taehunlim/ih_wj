@@ -5,7 +5,8 @@ import {
     Card,
     CardBody,
     CardImg,
-    CardTitle
+    CardTitle,
+    // CardText
 } from 'reactstrap';
 import {Link} from 'react-router-dom';
 import SwiperCore, {Controller, Scrollbar, Navigation, Pagination } from 'swiper'

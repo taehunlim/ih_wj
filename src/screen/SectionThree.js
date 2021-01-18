@@ -58,6 +58,7 @@ import today3 from "../assets/images/section3/today/3.jpg"
 import today4 from "../assets/images/section3/today/4.jpg"
 import today5 from "../assets/images/section3/today/5.jpg"
 import today6 from "../assets/images/section3/today/6.jpg"
+import IhNews from "../components/IhNews";
 
 
 
@@ -551,6 +552,11 @@ const SectionThree = ({match}) => {
                 정신과·중환자실 적정성 평가 1등급 획득
             </div>
         ),
+        (
+            <div>
+             김성우 병원장, 공로상 수상
+            </div>
+        )
     ]
 
     const ctext5 = [
@@ -610,6 +616,11 @@ const SectionThree = ({match}) => {
                 일산병원이 ‘의료급여 정신과 적정성 평가’ 에서 1등급을 받았다. 의료급여 정신과 적정성 평가는 의료급여 정신질환자에 대한 효과적인 의료서비스 제공과 지역사회 복귀 기반 마련을 목적으로 심평원이 시행하고 있는 제도로, 이번 평가에서 일산병원은 전체 평균인 66.8점을 상회하는 종합점수 89.6점을 획득했다. 또 ‘중환자실 적정성 평가’에서도 만점인 100점을 받아 동일종별 평균 68.9점을 크게 뛰어넘으며 1등급을 획득했다.
             </div>
         ),
+        (
+            <div>
+                김성우 병원장이 2020년 10월 30~31일 양 일간 서울드래곤시티에서 열린 2020 대한재활의학회 추계학술대회에서 공로상을 수상 했다. 공로상은 재활의학 분야 개선과 학회 발전에 기여한 개인에게 수여하는 상이다. 김성우 병원장은 대한재활의학회 회원으로서 학문과 학회의 발전에 힘쓰고 미충족 재활 의료 서비스에 대한 연구 지원으로 재활의료 연구에 기여한 공로를 인정 받아 이상을 수상했다.
+            </div>
+        )
     ]
 
     const ctitle6 = [
@@ -2110,7 +2121,7 @@ const SectionThree = ({match}) => {
             head: head[4],
             title: title[4],
             subtitle: subtitle[4],
-            caption: [
+            news: [
                 {
                     src: news2,
                     ctitle: ctitle5[0],
@@ -2122,10 +2133,15 @@ const SectionThree = ({match}) => {
                     ctext: ctext5[1]
                 },
                 {
-                    src: news4,
-                    ctitle: ctitle5[2],
-                    ctext: ctext5[2]
+                    src: news12,
+                    ctitle: ctitle5[10],
+                    ctext: ctext5[10]
                 },
+                // {
+                //     src: news4,
+                //     ctitle: ctitle5[2],
+                //     ctext: ctext5[2]
+                // },
                 {
                     src: news5,
                     ctitle: ctitle5[3],
@@ -2161,11 +2177,16 @@ const SectionThree = ({match}) => {
                     ctitle: ctitle5[9],
                     ctext: ctext5[9]
                 },
+                // {
+                //     src: news12,
+                //     ctitle: ctitle5[10],
+                //     ctext: ctext5[10]
+                // },
                 {
-                    src: news12,
-                    ctitle: ctitle5[10],
-                    ctext: ctext5[10]
-                }
+                    src: news4,
+                    ctitle: ctitle5[2],
+                    ctext: ctext5[2]
+                },
             ],
         },
         {
@@ -2758,6 +2779,8 @@ const SectionThree = ({match}) => {
                             )): ""}
 
 
+                            <IhNews item={item}/>
+
                             <IhToday item={item}/>
 
                             <IhLetter item={item}/>
@@ -2766,6 +2789,8 @@ const SectionThree = ({match}) => {
                         </Card>
 
                         <BoxSlide item={box}/>
+
+
                     </Container>
                 </section>
             </Fragment>
