@@ -13,6 +13,7 @@ import HeaderP from "../components/header/HeaderP";
 import Footer from "../components/footer/Footer";
 import IhToday from "../components/IhToday";
 import IhLetter from "../components/IhLetter";
+import BoxSlide from "../components/BoxSlide";
 
 import around1 from '../assets/images/section3/around1.jpg'
 import around2 from '../assets/images/section3/around2.jpg'
@@ -43,10 +44,10 @@ import news10 from '../assets/images/section3/news/10.jpg'
 import news11 from '../assets/images/section3/news/11.jpg'
 import news12 from '../assets/images/section3/news/12.png'
 
+import letter from '../assets/images/logo.jpg'
+import letter1 from '../assets/images/section3/7.jpg'
 
-
-
-
+import treat from '../assets/images/section3/8.jpg'
 import treatment1 from '../assets/images/section3/schedule/schedule.png'
 import treatment2 from '../assets/images/section3/schedule/schedule2.png'
 
@@ -58,8 +59,6 @@ import today4 from "../assets/images/section3/today/4.jpg"
 import today5 from "../assets/images/section3/today/5.jpg"
 import today6 from "../assets/images/section3/today/6.jpg"
 
-
-import letter from '../assets/images/logo.jpg'
 
 
 const SectionThree = ({match}) => {
@@ -263,6 +262,73 @@ const SectionThree = ({match}) => {
                 </p>
             </div>
         )
+    ]
+
+    const box = [
+        {
+            section: 3,
+            id: 1,
+            src: around1,
+            head: head[0],
+            title: title[0],
+            subtitle: subtitle[0]
+        },
+        {
+            section: 3,
+            id: 2,
+            src: food,
+            head: head[1],
+            title: " 지금이 제철! 영양 가득한 바다 맛, 굴",
+            subtitle: subtitle[1]
+        },
+        {
+            section: 3,
+            id: 3,
+            src: trend,
+            head: head[2],
+            title: "맛과 안전까지 더한 최고의 식단을 위하여 -영양팀",
+            subtitle: subtitle[2]
+        },
+        {
+            section: 3,
+            id: 4,
+            src: issue,
+            head: head[3],
+            title: "",
+            subtitle: subtitle[3]
+        },
+        {
+            section: 3,
+            id: 5,
+            src: news1,
+            head: head[4],
+            title: "",
+            subtitle: subtitle[4]
+        },
+        {
+            section: 3,
+            id: 6,
+            src: today1,
+            head: head[5],
+            title: "",
+            subtitle: subtitle[5]
+        },
+        {
+            section: 3,
+            id: 7,
+            src: letter1,
+            head: head[6],
+            title: "",
+            subtitle: subtitle[6]
+        },
+        {
+            section: 3,
+            id: 8,
+            src: treat,
+            head: head[7],
+            title: "",
+            subtitle: subtitle[7]
+        },
     ]
 
 
@@ -2698,6 +2764,8 @@ const SectionThree = ({match}) => {
 
 
                         </Card>
+
+                        <BoxSlide item={box}/>
                     </Container>
                 </section>
             </Fragment>

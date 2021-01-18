@@ -1,0 +1,34 @@
+.card-hover {
+  &:hover {
+    .card-hover__image {
+      img {
+        transform: scale(1.1);
+      }
+
+      &:after {
+        visibility: visible;
+
+        opacity: 1;
+      }
+    }
+  }
+
+  &__image {
+    position: relative;
+
+    overflow: hidden;
+    img {
+      width: 100%;
+
+      transition: 0.8s;
+    }
+  }
+}
+
+.box-image {
+  height: 191.56px;
+  object-fit: contain;
+}
+
+
+

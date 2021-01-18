@@ -20,12 +20,11 @@ import img4 from '../assets/images/section1/interview.jpg'
 import interv1 from '../assets/images/section1/interv1.1.jpg'
 import interv2 from '../assets/images/section1/interv2.1.jpg'
 
-// import {Swiper, SwiperSlide} from 'swiper/react';
-// import SwiperCore, {EffectFade, Navigation, Pagination, Autoplay} from 'swiper'
-//
-//
-// SwiperCore.use([Navigation, Pagination, EffectFade, Autoplay])
-
+import BoxSlide from "../components/BoxSlide";
+import image1 from "../assets/images/section1/1.png";
+import image2 from "../assets/images/section1/2.png";
+import image3 from "../assets/images/section1/3.png";
+import image4 from "../assets/images/section1/4.jpg";
 
 const SectionOne = ({match}) => {
 
@@ -128,6 +127,41 @@ const SectionOne = ({match}) => {
                 사진 <span style={{fontWeight: "normal"}}> 송인호 </span>
             </div>
         )
+    ]
+
+    const box = [
+        {
+            section: 1,
+            id: 1,
+            src: image1,
+            head: head[0],
+            title: title[0],
+            // subtitle: subtitle[0]
+        },
+        {
+            section: 1,
+            id: 2,
+            src: image2,
+            head: head[1],
+            title: title[1],
+            // subtitle: subtitle[1]
+        },
+        {
+            section: 1,
+            id: 3,
+            src: image3,
+            head: head[2],
+            title: "인간이 ‘본다’는 것은 일차원적이며 최고의 사고행위",
+            // subtitle: subtitle[2]
+        },
+        {
+            section: 1,
+            id: 4,
+            src: image4,
+            head: head[3],
+            title: "병원에서 '보다'의 의미를 찾다 ",
+            // subtitle: subtitle[3]
+        }
     ]
 
     const ctitle2 = [
@@ -473,6 +507,9 @@ const SectionOne = ({match}) => {
                                 </CardBody>
                             ))}
                         </Card>
+
+
+                            <BoxSlide item={box}/>
 
 
                     </Container>

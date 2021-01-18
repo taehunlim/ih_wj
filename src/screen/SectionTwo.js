@@ -12,6 +12,8 @@ import {
 import HeaderP from "../components/header/HeaderP";
 import Footer from "../components/footer/Footer";
 
+import BoxSlide from "../components/BoxSlide";
+
 import doctor1 from '../assets/images/section2/doctor101.jpg'
 import doctor12 from '../assets/images/section2/doctor102.jpg'
 
@@ -38,6 +40,7 @@ import clinic from '../assets/images/section2/clinic.png';
 import moment from '../assets/images/section2/moment.jpg'
 import moment1 from '../assets/images/section2/moment1.jpg'
 import moment2 from '../assets/images/section2/moment2.jpg'
+
 
 
 const SectionTwo = ({match}) => {
@@ -198,6 +201,65 @@ const SectionTwo = ({match}) => {
                 <br/>코로나19 거점전담병원으로서 국가적 재난 상황에 적극 대응합니다. 공공병원이자 보험자병원인 일산병원이 코로나19 종식의 그 날까지 함께합니다.
             </div>
         )
+    ]
+
+    const box = [
+        {
+            section: 2,
+            id: 1,
+            src: doctor1,
+            head: head[0],
+            title: title[0],
+            subtitle: subtitle[0]
+        },
+        {
+            section: 2,
+            id: 2,
+            src: doctor201,
+            head: head[1],
+            title: title[1],
+            subtitle: subtitle[1]
+        },
+        {
+            section: 2,
+            id: 3,
+            src: team1,
+            head: head[2],
+            title: "맛과 안전까지 더한 최고의 식단을 위하여 -영양팀",
+            subtitle: subtitle[2]
+        },
+        {
+            section: 2,
+            id: 4,
+            src: research0,
+            head: head[3],
+            title: "",
+            subtitle: subtitle[3]
+        },
+        {
+            section: 2,
+            id: 5,
+            src: training1,
+            head: head[4],
+            title: "",
+            subtitle: subtitle[4]
+        },
+        {
+            section: 2,
+            id: 6,
+            src: clinic,
+            head: head[5],
+            title: "",
+            subtitle: subtitle[5]
+        },
+        {
+            section: 2,
+            id: 7,
+            src: moment,
+            head: head[6],
+            title: "",
+            subtitle: subtitle[6]
+        },
     ]
 
     const ctitle1 = [
@@ -382,7 +444,7 @@ const SectionTwo = ({match}) => {
         ),
         (
             <div>
-                2021년에도 코로나19의 여파가 계속되리라 생각합니다. 영양팀은 타 부서보다 더 방역에 철저해야 하고 단 한 건의 감염도 있어서는 안되기에 영양팀원 모두 지금처럼만 무탈하게 이 어려운 시기를 함께 잘 넘기길 바랍니다. 영양팀 자체적으로 탈의실 내에서도 마스크 착용 및 티타임과 담소 금지, 한 줄 식사 등 방역 수 칙을 지키며 최선의 노력을 기울이고 있습니다. 바쁘게 돌아가는 업무 시간 내에서 유일하게 동료들과 얼 굴 보고 이야기할 수 있는 소중한 점심시간마저 빼앗는 것 같아 미안함을 느낍니다. 하지만 우리 모두의 안전을 위해 당연히 해야 할 일이라고 생각합니다. 코로 나19가 종식되는 그 날까지 직원들을 독려하며 더 안전한 일산병원을 만드는데 기여하겠습니다.
+                2021년에도 코로나19의 여파가 계속되리라 생각합니다. 영양팀은 타 부서보다 더 방역에 철저해야 하고 단 한 건의 감염도 있어서는 안되기에 영양팀원 모두 지금처럼만 무탈하게 이 어려운 시기를 함께 잘 넘기길 바랍니다. 영양팀 자체적으로 탈의실 내에서도 마스크 착용 및 티타임과 담소 금지, 한 줄 식사 등 방역 수 칙을 지키며 최선의 노력을 기울이고 있습니다. 바쁘게 돌아가는 업무 시간 내에서 유일하게 동료들과 얼굴 보고 이야기할 수 있는 소중한 점심시간마저 빼앗는 것 같아 미안함을 느낍니다. 하지만 우리 모두의 안전을 위해 당연히 해야 할 일이라고 생각합니다. 코로 나19가 종식되는 그 날까지 직원들을 독려하며 더 안전한 일산병원을 만드는데 기여하겠습니다.
             </div>
         ),
         (
@@ -793,6 +855,8 @@ const SectionTwo = ({match}) => {
                                 </CardBody>
                             ))}
                         </Card>
+
+                        <BoxSlide item={box}/>
                     </Container>
                 </section>
             </Fragment>
