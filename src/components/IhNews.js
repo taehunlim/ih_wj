@@ -30,7 +30,7 @@ const IhNews = ({item}) => {
 
                     <Row className="mb-5 justify-content-center" style={{width: "90%"}}>
                         {item.news ? item.news.map((c) => (
-                            <Col md={4} lg={4} className="">
+                            <Col md={6} lg={4} className="">
                                 <CardBody className="color-of-life__body">
                                     <div style={{textAlign: "center"}}>
                                         {c.src ?

@@ -218,7 +218,7 @@ const SectionThree = ({match}) => {
             </div>
         ),
         (
-            <div style={{fontSize: "25px"}}>
+            <div style={{fontSize: "20px"}}>
                 ‘스마트병원 시대를 꿈꾸다’ 칼럼이 인상깊었습니다. 일산병원을 방문할 때마다 다양한 iCt기술을 통해 정밀의료와 맞춤형 의료 등 환자중심 의료환경 패러다임으로 전환하며 변화하는 모습을 볼 수 있습니다. 포스트 코로나 시대를 맞아 업그레이드된 스마트한 일산병원의 모습, 앞으로도 계속 기대해 보겠습니다.
                 <div className="text-center" style={{fontWeight: "900"}}>- 유광열 님 -</div>
                 <br/>
