@@ -69,7 +69,7 @@ const Header = () => {
                     <NavbarBrand className="navbar-logo" style={{textAlign: "-webkit-center"}} href="/">
                         <img src={logo} alt="" height="19" className="logo logo-light"/>
                         <img src={logo} alt="" height="19" className="logo logo-dark"/>
-                        <h5 style={{color: "white"}}>
+                        <h5 style={{color: "white", marginTop: "10px"}}>
                             vol.21 2021 winter 신년호
                         </h5>
                     </NavbarBrand>

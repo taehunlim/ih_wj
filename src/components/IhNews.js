@@ -14,7 +14,7 @@ const IhNews = ({item}) => {
         <Fragment>
 
             {/*{item.airing ?*/}
-                <div>
+                <div style={{textAlign: "-webkit-center"}}>
                     {/*<CardBody className="color-of-life__header pt-0 pb-0" style={{backgroundColor: "powderblue"}}>*/}
                     {/*    <div className="d-flex align-items-center">*/}
                     {/*        <img src={icon1} alt="/"/>*/}
@@ -28,7 +28,7 @@ const IhNews = ({item}) => {
                     {/*    </div>*/}
                     {/*</CardBody>*/}
 
-                    <Row className="mb-5 justify-content-center">
+                    <Row className="mb-5 justify-content-center" style={{width: "90%"}}>
                         {item.news ? item.news.map((c) => (
                             <Col md={4} lg={4} className="">
                                 <CardBody className="color-of-life__body">
@@ -42,7 +42,7 @@ const IhNews = ({item}) => {
                                         {c.ctitle}
                                     </CardSubtitle>
                                     <CardText className="color-of-life__body__text mb-5">
-                                        <Row className="pl-4 pr-4">
+                                        <Row className="pl-3 pr-3" style={{textAlign: "left"}}>
                                             {c.ctext}
                                         </Row>
 

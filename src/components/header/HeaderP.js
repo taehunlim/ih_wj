@@ -74,6 +74,10 @@ const Header = () => {
                     <NavbarBrand className="navbar-logo " href="/">
                         <img src={logo} alt="" height="19" className="logo logo-light"/>
                         <img src={logo} alt="" height="19" className="logo logo-dark"/>
+
+                        <h5 style={{color: "white", marginTop: "10px"}}>
+                            vol.21 2021 winter 신년호
+                        </h5>
                     </NavbarBrand>
 
                     <Nav className="ml-auto navbar-nav d-none d-lg-flex header-content__navigation space-pr--15 d-none d-lg-block">
