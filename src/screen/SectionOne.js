@@ -143,7 +143,7 @@ const SectionOne = ({match}) => {
             id: 2,
             src: image2,
             head: head[1],
-            title: title[1],
+            title: "2021년 희망찬 새해가 밝았습니다.",
             // subtitle: subtitle[1]
         },
         {

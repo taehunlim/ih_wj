@@ -225,7 +225,7 @@ const SectionTwo = ({match}) => {
             id: 3,
             src: team1,
             head: head[2],
-            title: "맛과 안전까지 더한 최고의 식단을 위하여 -영양팀",
+            title: title[2],
             subtitle: subtitle[2]
         },
         {
@@ -233,7 +233,7 @@ const SectionTwo = ({match}) => {
             id: 4,
             src: research0,
             head: head[3],
-            title: "",
+            title: title[3],
             subtitle: subtitle[3]
         },
         {
@@ -241,7 +241,7 @@ const SectionTwo = ({match}) => {
             id: 5,
             src: training1,
             head: head[4],
-            title: "",
+            title: title[4],
             subtitle: subtitle[4]
         },
         {
@@ -249,7 +249,7 @@ const SectionTwo = ({match}) => {
             id: 6,
             src: clinic,
             head: head[5],
-            title: "",
+            title: title[5],
             subtitle: subtitle[5]
         },
         {
@@ -257,14 +257,14 @@ const SectionTwo = ({match}) => {
             id: 7,
             src: moment,
             head: head[6],
-            title: "",
+            title: title[6],
             subtitle: subtitle[6]
         },
     ]
 
     const ctitle1 = [
         (
-            <div style={{color: "darksalmon"}}>
+            <div style={{color: "darksalmon", fontSize: "25px"}}>
                 『논어』에 ‘박시제중(博施濟衆)’ 이라는 구절이 있습니다.
                 <br/>
                 ‘널리 베풀고 힘겨운 삶을 함께 풀자’라고 해석해볼 수 있는데요, 의사로서 일하고 있는 지금 제가 가진 역할에 감사한 마음이 있습니다.
@@ -675,21 +675,22 @@ const SectionTwo = ({match}) => {
             subtitle: subtitle[2],
             caption: [
                 {
-                    ctitle: ctitle3[0],
-                    ctext: ctext3[0]
-                },
-                {
-                    src: team2,
+                    src: team4,
                     ctitle: ctitle3[1],
                     ctext: ctext3[1]
                 },
+                {
+                    ctitle: ctitle3[0],
+                    ctext: ctext3[0]
+                },
+
                 {
                     src: team3,
                     ctitle: ctitle3[2],
                     ctext: ctext3[2]
                 },
                 {
-                    src: team4,
+                    src: team2,
                     ctitle: ctitle3[3],
                     ctext: ctext3[3]
                 }

@@ -1,5 +1,5 @@
 import React, {Fragment, useState} from 'react';
-import { Row, Col } from "reactstrap";
+import { Row, Col,} from "reactstrap";
 import logo from "../../assets/images/logo.jpg";
 import { FaFacebookF, FaBloggerB, FaTwitter } from "react-icons/fa";
 import {GoMailRead} from "react-icons/go/index";
@@ -16,9 +16,11 @@ const FooterLink = () => {
     return (
         <Fragment>
             <Row>
-                <Col lg="6"  style={{color: "white"}}>
+                <Col lg="6"  style={{color: "black"}}>
                     <div className="mb-4">
+
                         <img src={logo} alt="" height="40"/>
+
                     </div>
                     <p>경기도 고양시일산동구 일산로 100(백석 1동 1232번지), 우편번호 10444</p>
                     <p>대표전화 : 031-900-0114, 팩스 : 031-900-0049</p>

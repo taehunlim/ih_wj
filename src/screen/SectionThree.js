@@ -44,8 +44,14 @@ import news10 from '../assets/images/section3/news/10.jpg'
 import news11 from '../assets/images/section3/news/11.jpg'
 import news12 from '../assets/images/section3/news/12.png'
 
-import letter from '../assets/images/logo.jpg'
+import letter from '../assets/images/section3/letter/cover.png'
 import letter1 from '../assets/images/section3/7.jpg'
+
+import smart from '../assets/images/section3/letter/smart.jpg'
+import smart2 from '../assets/images/section3/letter/smart2.jpg'
+import smart3 from '../assets/images/section3/letter/smart3.jpg'
+import smart4 from '../assets/images/section3/letter/smart4.jpg'
+
 
 import treat from '../assets/images/section3/8.jpg'
 import treatment1 from '../assets/images/section3/schedule/schedule.png'
@@ -219,17 +225,17 @@ const SectionThree = ({match}) => {
         ),
         (
             <div style={{fontSize: "20px"}}>
-                ‘스마트병원 시대를 꿈꾸다’ 칼럼이 인상깊었습니다. 일산병원을 방문할 때마다 다양한 iCt기술을 통해 정밀의료와 맞춤형 의료 등 환자중심 의료환경 패러다임으로 전환하며 변화하는 모습을 볼 수 있습니다. 포스트 코로나 시대를 맞아 업그레이드된 스마트한 일산병원의 모습, 앞으로도 계속 기대해 보겠습니다.
-                <div className="text-center" style={{fontWeight: "900"}}>- 유광열 님 -</div>
-                <br/>
-                일산병원을 자주 이용하는데 전화로 예약하거나 변경할때 불편한 점이 간혹 있었는데 이번에 사보에서 모바일 앱 오픈 소식과 함께 이용 방법에 대해 자세하게 설명 해주셔서 좋았습니다. 각 메뉴별 특징도 요약되어 있어 앞으로 모바일 앱을 통해 예약은 물론 병원 이용이 더 편리해 질 것 같습니다.
-                <div className="text-center" style={{fontWeight: "900"}}>- 이가형 님 -</div>
-                <br/>
-                ‘레토르트 식품의 건강한 변신!’ 기사를 흥미롭게 잘 읽었습니다. 집에서 '혼밥'을 즐겨먹다 보니 맛도 영양도 근사한 편의점 음식을 더 건강하게 즐기는 방법 레시피 정보가 딱이네요. 앞으로는 혼자라고 대충 끼니를 때우기 보다는 집밥 못지 않은 맛과 영양으로 '혼밥'을 근사하게 먹을 수 있게 됐습니다.
-                <div className="text-center" style={{fontWeight: "900"}}>- 홍소진 님 -</div>
-                <br/>
-                조깅할 때나 헬스장에서 레깅스를 즐겨 입는 운동 마니아입니다. 신축성이 좋아 편하다는 이유로 레깅스를 2시간 이상 입고 있다 보면 혈액순환이 잘 안되는 느낌이 들어 늘 궁금했습니다. 이번호 ‘건강노트’에서 알려주신 레깅스 관련 기사를 읽고 궁금증이 해소되었습니다. 특히 레깅스로 인한 질환 예방법 오늘부터 실천해보겠습니다.
-                <div className="text-center" style={{fontWeight: "900"}}>- 강은경 님 -</div>
+                {/*‘스마트병원 시대를 꿈꾸다’ 칼럼이 인상깊었습니다. 일산병원을 방문할 때마다 다양한 iCt기술을 통해 정밀의료와 맞춤형 의료 등 환자중심 의료환경 패러다임으로 전환하며 변화하는 모습을 볼 수 있습니다. 포스트 코로나 시대를 맞아 업그레이드된 스마트한 일산병원의 모습, 앞으로도 계속 기대해 보겠습니다.*/}
+                {/*<div className="text-center" style={{fontWeight: "900"}}>- 유광열 님 -</div>*/}
+                {/*<br/>*/}
+                {/*일산병원을 자주 이용하는데 전화로 예약하거나 변경할때 불편한 점이 간혹 있었는데 이번에 사보에서 모바일 앱 오픈 소식과 함께 이용 방법에 대해 자세하게 설명 해주셔서 좋았습니다. 각 메뉴별 특징도 요약되어 있어 앞으로 모바일 앱을 통해 예약은 물론 병원 이용이 더 편리해 질 것 같습니다.*/}
+                {/*<div className="text-center" style={{fontWeight: "900"}}>- 이가형 님 -</div>*/}
+                {/*<br/>*/}
+                {/*‘레토르트 식품의 건강한 변신!’ 기사를 흥미롭게 잘 읽었습니다. 집에서 '혼밥'을 즐겨먹다 보니 맛도 영양도 근사한 편의점 음식을 더 건강하게 즐기는 방법 레시피 정보가 딱이네요. 앞으로는 혼자라고 대충 끼니를 때우기 보다는 집밥 못지 않은 맛과 영양으로 '혼밥'을 근사하게 먹을 수 있게 됐습니다.*/}
+                {/*<div className="text-center" style={{fontWeight: "900"}}>- 홍소진 님 -</div>*/}
+                {/*<br/>*/}
+                {/*조깅할 때나 헬스장에서 레깅스를 즐겨 입는 운동 마니아입니다. 신축성이 좋아 편하다는 이유로 레깅스를 2시간 이상 입고 있다 보면 혈액순환이 잘 안되는 느낌이 들어 늘 궁금했습니다. 이번호 ‘건강노트’에서 알려주신 레깅스 관련 기사를 읽고 궁금증이 해소되었습니다. 특히 레깅스로 인한 질환 예방법 오늘부터 실천해보겠습니다.*/}
+                {/*<div className="text-center" style={{fontWeight: "900"}}>- 강은경 님 -</div>*/}
             </div>
         ),
         (
@@ -265,6 +271,43 @@ const SectionThree = ({match}) => {
         )
     ]
 
+    const titleL = [
+        (
+            <div>
+                ‘스마트병원 시대를 꿈꾸다’ 칼럼이 인상깊었습니다. 일산병원을 방문할 때마다 다양한 iCt기술을 통해 정밀의료와 맞춤형 의료 등 환자중심 의료환경 패러다임으로 전환하며 변화하는 모습을 볼 수 있습니다. 포스트 코로나 시대를 맞아 업그레이드된 스마트한 일산병원의 모습, 앞으로도 계속 기대해 보겠습니다.
+                <div className="text-center" style={{fontWeight: "900"}}>- 유광열 님 -</div>
+            </div>
+        ),
+        (
+            <div>
+                일산병원을 자주 이용하는데 전화로 예약하거나 변경할때 불편한 점이 간혹 있었는데 이번에 사보에서 모바일 앱 오픈 소식과 함께 이용 방법에 대해 자세하게 설명 해주셔서 좋았습니다. 각 메뉴별 특징도 요약되어 있어 앞으로 모바일 앱을 통해 예약은 물론 병원 이용이 더 편리해 질 것 같습니다.
+                <div className="text-center" style={{fontWeight: "900"}}>- 이가형 님 -</div>
+            </div>
+        ),
+        (
+            <div>
+                ‘레토르트 식품의 건강한 변신!’ 기사를 흥미롭게 잘 읽었습니다. 집에서 '혼밥'을 즐겨먹다 보니 맛도 영양도 근사한 편의점 음식을 더 건강하게 즐기는 방법 레시피 정보가 딱이네요. 앞으로는 혼자라고 대충 끼니를 때우기 보다는 집밥 못지 않은 맛과 영양으로 '혼밥'을 근사하게 먹을 수 있게 됐습니다.
+                <div className="text-center" style={{fontWeight: "900"}}>- 홍소진 님 -</div>
+            </div>
+        ),
+        (
+            <div>
+                조깅할 때나 헬스장에서 레깅스를 즐겨 입는 운동 마니아입니다. 신축성이 좋아 편하다는 이유로 레깅스를 2시간 이상 입고 있다 보면 혈액순환이 잘 안되는 느낌이 들어 늘 궁금했습니다. 이번호 ‘건강노트’에서 알려주신 레깅스 관련 기사를 읽고 궁금증이 해소되었습니다. 특히 레깅스로 인한 질환 예방법 오늘부터 실천해보겠습니다.
+                <div className="text-center" style={{fontWeight: "900"}}>- 강은경 님 -</div>
+            </div>
+        )
+    ]
+
+    const boxtitle = [
+        (
+            <div>
+                진료일정표 <br/>
+                ※ 진료일정은 병원사정에 의해 변경될 수 있습니다.
+            </div>
+        )
+    ]
+
+
     const box = [
         {
             section: 3,
@@ -279,7 +322,7 @@ const SectionThree = ({match}) => {
             id: 2,
             src: food,
             head: head[1],
-            title: " 지금이 제철! 영양 가득한 바다 맛, 굴",
+            title: title[1],
             subtitle: subtitle[1]
         },
         {
@@ -287,7 +330,7 @@ const SectionThree = ({match}) => {
             id: 3,
             src: trend,
             head: head[2],
-            title: "맛과 안전까지 더한 최고의 식단을 위하여 -영양팀",
+            title: title[2],
             subtitle: subtitle[2]
         },
         {
@@ -295,7 +338,7 @@ const SectionThree = ({match}) => {
             id: 4,
             src: issue,
             head: head[3],
-            title: "",
+            title: title[3],
             subtitle: subtitle[3]
         },
         {
@@ -303,7 +346,7 @@ const SectionThree = ({match}) => {
             id: 5,
             src: news1,
             head: head[4],
-            title: "",
+            title: title[4],
             subtitle: subtitle[4]
         },
         {
@@ -311,7 +354,7 @@ const SectionThree = ({match}) => {
             id: 6,
             src: today1,
             head: head[5],
-            title: "",
+            title: title[5],
             subtitle: subtitle[5]
         },
         {
@@ -319,7 +362,7 @@ const SectionThree = ({match}) => {
             id: 7,
             src: letter1,
             head: head[6],
-            title: "",
+            title: "독자 의견, 독자 퀴즈, 새 근무복 소개",
             subtitle: subtitle[6]
         },
         {
@@ -327,7 +370,7 @@ const SectionThree = ({match}) => {
             id: 8,
             src: treat,
             head: head[7],
-            title: "",
+            title: boxtitle,
             subtitle: subtitle[7]
         },
     ]
@@ -2692,6 +2735,28 @@ const SectionThree = ({match}) => {
             id: "7",
             src: letter,
             head: head[6],
+            letter: [
+                {
+                    src: smart,
+                    titleL: titleL[0],
+
+                },
+                {
+                    src: smart2,
+                    titleL: titleL[1],
+
+                },
+                {
+                    src: smart3,
+                    titleL: titleL[2],
+
+                },
+                {
+                    src: smart4,
+                    titleL: titleL[3],
+
+                }
+            ],
             titleL: title[6],
             subtitleL: subtitle[6],
             letterH : letterH,

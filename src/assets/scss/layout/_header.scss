@@ -35,6 +35,17 @@
         display: none;
       }
     }
+    .title {
+      color: white;
+      margin-top: 10px;
+
+      font-size: 17.5px;
+
+      @media (max-width: 425px) {
+        font-size: 10px !important;
+
+      }
+    }
   }
 
 
@@ -76,6 +87,10 @@
     //box-shadow: $box-shadow;
     .navbar-logo{
       line-height: 60px;
+
+      @media (max-width: 325px) {
+        width: 50%;
+      }
 
       .logo-dark{
         display: $display-block;

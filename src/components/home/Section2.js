@@ -24,7 +24,7 @@ const Section2 = () => {
                     <Row>
                         <Col lg="12" className="section-col">
                             <div className="text-center mb-5">
-                                <h4>SECTION Ⅱ</h4>
+                                <h4 className="section-title">SECTION Ⅱ</h4>
                             </div>
                         </Col>
                     </Row>

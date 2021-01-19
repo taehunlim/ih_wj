@@ -24,7 +24,7 @@ const Service = () => {
                     <Row>
                         <Col lg="12">
                             <div className="text-center mb-3">
-                                <h4>Service</h4>
+                                <h4 className="section-title">Service</h4>
                             </div>
                         </Col>
                     </Row>

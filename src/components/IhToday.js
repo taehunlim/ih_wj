@@ -31,8 +31,8 @@ const IhToday = ({item}) => {
 
                     {item.airing ?
                         <div>
-                            <CardBody className="color-of-life__header pt-0 pb-0" style={{backgroundColor: "powderblue"}}>
-                                <div className="d-flex align-items-center">
+                            <CardBody className="color-of-life__header pt-0 pb-0" >
+                                <div className="d-flex align-items-center" style={{backgroundColor: "powderblue"}}>
                                     <img src={icon1} alt="/"/>
 
                                     <CardBody className="pt-0 pb-0">
@@ -44,7 +44,7 @@ const IhToday = ({item}) => {
                                 </div>
                             </CardBody>
 
-                            <Row className="mb-5">
+                            <Row className="mb-5 ih-celebration-wrapper">
                                 {item.airing ? item.airing.map((c) => (
                                     <Col md={6} lg={4} className="pl-2 pr-2">
                                         <CardBody className="color-of-life__body">
@@ -90,9 +90,9 @@ const IhToday = ({item}) => {
 
 
                     {item.article ?
-                        <div>
-                            <CardBody className="color-of-life__header pt-0 pb-0" style={{backgroundColor: "powderblue"}}>
-                                <div className="d-flex align-items-center">
+                        <div className="">
+                            <CardBody className="color-of-life__header pt-0 pb-0">
+                                <div className="d-flex align-items-center" style={{backgroundColor: "powderblue"}}>
                                     <img src={icon2} alt="/" />
 
                                     <CardBody className="pt-0 pb-0">
@@ -105,7 +105,7 @@ const IhToday = ({item}) => {
                             </CardBody>
 
                             <Container>
-                                <Row className="mb-5">
+                                <Row className="mb-5 ih-celebration-wrapper">
                                     {item.article ? item.article.map((c) => (
                                         <Col md={6} lg={6}>
                                             <table className="ih-article">
@@ -121,6 +121,7 @@ const IhToday = ({item}) => {
                                                     </td>
                                                     <td style={{textAlign: "end"}}>
                                                         <a
+                                                            style={{padding: "5px"}}
                                                             className="ih-button"
                                                             href={c.wUrl}
                                                             target="_blank"
@@ -143,9 +144,9 @@ const IhToday = ({item}) => {
 
 
                     {item.celebration ?
-                        <div className="fix-need">
-                            <CardBody className="color-of-life__header pt-0 pb-0" style={{backgroundColor: "powderblue"}}>
-                                <div className="d-flex align-items-center">
+                        <div className="">
+                            <CardBody className="color-of-life__header pt-0 pb-0" >
+                                <div className="d-flex align-items-center" style={{backgroundColor: "powderblue"}}>
                                     <img src={icon4} alt="/"/>
 
                                     <CardBody className="pt-0 pb-0">
@@ -157,57 +158,59 @@ const IhToday = ({item}) => {
                                 </div>
                             </CardBody>
 
-                            <div>
-                                <Row className="mb-5">
+                            <div className="ih-celebration-wrapper">
+                                <Row className="mb-5 ">
                                     <Col lg={12}>
                                         <table className="ih-celebration">
 
-                                            <thead style={{backgroundColor: "powderblue", color: "white"}}>
-                                            <tr>
-                                                <th style={{width: "15%"}}>
-                                                    수상자
-                                                </th>
-                                                <th style={{width: "15%"}}>
-                                                    수상명
-                                                </th>
-                                                <th style={{width: "15%"}}>
-                                                    학술대회명
-                                                </th>
-                                                <th style={{width: "15%"}}>
-                                                    수상년월
-                                                </th>
-                                                <th style={{width: "40%"}}>
-                                                    수상내용
-                                                </th>
-                                            </tr>
-                                            </thead>
+                                            <div
+                                                className="ih-celebration__title"
+
+                                            >
+                                                <Row>
+                                                    <Col xs={2} sm={2} md={2} lg={2}>
+                                                        수상자
+                                                    </Col>
+                                                    <Col xs={2} sm={2} md={2} lg={2}>
+                                                        수상명
+                                                    </Col>
+                                                    <Col xs={2} sm={2} md={2} lg={2}>
+                                                        학술대회명
+                                                    </Col>
+                                                    <Col xs={2} sm={2} md={2} lg={2}>
+                                                        수상년월
+                                                    </Col>
+                                                    <Col xs={4} sm={4} md={4} lg={4}>
+                                                        수상내용
+                                                    </Col>
+                                                </Row>
+                                            </div>
 
 
                                             {item.celebration ? item.celebration.map((c) => (
-                                                <tbody style={{borderBottom: "1px solid"}}>
-                                                <tr>
-                                                    <td style={{width: "15%"}}>
+                                            <div className="ih-celebration__body">
+                                                <Row className="align-items-center">
+                                                    <Col xs={2} sm={2} md={2} lg={2}>
                                                         {c.winner}
-                                                    </td>
-                                                    <td style={{width: "15%"}}>
+                                                    </Col>
+                                                    <Col xs={2} sm={2} md={2} lg={2}>
                                                         {c.cName}
-                                                    </td>
-                                                    <td style={{width: "15%"}}>
+                                                    </Col>
+                                                    <Col xs={2} sm={2} md={2} lg={2}>
                                                         {c.conference}
-                                                    </td>
-                                                    <td style={{width: "15%"}}>
+                                                    </Col>
+                                                    <Col xs={2} sm={2} md={2} lg={2}>
                                                         {c.cDate}
-                                                    </td>
-                                                    <td style={{width: "40%"}}>
+                                                    </Col>
+                                                    <Col xs={4} sm={4} md={4} lg={4}>
                                                         {c.content}
-                                                    </td>
-                                                </tr>
-                                                </tbody>
+                                                    </Col>
+                                                </Row>
+                                            </div>
                                             )) : ""
                                             }
                                         </table>
                                     </Col>
-
 
                                 </Row>
                             </div>
@@ -215,7 +218,7 @@ const IhToday = ({item}) => {
                         : ""}
 
                     <Col lg={12} className="mb-5">
-                        <Row>
+                        <Row className="ih-celebration-wrapper">
                             <Col lg={6}>
                                 <div className="">
                                     {item.merry ?
@@ -311,7 +314,7 @@ const IhToday = ({item}) => {
                     </Col>
 
                     <Col lg={12} className="mb-5">
-                        <Row>
+                        <Row className='ih-celebration-wrapper'>
                             <Col lg={6}>
                                 <div className="">
                                     {item.outstanding ?
@@ -340,7 +343,7 @@ const IhToday = ({item}) => {
                                                             <td className="text-center">
                                                                 {o.oDm}
                                                             </td>
-                                                            <td style={{width: "50%", textAlign: "end"}}>
+                                                            <td style={{width: "40%", textAlign: "end"}}>
                                                                 {o.oName}
                                                             </td>
 

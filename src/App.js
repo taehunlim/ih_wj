@@ -20,7 +20,7 @@ function App() {
               <Route path="/section/1/:id" render={props => <SectionOne {...props}/>}/>
               <Route path="/section/2/:id" render={props => <SectionTwo {...props}/>}/>
               <Route path="/section/3/:id" render={props => <SectionThree {...props}/>}/>
-              <Route pat="/history" render={props => <His {...props}/>}/>
+              <Route pat="/list" render={props => <His {...props}/>}/>
               <Redirect to="/" />
           </Switch>
       </BrowserRouter>

@@ -15,4 +15,12 @@
   h2 {
     margin-bottom: 10px;
   }
+
+  &__display {
+
+    @media (max-width: 767px) {
+      display: none;
+    }
+
+  }
 }

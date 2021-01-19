@@ -6,13 +6,11 @@ import {
     CardBody,
     CardImg,
     CardTitle,
-    // CardText
 } from 'reactstrap';
 import {Link} from 'react-router-dom';
 import SwiperCore, {Controller, Scrollbar, Navigation, Pagination } from 'swiper'
 import {SwiperSlide, Swiper} from 'swiper/react'
 
-// import {trimText} from '../utils'
 
 
 SwiperCore.use([Navigation, Pagination, Controller, Scrollbar])
@@ -29,7 +27,7 @@ const BoxSlide = ({item}) => {
                             <div className="owl-carousel owl-theme  navs-carousel events" id="timeline-carousel">
                                 <Swiper
                                     slidesPerView={3}
-                                    spaceBetween={24}
+                                    spaceBetween={0}
                                     navigation
                                     breakpoints={{
                                         1024: {
@@ -49,7 +47,7 @@ const BoxSlide = ({item}) => {
                                     {item && item.map((item) => {
                                         return (
                                             <SwiperSlide>
-                                                <Row>
+                                                <Row className="slide-box">
                                                     <Col md={12}>
                                                         <Card className="card-hover">
 
@@ -60,12 +58,8 @@ const BoxSlide = ({item}) => {
 
                                                                 <CardImg src={item.src} className="img-fluid box-image"/>
 
-                                                                {/*<CardImg top className="img-fluid h" src={item.src} alt="Skote" />*/}
-                                                                <CardBody>
-                                                                    {/*<CardTitle className="mt-0">{item.title}</CardTitle>*/}
-                                                                    {/*<CardText>*/}
-                                                                    {/*    {trimText(item.subtitle, 80)}*/}
-                                                                    {/*</CardText>*/}
+                                                                <CardBody className="slide-box__title">
+                                                                    <CardTitle className="mt-0 card-title">{item.title}</CardTitle>
                                                                 </CardBody>
                                                             </Link>
                                                         </Card>

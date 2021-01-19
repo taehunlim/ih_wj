@@ -37,15 +37,33 @@ const IhLetter = ({item}) => {
                     </div>
 
 
-                    <CardBody className="color-of-life__body">
+                    <div style={{textAlign: "-webkit-center"}}>
+
                         <CardTitle className="color-of-life__body__title mb-4">
                             {item.titleL}
                         </CardTitle>
-                        <CardSubtitle className="color-of-life__body__subtitle mb-5">
-                            {item.subtitleL}
-                        </CardSubtitle>
-                    </CardBody>
 
+                        <Row className="mb-5 justify-content-center" style={{width: "90%"}}>
+
+
+
+                            {item.letter ? item.letter.map ((l) => (
+                                    <Col md={6} lg={6} className="">
+                                        <CardBody className="color-of-life__header pt-0 pb-0">
+                                            <CardImg top className="img-fluid mb-3" src={l.src} alt="/" />
+                                        </CardBody>
+                                        <CardBody className="color-of-life__body">
+                                            <CardTitle className="color-of-life__body__subtitle mb-4">
+                                                {l.titleL}
+                                            </CardTitle>
+                                        </CardBody>
+                                    </Col>
+                                ))
+
+                            : ""}
+
+                        </Row>
+                    </div>
 
 
                     <div>

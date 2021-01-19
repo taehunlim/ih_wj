@@ -69,7 +69,7 @@ const Header = () => {
                     <NavbarBrand className="navbar-logo" style={{textAlign: "-webkit-center"}} href="/">
                         <img src={logo} alt="" height="19" className="logo logo-light"/>
                         <img src={logo} alt="" height="19" className="logo logo-dark"/>
-                        <h5 style={{color: "white", marginTop: "10px"}}>
+                        <h5 className="title">
                             vol.21 2021 winter 신년호
                         </h5>
                     </NavbarBrand>
@@ -83,7 +83,7 @@ const Header = () => {
                             border: "1px solid",
                             borderRadius: "15px"
                         }}>
-                        <Link to="/hisotry" style={{padding: "5px"}}>
+                        <Link to="/list" className="history__display" style={{padding: "5px"}}>
                             지난호 보기
                         </Link>
                     </div>
