@@ -75,13 +75,13 @@ const Header = () => {
                     </NavbarBrand>
 
                     <div
-                        className="ml-5"
+                        className=""
                         style={{
                             fontSize: "24px",
                             color: "white",
                             fontWeight: "bold",
-                            border: "1px solid",
-                            borderRadius: "15px"
+                            // border: "1px solid",
+                            // borderRadius: "15px"
                         }}>
                         <Link to="/list" className="history__display" style={{padding: "5px"}}>
                             지난호 보기

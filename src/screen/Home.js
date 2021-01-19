@@ -33,7 +33,7 @@ const Home = () => {
                 <Service/>
 
                 <div style={{textAlign: "-webkit-center"}}>
-                    <Card style={{width: "35%", alignItems: "center"}}>
+                    <Card style={{width: "25%", alignItems: "center"}}>
                         <img src={logo} className="img-fluid" alt="/"/>
                     </Card>
                     <CardBody className="pt-0">

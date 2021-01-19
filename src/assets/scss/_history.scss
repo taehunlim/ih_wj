@@ -18,8 +18,11 @@
 
   &__display {
 
+    border: 1px solid;
+    border-radius: 15px;
+
     @media (max-width: 767px) {
-      display: none;
+      font-size: 12px;
     }
 
   }
