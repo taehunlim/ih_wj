@@ -16,7 +16,9 @@ import logo from '../assets/images/logo.jpg'
 const Home = () => {
     return (
         <Fragment>
-            <div style={{backgroundColor: "#ededed"}}>
+            <div
+                // style={{backgroundColor: "#ededed"}}
+            >
 
                 <Header/>
 
@@ -31,7 +33,7 @@ const Home = () => {
                 <Service/>
 
                 <div style={{textAlign: "-webkit-center"}}>
-                    <Card style={{width: "50%", alignItems: "center"}}>
+                    <Card style={{width: "35%", alignItems: "center"}}>
                         <img src={logo} className="img-fluid" alt="/"/>
                     </Card>
                     <CardBody className="pt-0">

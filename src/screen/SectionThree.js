@@ -44,7 +44,7 @@ import news10 from '../assets/images/section3/news/10.jpg'
 import news11 from '../assets/images/section3/news/11.jpg'
 import news12 from '../assets/images/section3/news/12.png'
 
-import letter from '../assets/images/section3/letter/cover.png'
+// import letter from '../assets/images/section3/letter/cover.png'
 import letter1 from '../assets/images/section3/7.jpg'
 
 import smart from '../assets/images/section3/letter/smart.jpg'
@@ -2733,7 +2733,7 @@ const SectionThree = ({match}) => {
         },
         {
             id: "7",
-            src: letter,
+            src: "",
             head: head[6],
             letter: [
                 {

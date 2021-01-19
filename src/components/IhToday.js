@@ -32,7 +32,7 @@ const IhToday = ({item}) => {
                     {item.airing ?
                         <div>
                             <CardBody className="color-of-life__header pt-0 pb-0" >
-                                <div className="d-flex align-items-center" style={{backgroundColor: "powderblue"}}>
+                                <div className="d-flex " style={{backgroundColor: "powderblue"}}>
                                     <img src={icon1} alt="/"/>
 
                                     <CardBody className="pt-0 pb-0">
@@ -92,7 +92,7 @@ const IhToday = ({item}) => {
                     {item.article ?
                         <div className="">
                             <CardBody className="color-of-life__header pt-0 pb-0">
-                                <div className="d-flex align-items-center" style={{backgroundColor: "powderblue"}}>
+                                <div className="d-flex " style={{backgroundColor: "powderblue"}}>
                                     <img src={icon2} alt="/" />
 
                                     <CardBody className="pt-0 pb-0">
@@ -145,8 +145,8 @@ const IhToday = ({item}) => {
 
                     {item.celebration ?
                         <div className="">
-                            <CardBody className="color-of-life__header pt-0 pb-0" >
-                                <div className="d-flex align-items-center" style={{backgroundColor: "powderblue"}}>
+                            <CardBody className="color-of-life__header pt-0 pb-0 " >
+                                <div className="d-flex " style={{backgroundColor: "powderblue"}}>
                                     <img src={icon4} alt="/"/>
 
                                     <CardBody className="pt-0 pb-0">
@@ -223,8 +223,8 @@ const IhToday = ({item}) => {
                                 <div className="">
                                     {item.merry ?
                                         <div>
-                                            <CardBody className="color-of-life__header pt-0 pb-0" style={{backgroundColor: "powderblue"}}>
-                                                <div className="d-flex align-items-center">
+                                            <CardBody className="color-of-life__header pt-0 pb-0 pl-0" >
+                                                <div className="d-flex" style={{backgroundColor: "powderblue"}}>
                                                     <img src={icon6} alt="/"/>
 
                                                     <CardBody className="pt-0 pb-0">
@@ -270,8 +270,8 @@ const IhToday = ({item}) => {
                                     {item.childbirth ?
 
                                         <div>
-                                            <CardBody className="color-of-life__header pt-0 pb-0" style={{backgroundColor: "powderblue"}}>
-                                                <div className="d-flex align-items-center">
+                                            <CardBody className="color-of-life__header pt-0 pb-0 pl-0" >
+                                                <div className="d-flex" style={{backgroundColor: "powderblue"}}>
                                                     <img src={icon5} alt="/"/>
 
                                                     <CardBody className="pt-0 pb-0">
@@ -320,8 +320,9 @@ const IhToday = ({item}) => {
                                     {item.outstanding ?
 
                                         <div>
-                                            <CardBody className="color-of-life__header pt-0 pb-0" style={{backgroundColor: "powderblue"}}>
-                                                <div className="d-flex align-items-center">
+                                            <CardBody className="color-of-life__header pt-0 pb-0 pl-0" >
+                                                <div className="d-flex" style={{backgroundColor: "powderblue"}}>
+
                                                     <img src={icon3} alt="/"/>
 
                                                     <CardBody className="pt-0 pb-0">
@@ -363,8 +364,8 @@ const IhToday = ({item}) => {
                                 <div className="">
                                     {item.kind ?
                                         <div>
-                                            <CardBody className="color-of-life__header pt-0 pb-0" style={{backgroundColor: "powderblue"}}>
-                                                <div className="d-flex align-items-center">
+                                            <CardBody className="color-of-life__header pt-0 pb-0 pl-0">
+                                                <div className="d-flex "  style={{backgroundColor: "powderblue"}}>
                                                     <img src={icon3} alt="/"/>
 
                                                     <CardBody className="pt-0 pb-0">
