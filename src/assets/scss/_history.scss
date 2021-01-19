@@ -10,10 +10,18 @@
 .history {
   div {
     font-size: 30px;
+
+    @media (max-width: 425px) {
+      font-size: 15px;
+    }
   }
 
   h2 {
     margin-bottom: 10px;
+
+    @media (max-width: 425px) {
+      font-size: 10px;
+    }
   }
 
   &__display {
@@ -24,6 +32,10 @@
     @media (max-width: 767px) {
       font-size: 12px;
     }
+
+  }
+
+  &__title {
 
   }
 }

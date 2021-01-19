@@ -83,7 +83,7 @@ const Header = () => {
                             // border: "1px solid",
                             // borderRadius: "15px"
                         }}>
-                        <Link to="/list" className="history__display" style={{padding: "5px"}}>
+                        <Link to="/list" className="history__display" style={{padding: "3px"}}>
                             지난호 보기
                         </Link>
                     </div>
